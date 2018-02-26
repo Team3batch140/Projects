@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NEW MAGAZINE IN JULY</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="bán-báo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="bán-báo.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my-JQ.js"></script>
+    <script src="js/placeholder.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="css/header&footer.css">
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <div class="row" id="nav1">
+            <div class="col-md-12 hder">
+                <nav class="navbar navbar-inverse menu">
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a  href="#"><img class="logo" src="images/images.png"/></a></li>
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">PHOTOGRAPH</a></li>
+                            <li><a href="#">SELL MAGAZINES</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form>
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </li>
+                            <li>
+                                <div class="btn-cart" id="cart-block">
+                                    <a title="SignIn" href="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-lg modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">LOGIN/REGISTER</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Register</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="Login">
+                                    <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                          id="dangnhap_from" method="post">
+                                        <div class="form-group">
+                                            <label for="email_login" class="col-sm-3 control-label">ID</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="email" class="input form-control" id="email_login"
+                                                       placeholder="ID...."/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_login" class="col-sm-3 control-label">Password</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="password" class="input form-control" id="pass_login"
+                                                       placeholder="Password...."/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <button class="button" type="submit" id="button-confirm">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="tab-pane fade" id="Registration">
+                                    <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                          enctype="multipart/form-data" id="dangkytk_form register">
+                                        <div class="form-group">
+                                            <label for="frm_name" class="col-sm-4 control-label">ID</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" class="input form-control" id="frm_name" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="email" class="input form-control" id="emailtk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="pass_tk" class="col-sm-4 control-label">Password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="pass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="repass_tk" class="col-sm-4 control-label">Re-password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="repass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ngaysinh_tk" class="col-sm-4 control-label">Birth day</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="date" class="input form-control" id="ngaysinh_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="gender_tk" class="col-sm-4 control-label">Gender</label>
+
+                                            <div class="col-sm-8">
+                                                <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                    <option value="1">Female</option>
+                                                    <option value="0">Male</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Adress</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="diachi" class="input form-control" id="diachi_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Phone number</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="dienthoai" class="input form-control"
+                                                       id="dienthoai_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <button class="button" type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="OR" class="hidden-xs">OR</div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="row text-center sign-with">
+                                <div class="social-header">Login With</div>
+                                <div class="unit social-column">
+                                    <div class="social-inner">
+                                        <div><a href=""><img src="images/ava/fb-login-button-big.png" alt="login-facebook"></a>
+                                        </div>
+                                        <div><a href=""><img src="images/ava/gg-login-button-big.png" alt="login-google"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="breadcrumb">
+                <li><a href="Bán-báo.html">HOME</a></li>
+                <li class="active">NEW MAGAZINE</li>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="cate"><span class="caret"></span>Category</a>
+                </div>
+                <div class="showcate" id="s1">
+                    <a id="a1" style="font-size: 14pt"><b>NEW MAGAZINE</b><span class="badge">12</span></a>
+                    <div id="show1" class="cateclass">
+                        <a href="new-magazine-january.html">New magazine in January</a><br>
+                        <a href="new-magazine-february.html">New magazine in February</a><br>
+                        <a href="new-magazine-march.html">New magazine in March</a><br>
+                        <a href="new-magazine-april.html">New magazine in April</a><br>
+                        <a href="new-magazine-may.html">New magazine in May</a><br>
+                        <a href="new-magazine-june.html">New magazine in June</a><br>
+                        <a href="new-magazine-july.html">New magazine in July</a><br>
+                        <a href="new-magazine-august.html">New magazine in August</a><br>
+                        <a href="new-amagazine-september.html">New magazine in September</a><br>
+                        <a href="new-magazine-october.html">New magazine in October</a><br>
+                        <a href="new-magazine-november.html">New magazine in November</a><br>
+                        <a href="new-magazine-december.html">New magazine in December</a><br>
+
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="price"><span class="caret"></span>Price<span id="badgered" class="badge">Clear</span></a>
+                </div>
+                <div class="showcate" id="s2">
+                    <form>
+                        <input type="radio" name="price"> 10$ - 50$<br>
+                        <input type="radio" name="price"> 50$ - 100$<br>
+                        <input type="radio" name="price"> 100$ - 150$<br>
+                        <input type="radio" name="price"> 150$ - 200$<br>
+                        <input type="radio" name="price"> 200$ - 250$<br>
+                        <input type="radio" name="price"> 250$ - 300$<br>
+                        <input type="radio" name="price" checked> Don't know<br>
+                    </form>
+                    <hr>
+                    <p>Enter a price range</p>
+                    <form class="form-inline">
+                        <input type="text" class="form-control" placeholder="2000$">
+                        <span> - </span>
+                        <input type="text" class="form-control" placeholder="3000$">
+                        <button type="submit" class="btn btn-default">Check</button>
+                    </form>
+                </div>
+            </div>
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="brand"><span class="caret"></span>Brand</a>
+                </div>
+                <div class="showcate" id="s3">
+                    <form>
+                        <input type="checkbox" name="brand"> New magazine in January<br>
+                        <input type="checkbox" name="brand"> New magazine in February<br>
+                        <input type="checkbox" name="brand"> New magazine in March<br>
+                        <input type="checkbox" name="brand"> New magazine in April<br>
+                        <input type="checkbox" name="brand"> New magazine in May<br>
+                        <input type="checkbox" name="brand"> New magazine in June<br>
+                        <input type="checkbox" name="brand"> New magazine in July<br>
+                        <input type="checkbox" name="brand"> New magazine in August<br>
+                        <input type="checkbox" name="brand"> New magazine in September<br>
+                        <input type="checkbox" name="brand"> New magazine in October<br>
+                        <input type="checkbox" name="brand"> New magazine in November<br>
+                        <input type="checkbox" name="brand"> New magazine in December<br>
+                        <div style="text-align: center">
+                            <button type="submit" class="btn">Check</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+            <nav class="navbar navbar-default" role="navigation" id="nav2">
+                <div class="navbar-default">
+                    <a class="navbar-brand" href="#" style="color: white">NEW MAGAZINE IN JULY</a>
+                </div>
+            </nav>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/garden5.jpg" srcset="images/garden5-mobile.jpg 320w, images/garden5.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/garden2.jpg" srcset="images/garden2-mobile.jpg 320w, images/garden2.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/garden3.jpg" srcset="images/garden3-mobile.jpg 320w, images/garden3.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/garden4.jpg" srcset="images/garden4-mobile.png 320w, images/garden4.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/garden1.jpg" srcset="images/garden1-mobile.jpg 320w, images/garden1.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/garden6.jpg" srcset="images/garden6-mobile.jpg 320w, images/garden6.jpg 760w">
+                    </div>
+                </div>
+            </div>
+            <h1>Garden Bridge in LonDon</h1>
+            The Garden Bridge project was a private proposal for a pedestrian bridge over the River Thames in London, England.[2] Consequent on an idea of Joanna Lumley,[3] Thomas Heatherwick worked with Arup on a proposal by Transport for London (TfL) for a new bridge across the Thames between Waterloo[3] and Blackfriars bridges. The proposed concrete, steel, cupronickel clad structure was intended to carry pedestrians, with no cycles or other vehicles. It was to have been located some 200 metres (660 ft) from Waterloo Bridge and 300 m (980 ft) from Blackfriars Bridge, and have included some areas of planting. The project included a commercial building, built on former green space at the southern end of the bridge. The bridge could only be funded by raising over £140 million of private money (including charitable gift aid) and £60 million of promised public money, of which £30m was from Transport for London (£20m of this to be repaid over 55 years) and £30m from the Department for Transport, adding up to projected funding of over £200m in total,[4] In January 2017 the trustees of the prospective owner of the bridge stated that costs would "substantially exceed" an earlier revised total of £185m and in April 2017 the report by Margaret Hodge (below) concluded, on the basis of the Garden Bridge Trust's own evidence to her, that the cost would be over £200m.[5]
+
+            If built, it was proposed that the bridge would have been open from 6am to midnight, and closed overnight, with further closures for preparation for and holding up to 12 private commercial events per year, to raise funds for its maintenance.[6] A planning condition required annual maintenance costs to be guaranteed by a third party, and it was expected that this would be the Greater London Authority. The maintenance costs were variously estimated at between £2m and £3.5m, before allowing for repayment of loan capital and interest.[7]
+
+            In July 2016 preparatory work for the bridge was halted and the Garden Bridge Trust put contractors on standby to allow for a financial review and because they had not cleared outstanding issues such as securing legal rights to the land on either side of the river, despite signing a contract for construction of the bridge in January 2016. In September 2016 the Mayor of London announced a formal review by Margaret Hodge of the procurement processes in relation to the bridge project and the value for money it would provide.[8] In October 2016 the National Audit Office reported on procurement issues and perceived value for money for that part of the cost of the project which was being met by funds (£30m) from the Department for Transport. In January 2017, the accounts of the Garden Bridge Trust (the limited company behind the project) stated that it was not a going concern.[5] In February 2017 the Charity Commission found the financial management of the trust to be satisfactory, albeit with criticisms as to the trustees' approach.[9] The subsequent report by Margaret Hodge MP was highly critical of the plan, its procurement, its cost, the risk to public funds, and value for money.[10]
+
+            The Garden Bridge Trust formally announced on 14 August 2017 that it would be ending the project and that the Garden Bridge Trust itself would be wound up in accordance with the Companies Acts.[11] The failed project cost some £46m of public money.[12]
+            <h1>Design</h1>
+            The bridge would have been 366 metres (1,201 ft) long[18] and 30 metres (98 ft) across at its widest point. It would have run from the roof of Temple station at the foot of Arundel Street[3] on the north bank to Queen's Walk on the South Bank, next to the ITV building, where a public green open space would have been sacrificed and built upon to provide a commercial building associated with the bridge, with removal of some 28 mature trees.[19][20] The new building would have housed a combination of public toilets, maintenance facilities, and operational areas, together with an events space which was intended to be occupied by Coin Street Community Builders who have a long lease of the area on which the building would have been constructed.[21] The bridge would have featured trees and shrubs, hedging plants and climbers, perennials, ferns and grasses, and bulbs. Its construction would have required the felling of mature trees on both sides of the river, including 28 plane trees in the avenue on Queen's Walk which were planted in the 1960s as a living memorial to London's war dead.[22] The bridge was to have been planted with some 270 immature trees.[7] In order to limit the wind loading on the bridge structure the trees would have been maintained by pruning so that they never exceeded a height of 15 m (49 ft) at the bridge piers and 2 m (6 ft 7 in) near the bridge landings.[23] Dan Pearson was appointed as landscape designer.[17]
+
+            Before granting planning permission, Westminster Council raised concerns that the bridge would cause "significant harm" to a number of protected views from Waterloo Bridge, Blackfriars Bridge, and the South Bank, but concluded that new views from the garden bridge would outweigh the damage caused.[24] The bridge's proposed private owners claimed however that English Heritage stated in an assessment that "the Bridge would be as a picturesque incident in the riverscape….its low slung and restrained architecture and engineering will change the character of views but not cause harm to the setting of, and views to and from historic assets."[25]
+            <h1>Planning process</h1>
+            In January 2015, a legal challenge of Lambeth's planning permission was brought by Michael Ball, director of the Waterloo Community Development Group. On 21 April 2015, permission was granted by The Hon. Mr Justice Ouseley for a full judicial review of Lambeth’s decision to grant planning permission on the grounds that the impact of views on heritage assets (particularly Somerset House) had not been properly considered, and Lambeth had not adequately ensured the ongoing maintenance of the bridge.[62] However, it was agreed the case should be dismissed after Lambeth and the trust agreed to enter into a planning obligation requiring the trust to submit a plan for the maintenance of the bridge for approval by the Council, and to provide a surety or guarantor for the trust’s ongoing maintenance obligations.[63] The Greater London Authority has guaranteed the maintenance costs.
+
+            A second judicial review, of Lambeth’s decision to allow a variation of the lease on the South Bank, was dismissed in September 2016.[64]
+
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="footer">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUPPORT </h3>
+                            <p id="p2"><span class="glyphicon glyphicon glyphicon-earphone"></span> +1-202-555-0151</p>
+                            <p id="p3"><i class="glyphicon glyphicon-envelope"></i> help@yourweb.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUBSCRIBE TO NEWSLETTERS </h3>
+                            <form action="#" class="input-append newsletter-box">
+                                <input type="text" class="input-footer" placeholder="  ENTER YOUR EMAIL">
+                                <button type="submit" class="btn-sub">
+                                    <i class="glyphicon glyphicon-hand-right"></i><span> SUBSCRIBE</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> FOLLOW US </h3>
+                            <div class="social-link">
+                                <ul class="social-icons">
+                                    <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                                    <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                                    <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                                    <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                                    <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

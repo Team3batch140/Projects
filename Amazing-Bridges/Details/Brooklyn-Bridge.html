@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HD&FT</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Details.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,vietnamese" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin-ext,vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/Details.js"></script>
+    <script src="../js/placeholder.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <script src="../js/html5shiv.js"></script>
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="fa fa-paper-plane"></span></button>
+        <div class="row" id="nav1">
+            <div class="col-md-12 hder">
+                <nav class="navbar navbar-inverse menu">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="active navbar-brand visible-xs" href="../Home.html"><img class="logo" src="../images/images.png"/></a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active hidden-xs"><a  href="../Home.html"><img class="logo" src="../images/images.png"/></a></li>
+                            <li><a href="../New/news.html">NEWS</a></li>
+                            <li><a href="#">PHOTOGRAPH</a></li>
+                            <li><a href="../sellmagazine/Bán-báo.html">MAGAZINES</a></li>
+                            <li><a href="../about&contact1/about-26-1-2018/about.html">ABOUT US</a></li>
+                            <li><a href="../about&contact1/contact-us/contact1.html">CONTACT US</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form class="navform">
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </li>
+                            <li>
+                                <div class="btn-cart" id="cart-block">
+                                    <a title="SignIn" href="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-lg modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">LOGIN/REGISTER</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Register</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- LOGIN -->
+                                <div class="tab-pane active" id="Login">
+                                    <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                          id="dangnhap_from" method="post">
+                                        <div class="form-group">
+                                            <label for="email_login" class="col-sm-3 control-label">ID</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="email" class="input form-control" id="email_login"
+                                                       placeholder="ID...."/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_login" class="col-sm-3 control-label">Password</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="password" class="input form-control" id="pass_login"
+                                                       placeholder="Password...."/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <button class="button" type="submit" id="button-confirm">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- REGISTER -->
+                                <div class="tab-pane fade" id="Registration">
+                                    <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                          enctype="multipart/form-data" id="dangkytk_form register">
+                                        <div class="form-group">
+                                            <label for="frm_name" class="col-sm-4 control-label">ID</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" class="input form-control" id="frm_name" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="email" class="input form-control" id="emailtk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="pass_tk" class="col-sm-4 control-label">Password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="pass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="repass_tk" class="col-sm-4 control-label">Re-password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="repass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ngaysinh_tk" class="col-sm-4 control-label">Birth day</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="date" class="input form-control" id="ngaysinh_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="gender_tk" class="col-sm-4 control-label">Gender</label>
+
+                                            <div class="col-sm-8">
+                                                <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                    <!--<option value="" checked>I am...</option>-->
+                                                    <option value="1">Female</option>
+                                                    <option value="0">Male</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Adress</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="diachi" class="input form-control" id="diachi_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Phone number</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="dienthoai" class="input form-control" id="dienthoai_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <button class="button" type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="OR" class="hidden-xs">OR</div>
+                        </div>
+
+                        <!-- Facebook - Google account -->
+                        <div class="col-md-5">
+                            <div class="row text-center sign-with">
+                                <div class="social-header">Login With</div>
+                                <div class="unit social-column">
+                                    <div class="social-inner">
+                                        <div><a href=""><img src="../images/ava/fb-login-button-big.png" alt="login-facebook"></a>
+                                        </div>
+                                        <div><a href=""><img src="../images/ava/gg-login-button-big.png" alt="login-google"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="container container-body" >
+       <div class="row">
+           <div class="col-lg-12">
+               <h1>BROOKLYN BRIDGE, NEW YORK</h1>
+               <hr class="hr"/>
+           </div>
+           <div class="col-lg-12 ">
+              <p class="p-img">
+                  <img src="../images/ava/Brooklyn-Bridge-New-York.jpg" alt="">
+              </p>
+           </div>
+       </div>
+        <div class="row">
+            <div class="center-block ">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading1">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    <span class="fa fa-newspaper-o"></span> General Introduction
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                            <div class="panel-body">
+                               <div>
+                                   <p>
+                                       The Brooklyn Bridge is a hybrid cable-stayed/suspension bridge in New York City and is one of the oldest roadway bridges in the United States. Started in 1869 and completed fourteen years later in 1883, it connects the boroughs of Manhattan and Brooklyn, spanning the East River. It has a main span of 1,595.5 feet (486.3 m) and was the first steel-wire suspension bridge constructed. It was originally called the New York and Brooklyn Bridge and the East River Bridge, but it was later dubbed the Brooklyn Bridge, a name coming from an earlier January 25, 1867, letter to the editor of the Brooklyn Daily Eagle and formally so named by the city government in 1915. Since opening, it has become an icon of New York City and was designated a National Historic Landmark in 1964 and a National Historic Civil Engineering Landmark in 1972.
+                                   </p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading2">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse3">
+                                    <span class="fa fa-newspaper-o"></span> History
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                            <div class="panel-body">
+                                <h5 class="h5-body">Construction</h5>
+                                <div>
+                                    <p>
+                                        Construction of the Brooklyn Bridge began in 1869. The bridge was conceived by German immigrant John Augustus Roebling, who had previously designed and constructed shorter suspension bridges, such as Roebling's Delaware Aqueduct in Lackawaxen, Pennsylvania, and the John A. Roebling Suspension Bridge between Cincinnati, Ohio, and Covington, Kentucky. While conducting surveys for the bridge project, Roebling sustained a crush injury to his foot when a ferry pinned it against a piling. After amputation of his crushed toes, he developed a tetanus infection which left him incapacitated and soon resulted in his death in 1869, not long after he had placed his 32-year-old son Washington Roebling in charge of the project.
+                                    </p>
+                                    <p>
+                                        The bridge's two towers were built by floating two caissons, giant upside-down boxes made of southern yellow pine, in the span of the East River, and then beginning to build the stone towers on top of them until they sank to the bottom of the river. Compressed air was pumped into the caissons, and workers entered the space to dig the sediment, until the caissons sank to the bedrock. The whole weight of the bridge still sits upon a 15-foot thickness of southern yellow pine wood under the sediment.
+                                    </p>
+                                    <p>
+                                        Many workers became sick with the bends during this work. This condition was unknown at the time and was first called "caisson disease" by the project physician Andrew Smith. Washington Roebling suffered a paralyzing injury as a result of "caisson disease" shortly after ground was broken for the Brooklyn tower foundation on January 3, 1870. Roebling's debilitating condition left him unable to physically supervise the construction firsthand.                                    </p>
+                                    <p>
+                                        As Chief Engineer, Roebling supervised the entire project from his apartment with a view of the work, designing and redesigning caissons and other equipment. He was aided by his wife Emily Warren Roebling, who provided the critical written link between her husband and the engineers on site. Under her husband's guidance, Emily studied higher mathematics, the calculations of catenary curves, the strengths of materials, bridge specifications, and the intricacies of cable construction. She spent the next 11 years assisting Washington Roebling, helping to supervise the bridge's construction.
+                                    </p>
+                                    <p>
+                                        When iron probes underneath the caisson for the Manhattan tower found the bedrock to be even deeper than expected, Roebling halted construction due to the increased risk of decompression sickness. He later deemed the sandy subsoil overlying the bedrock 30 feet (9.1 m) below it to be firm enough to support the tower base, and construction continued.
+                                    </p>
+                                    <p>
+                                        The construction of the Brooklyn Bridge is detailed in the 1972 book The Great Bridge by David McCullough and Brooklyn Bridge (1981), the first PBS documentary film by Ken Burns. Burns drew heavily on McCullough's book for the film and used him as narrator. It is also described in Seven Wonders of the Industrial World, a BBC docudrama series with an accompanying book.
+                                    </p>
+                                </div>
+                                <h5 class="h5-body">Renovation</h5>
+                                <div>
+                                    <p>
+                                        After the 2007 collapse of the I-35W highway bridge in Minneapolis, public attention has focused on the condition of bridges across the U.S. The New York Times reported that the Brooklyn Bridge approach ramps received a rating of "poor" during its inspection in 2007. According to a NYC Department of Transportation spokesman, the poor rating did not indicate a dangerous state but rather implied it required renovation. A US$508 million project (equivalent to US$570 million in 2017) to renovate the approaches began in 2010, with the full bridge renovation beginning in spring 2011 which was originally scheduled to run until 2014, however the project did not finish until April 2015.
+                                    </p>
+                                    <p>
+                                        Work included widening two approach ramps from one to two lanes by re-striping a new prefabricated ramp; raising clearance over the eastbound Interstate 278 at York Street, on the double-deck Brooklyn-Queens Expressway; seismic retrofitting; replacement of rusted railings and safety barriers; and road deck resurfacing. The nature of the work necessitated detours for four years.
+                                    </p>
+                                    <p>
+                                        In August 2016, after the renovation of the bridge had already been completed, the New York City Department of Transportation announced that it would conduct a seven-month, US$370,000 study to verify if the bridge could support a heavier upper deck that consisted of an expanded bicycle and pedestrian path. As of 2016, about 10,000 pedestrians and 3,500 bikers use the pathway on an average weekday. Work on the pedestrian entrance on the Brooklyn side was underway by 2017.
+                                    </p>
+                                </div>
+                                <h5 class="h5-body">Notable Events</h5>
+                                <div>
+                                    <p>
+                                        In 1915, the city government officially named the structure the Brooklyn Bridge, a name first mentioned in print in a January 1867 letter to the editor of the Brooklyn Daily Eagle.
+                                    </p>
+                                    <p>
+                                        The centennial celebrations on May 24, 1983, saw a cavalcade of cars crossing the bridge, led by President Ronald Reagan. A flotilla of ships visited the harbor, parades were held, and in the evening the sky over the bridge was illuminated by Grucci Fireworks. The Brooklyn Museum exhibited a selection of the original drawings made for the bridge's construction, some by Washington Roebling. Media coverage of the centennial was declared "the public relations triumph of 1983" by Inc.
+                                    </p>
+                                    <p>
+                                        In June 1993, following 13 reconnoiters inside the metal structure, and with the help of a mountain guide, Thierry Devaux performed (illegally) eight acrobatic bungee jumps above the East River close to the Brooklyn-side pier, in the early morning. He used an electric winch between each acrobatic figure.
+                                    </p>
+                                    <p>
+                                        On March 1, 1994, Lebanese-born Rashid Baz opened fire on a van carrying members of the Chabad-Lubavitch Orthodox Jewish Movement, striking 16-year-old student Ari Halberstam and three others traveling on the bridge. Halberstam died five days later from his wounds. Baz was apparently acting out of revenge for the Hebron massacre of 29 Palestinian Muslims by Baruch Goldstein that had taken place a few days earlier on February 25, 1994. Baz was convicted of murder and sentenced to a 141-year prison term. After initially classifying the murder as one committed out of road rage, the Justice Department reclassified the case in 2000 as a terrorist attack. The entrance ramp to the bridge on the Manhattan side was named the Ari Halberstam Memorial Ramp in memory of the victim.
+                                    </p>
+                                    <p>
+                                        Beginning on May 22, 2008, five days of festivities celebrated the 125th anniversary of the bridge's opening. The events kicked off with a live performance of the Brooklyn Philharmonic in Empire–Fulton Ferry State Park, followed by special lighting of the bridge's towers and a fireworks display. Other events held during the 125th anniversary celebrations, which coincided with the Memorial Day weekend, included a film series, historical walking tours, information tents, a series of lectures and readings, a bicycle tour of Brooklyn, a miniature golf course featuring Brooklyn icons, and other musical and dance performances. Just before the anniversary celebrations, artist Paul St George installed the Telectroscope, a video link between New York and London, on the Brooklyn side of the bridge. The installation lasted for a few weeks and permitted viewers in New York to see people looking into a matching telectroscope near London's Tower Bridge. A newly renovated pedestrian connection to the DUMBO neighborhood was also unveiled before the anniversary celebrations.
+                                    </p>
+                                    <p>
+                                        Early in the morning on July 22, 2014, the two American flags attached to poles atop each tower were found to have been replaced by American flags that had been bleached white. It is believed that several individuals covered the lights that illuminate the flags, then climbed the cables to the top of the two bridge towers. Authorities reviewed evidence including surveillance footage and DNA taken from the bridge, and by August 1, 2014, they found up to nine "persons of interest" with a possible motive being cannabis activism. However, on August 12, 2014, two Berlin artists claimed responsibility for hoisting the two white flags, causing the security panic and investigation by New York police. Mischa Leinkauf and Matthias Wermke said the flags were meant to celebrate "the beauty of public space" and the anniversary of the death of German-born John Roebling, who designed the bridge. The artists say they hand-sewed the two flags into all-white replicas of an American flag and had the original flags ready to return. "This was not an anti-American statement," Wermke said.
+                                    </p>
+                                    <p>
+                                        There have been several notable jumpers as well. The first person to jump from the bridge was Robert Emmet Odlum, brother of women's rights activist Charlotte Odlum Smith, on May 19, 1885. He struck the water at an angle and died shortly thereafter from internal injuries. Steve Brodie dropped from underneath the bridge in July 1886, although there is some doubt about this. Larry Donovan made a slightly higher jump from the railing a month later and went on to an international bridge jumping career. Cartoonist Otto Eppers jumped and survived in 1910, and was then tried and acquitted for attempted suicide. A lesser known early jumper was James Duffy of County Cavan, Ireland, who, on April 15, 1895, asked several men to watch him jump from the bridge. Duffy jumped and was not seen again.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading3">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <span class="fa fa-newspaper-o"></span> Design
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                            <div class="panel-body">
+                                <div>
+                                    <p>
+                                        Although the Brooklyn Bridge is technically a suspension bridge, it uses a hybrid cable-stayed/suspension bridge design. The towers are built of limestone, granite, and Rosendale cement. The limestone was quarried at the Clark Quarry in Essex County, New York. The granite blocks were quarried and shaped on Vinalhaven Island, Maine, under a contract with the Bodwell Granite Company, and delivered from Maine to New York by schooner.
+                                    </p>
+                                    <p>
+                                        The bridge was built with numerous passageways and compartments in its anchorages. New York City rented out the large vaults under the bridge's Manhattan anchorage in order to fund the bridge. Opened in 1876, the vaults were used to store wine, as they were always at 60 °F (16 °C). This was called the "Blue Grotto" because of a shrine to the Virgin Mary next to an opening at the entrance. When New York magazine visited one of the cellars in 1978, it discovered on the wall a "fading inscription" reading: "Who loveth not wine, women and song, he remaineth a fool his whole life long."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row foot">
+                <div id="footer">
+                    <div class="row foot">
+                        <div class="col-lg-4">
+                            <div class="footer">
+                                <h3> SUPPORT </h3>
+                                <p class="p-foot" id="p2"><span class="glyphicon glyphicon glyphicon-earphone"></span> +1-202-555-0151</p>
+                                <p class="p-foot" id="p3"><i class="glyphicon glyphicon-envelope"></i> help@yourweb.com</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer">
+                                <h3> SUBSCRIBE TO NEWSLETTERS </h3>
+                                <form action="#" class="input-append newsletter-box">
+                                    <input type="email" class="input-footer" placeholder="  ENTER YOUR EMAIL">
+                                    <button type="submit" class="btn-sub">
+                                        <i class="glyphicon glyphicon-hand-right"></i><span> SUBSCRIBE</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer">
+                                <h3> FOLLOW US </h3>
+                                <div class="social-link">
+                                    <ul class="social-icons">
+                                        <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                                        <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                                        <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                                        <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                                        <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

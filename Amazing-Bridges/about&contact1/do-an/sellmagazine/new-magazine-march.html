@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NEW MAGAZINE IN MARCH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="bán-báo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="bán-báo.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my-JQ.js"></script>
+    <script src="js/placeholder.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="css/header&footer.css">
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <div class="row" id="nav1">
+            <div class="col-md-12 hder">
+                <nav class="navbar navbar-inverse menu">
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a  href="#"><img class="logo" src="images/images.png"/></a></li>
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">PHOTOGRAPH</a></li>
+                            <li><a href="#">SELL MAGAZINES</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form>
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </li>
+                            <li>
+                                <div class="btn-cart" id="cart-block">
+                                    <a title="SignIn" href="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-lg modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">LOGIN/REGISTER</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Register</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="Login">
+                                    <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                          id="dangnhap_from" method="post">
+                                        <div class="form-group">
+                                            <label for="email_login" class="col-sm-3 control-label">ID</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="email" class="input form-control" id="email_login"
+                                                       placeholder="ID...."/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_login" class="col-sm-3 control-label">Password</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="password" class="input form-control" id="pass_login"
+                                                       placeholder="Password...."/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <button class="button" type="submit" id="button-confirm">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="tab-pane fade" id="Registration">
+                                    <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                          enctype="multipart/form-data" id="dangkytk_form register">
+                                        <div class="form-group">
+                                            <label for="frm_name" class="col-sm-4 control-label">ID</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" class="input form-control" id="frm_name" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="email" class="input form-control" id="emailtk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="pass_tk" class="col-sm-4 control-label">Password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="pass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="repass_tk" class="col-sm-4 control-label">Re-password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="repass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ngaysinh_tk" class="col-sm-4 control-label">Birth day</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="date" class="input form-control" id="ngaysinh_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="gender_tk" class="col-sm-4 control-label">Gender</label>
+
+                                            <div class="col-sm-8">
+                                                <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                    <option value="1">Female</option>
+                                                    <option value="0">Male</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Adress</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="diachi" class="input form-control" id="diachi_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Phone number</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="dienthoai" class="input form-control"
+                                                       id="dienthoai_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <button class="button" type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="OR" class="hidden-xs">OR</div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="row text-center sign-with">
+                                <div class="social-header">Login With</div>
+                                <div class="unit social-column">
+                                    <div class="social-inner">
+                                        <div><a href=""><img src="images/ava/fb-login-button-big.png" alt="login-facebook"></a>
+                                        </div>
+                                        <div><a href=""><img src="images/ava/gg-login-button-big.png" alt="login-google"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="breadcrumb">
+                <li><a href="Bán-báo.html">HOME</a></li>
+                <li class="active">NEW MAGAZINE</li>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="cate"><span class="caret"></span>Category</a>
+                </div>
+                <div class="showcate" id="s1">
+                    <a id="a1" style="font-size: 14pt"><b>NEW MAGAZINE</b><span class="badge">12</span></a>
+                    <div id="show1" class="cateclass">
+                        <a href="new-magazine-january.html">New magazine in January</a><br>
+                        <a href="new-magazine-february.html">New magazine in February</a><br>
+                        <a href="new-magazine-march.html">New magazine in March</a><br>
+                        <a href="new-magazine-april.html">New magazine in April</a><br>
+                        <a href="new-magazine-may.html">New magazine in May</a><br>
+                        <a href="new-magazine-june.html">New magazine in June</a><br>
+                        <a href="new-magazine-july.html">New magazine in July</a><br>
+                        <a href="new-magazine-august.html">New magazine in August</a><br>
+                        <a href="new-amagazine-september.html">New magazine in September</a><br>
+                        <a href="new-magazine-october.html">New magazine in October</a><br>
+                        <a href="new-magazine-november.html">New magazine in November</a><br>
+                        <a href="new-magazine-december.html">New magazine in December</a><br>
+
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="price"><span class="caret"></span>Price<span id="badgered" class="badge">Clear</span></a>
+                </div>
+                <div class="showcate" id="s2">
+                    <form>
+                        <input type="radio" name="price"> 10$ - 50$<br>
+                        <input type="radio" name="price"> 50$ - 100$<br>
+                        <input type="radio" name="price"> 100$ - 150$<br>
+                        <input type="radio" name="price"> 150$ - 200$<br>
+                        <input type="radio" name="price"> 200$ - 250$<br>
+                        <input type="radio" name="price"> 250$ - 300$<br>
+                        <input type="radio" name="price" checked> Don't know<br>
+                    </form>
+                    <hr>
+                    <p>Enter a price range</p>
+                    <form class="form-inline">
+                        <input type="text" class="form-control" placeholder="2000$">
+                        <span> - </span>
+                        <input type="text" class="form-control" placeholder="3000$">
+                        <button type="submit" class="btn btn-default">Check</button>
+                    </form>
+                </div>
+            </div>
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="brand"><span class="caret"></span>Brand</a>
+                </div>
+                <div class="showcate" id="s3">
+                    <form>
+                        <input type="checkbox" name="brand"> New magazine in January<br>
+                        <input type="checkbox" name="brand"> New magazine in February<br>
+                        <input type="checkbox" name="brand"> New magazine in March<br>
+                        <input type="checkbox" name="brand"> New magazine in April<br>
+                        <input type="checkbox" name="brand"> New magazine in May<br>
+                        <input type="checkbox" name="brand"> New magazine in June<br>
+                        <input type="checkbox" name="brand"> New magazine in July<br>
+                        <input type="checkbox" name="brand"> New magazine in August<br>
+                        <input type="checkbox" name="brand"> New magazine in September<br>
+                        <input type="checkbox" name="brand"> New magazine in October<br>
+                        <input type="checkbox" name="brand"> New magazine in November<br>
+                        <input type="checkbox" name="brand"> New magazine in December<br>
+                        <div style="text-align: center">
+                            <button type="submit" class="btn">Check</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+            <nav class="navbar navbar-default" role="navigation" id="nav2">
+                <div class="navbar-default">
+                    <a class="navbar-brand" href="#" style="color: white">NEW MAGAZINE IN MARCH</a>
+                </div>
+            </nav>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/hkzm6.jpg" srcset="images/hkzm6-mobile.jpg 320w, images/hkzm6.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/hkzm2.jpg" srcset="images/hkzm2-mobile.jpg 320w, images/hkzm2.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/hkzm3.jpg" srcset="images/hkzm3-mobile.jpg 320w, images/hkzm3.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/hkzm4.png" srcset="images/hkzm4-mobile.png 320w, images/hkzm4.png 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/hkzm5.jpg" srcset="images/hkzm5-mobile.jpg 320w, images/hkzm5.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/hkzm1.jpg" srcset="images/hkzm1-mobile.jpg 320w, images/hkzm1.jpg 760w">
+                    </div>
+                </div>
+            </div>
+            <h1>Hong Kong–Zhuhai–Macau Bridge</h1>
+            The Hong Kong–Zhuhai–Macau Bridge (HKZMB) (simplified Chinese: 港珠澳大桥; traditional Chinese: 港珠澳大橋) is a complex sea-crossing project, which consists of a series of three cable-stayed bridges and one undersea tunnel spanning the Lingdingyang channel, that connects Hong Kong with Macau and Zhuhai, three major cities on the Pearl River Delta in China. The 55-kilometre (34 mi) link is expected to cost 110 billion yuan ($15.9 billion).[1] With its length, it would be among the world's longest and become one of the landmarks within the area.
+
+            Construction formally began on 15 December 2009.[2] The main bridge section is 22.9 kilometres (14.2 mi) long and includes three cable-stayed spans between 280 and 460 metres (920 and 1,510 ft).[3][4]The last bridge tower was erected on 2 June 2016.[5][6] The last straighted-element of the 4,860-metre-long (15,940 ft) straight section of the undersea tunnel was installed on 12 July 2016.[7] The final tunnel joint was installed on the 2 May 2017. The construction of the main 29.6-kilometre (18.4 mi) structure, both the 22.9-kilometre (14.2 mi) bridge section and the 6.7-kilometre (4.2 mi) undersea tunnel, was formally declared complete on 7 July 2017.[8]
+
+            Originally set to be opened to traffic in October 2016, the project is at least a year late and now is due to be completed in December 2017[8] [9][10] and open to vehicular traffic in 2018.[1]
+            <h1>Background</h1>
+            In 1982, the rapid growth and demand of cross-border traffic prompted an agreement between the government of Hong Kong and Shenzhen authorities. This agreement suggested an improvement of connections by opening up new road links.
+
+            Continuous expansion of these existing crossings has been done to meet the increasing demand for passenger crossings.
+
+            In order to provide long-term relief of traffic congestion, various projects have been approved and endorsed. Hong Kong's government and the relevant Chinese authorities have identified the need to open new border crossings. At the third meeting of the China/Hong Kong Conference on the Co-ordination of Major Infrastructure Projects (the Conference) held on 20 September 2002, it was agreed that a joint study should be conducted on the transport linkage between Hong Kong and Pearl River West.
+
+            An important study was completed by the National Development and Reform Commission and the Hong Kong Government on the transport linkage between Hong Kong and the western bank of the Pearl River Delta. The study points out that a bridge linking Hong Kong, Zhuhai and Macau will provide significant macro socio-economic benefits for the Greater Pearl River Delta Region including Hong Kong. The study has considered three alignments linking the two banks of Pearl River. The result of the study is that the Hong Kong (Lantau)-Zhuhai-Macau Bridge proposed by the HKSAR Government, a link connecting the three places under "one country, two systems", is the most urgent one and bears significant political and economic implications.
+
+            The study points out that the Hong Kong–Zhuhai–Macau Bridge will alter the present passive condition of the transport linkage between Hong Kong and Pearl River West which relies mainly on water transport. It will shorten the distance from Hong Kong to Macau and Zhuhai from 160 to 30 kilometres (99 to 19 mi), and reduce the journey time to within half an hour. As a result, Pearl River West will lie within the 3-hour transport network that radiates from Hong Kong as its centre.
+            <h1>Preparation</h1>
+            <img src="images/hkzm7.jpg" width="800px">
+            <p style="color: black">In order to coordinate the project, Hong Kong–Zhuhai–Macau Bridge Advance Work Coordination Group was established in 2003. In the second meeting, officials from three sides decided to set up an office specifically in Guangzhou to do the work of the group and appointed a design institute in China to conduct the feasibility study and produce a report on landing points for the bridge. The landing points were studied and factors such as economic effectiveness and environmental issues determined the final location of those points.
+
+            For the part of the bridge that is situated in Hong Kong, the Environment, Transport and Works Bureau sought $59 million from the Legislative Council's public works subcommittee for investigations and preliminary design work.
+
+                Preliminary design work on the proposed Y-shaped bridge was completed at the end of 2004.</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="footer">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUPPORT </h3>
+                            <p id="p2"><span class="glyphicon glyphicon glyphicon-earphone"></span> +1-202-555-0151</p>
+                            <p id="p3"><i class="glyphicon glyphicon-envelope"></i> help@yourweb.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUBSCRIBE TO NEWSLETTERS </h3>
+                            <form action="#" class="input-append newsletter-box">
+                                <input type="text" class="input-footer" placeholder="  ENTER YOUR EMAIL">
+                                <button type="submit" class="btn-sub">
+                                    <i class="glyphicon glyphicon-hand-right"></i><span> SUBSCRIBE</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> FOLLOW US </h3>
+                            <div class="social-link">
+                                <ul class="social-icons">
+                                    <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                                    <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                                    <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                                    <li><a class="skype" data-original-title="skype" href="#"></a></li><li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

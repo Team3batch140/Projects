@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Trang Bán Báo</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <!--<link rel="stylesheet" href="bán-báo.css">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style-setting.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/select2/css/select2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/jquery.bxslider/jquery.bxslider.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/owl.carousel/owl.carousel.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/jquery-ui/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/fancyBox/source/jquery.fancybox.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/green.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style_frm_dkdn.css"/>
+    <link rel="stylesheet" href="css/switcher.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="bán-báo.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my-JQ.js"></script>
+    <script src="js/placeholder.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="css/header&footer.css">
+    <script src="js/checkout.js"></script>
+    <script src="js/contact-us.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/option4.js"></script>
+    <script src="js/shoppingCart.js"></script>
+    <script src="js/theme-script.js"></script>
+    <script src="js/jquery.actual.min.js"></script>
+
+
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="fa fa-paper-plane"></span></button>
+        <div class="row" id="nav1">
+            <div class="col-md-12 hder">
+                <nav class="navbar navbar-inverse menu">
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a  href="#"><img class="logo" src="images/images.png"/></a></li>
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">PHOTOGRAPH</a></li>
+                            <li><a href="#">MAGAZINES</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form>
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </li>
+                            <li>
+                                <div class="btn-cart" id="cart-block">
+                                    <a title="SignIn" href="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-lg modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">LOGIN/REGISTER</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Register</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- LOGIN -->
+                                <div class="tab-pane active" id="Login">
+                                    <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                          id="dangnhap_from" method="post">
+                                        <div class="form-group">
+                                            <label for="email_login" class="col-sm-3 control-label">ID</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="email" class="input form-control" id="email_login"
+                                                       placeholder="ID...."/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_login" class="col-sm-3 control-label">Password</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="password" class="input form-control" id="pass_login"
+                                                       placeholder="Password...."/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <button class="button" type="submit" id="button-confirm">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- REGISTER -->
+                                <div class="tab-pane fade" id="Registration">
+                                    <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                          enctype="multipart/form-data" id="dangkytk_form register">
+                                        <div class="form-group">
+                                            <label for="frm_name" class="col-sm-4 control-label">ID</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" class="input form-control" id="frm_name" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="email" class="input form-control" id="emailtk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="pass_tk" class="col-sm-4 control-label">Password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="pass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="repass_tk" class="col-sm-4 control-label">Re-password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="repass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ngaysinh_tk" class="col-sm-4 control-label">Birth day</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="date" class="input form-control" id="ngaysinh_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="gender_tk" class="col-sm-4 control-label">Gender</label>
+
+                                            <div class="col-sm-8">
+                                                <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                    <!--<option value="" checked>I am...</option>-->
+                                                    <option value="1">Female</option>
+                                                    <option value="0">Male</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Adress</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="diachi" class="input form-control" id="diachi_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Phone number</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="dienthoai" class="input form-control"
+                                                       id="dienthoai_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <button class="button" type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="OR" class="hidden-xs">OR</div>
+                        </div>
+
+                        <!-- Facebook - Google account -->
+                        <div class="col-md-5">
+                            <div class="row text-center sign-with">
+                                <div class="social-header">Login With</div>
+                                <div class="unit social-column">
+                                    <div class="social-inner">
+                                        <div><a href=""><img src="images/ava/fb-login-button-big.png" alt="login-facebook"></a>
+                                        </div>
+                                        <div><a href=""><img src="images/ava/gg-login-button-big.png" alt="login-google"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="page-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <h2 class="page-heading">
+                    <span class="page-heading-title"><img alt="fashion" src="images/tag.png" style="width: 50px; height: 50px"/> PROMOTION</span>
+                </h2>
+
+                <div class="latest-deals-product">
+                    <ul class="product-list owl-carousel" data-dots="false" data-loop="true" data-nav="true"
+                        data-margin="10" data-autoplayTimeout="1000" data-autoplayHoverPause="true"
+                        data-responsive='{"0":{"items":1},"600":{"items":3},"1000":{"items":5}}'>
+                        <li>
+
+                            <div class="left-block">
+                                <a href="new-magazine-january.html"><img class="img-responsive" alt="product"
+                                        src="images/cau1.png" style="width: 350px; height: 220px"/></a>
+
+                                <div class="quick-view">
+                                    <a title="Add to my wishlist" class="heart" href="new-magazine-january.html"></a>
+                                    <a title="Add to compare" class="compare" href="new-magazine-january.html"></a>
+                                    <a title="Quick view" href="images/cau1.png" class="search fancybox-button"></a>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a class="add-item-to-cart" title="Add to Carr" href="#" data-name="Asparagus - 1kg"
+                                       data-price="38500" data-image="cau1.png" data-product-code="AS109">Add to Cart</a>
+                                </div>
+                                <div class="price-percent-reduction2">
+                                    -30% OFF
+                                </div>
+                            </div>
+                            <div class="right-block">
+                                <h5 class="product-name"><a href="new-magazine-january.html">New Magazine (1/2016)</a></h5>
+
+                                <div class="content_price">
+                                    <span class="price product-price">
+                                        <span style="color: orangered">Best Price:</span> 38,500đ</span>
+                                    <br><span style="color: black">Price:</span>
+                                    <span class="price old-price">55,000đ</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-block">
+                                <a href="new-magazine-february.html" ><img class="img-responsive" alt="product"
+                                         src="images/cau2.png" style="width: 350px; height: 220px" /></a>
+
+                                <div class="quick-view">
+                                    <a title="Add to my wishlist" class="heart" href="new-magazine-february.html"></a>
+                                    <a title="Add to compare" class="compare" href="new-magazine-february.html"></a>
+                                    <a title="Quick view" href="images/cau2.png" class="search fancybox-button"></a>
+
+                                </div>
+                                <div class="add-to-cart">
+                                    <a class="add-item-to-cart" title="Add to Cart" href="#" data-name="Barley - 1kg"
+                                       data-price="21000" data-image="cau2.png" data-product-code="BL237">Add to Cart</a>
+                                </div>
+                                <div class="price-percent-reduction2">
+                                    -30% OFF
+                                </div>
+                            </div>
+                            <div class="right-block">
+                                <h5 class="product-name"><a href="new-magazine-february.html">New Magazine (2/2016)</a></h5>
+
+                                <div class="content_price">
+                                    <span class="price product-price"><span
+                                            style="color: orangered">Best Price:</span> 21,000đ</span>
+                                    <br><span style="color: black">Price:</span>
+                                    <span class="price old-price">30,000đ</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-block">
+                                <a><img class="img-responsive" alt="product"
+                                        src="images/cau3.png" style="width: 350px; height: 220px"/></a>
+
+                                <div class="quick-view">
+                                    <a title="Add to my wishlist" class="heart" href="#"></a>
+                                    <a title="Add to compare" class="compare" href="#"></a>
+                                    <a title="Quick view" href="images/cau3.png" class="search fancybox-button"></a>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a class="add-item-to-cart" title="Add to Cart" href="#" data-name="Papaya - 1kg"
+                                       data-price="10500" data-image="cau3.png" data-product-code="PP987">Add to Cart</a>
+                                </div>
+                                <div class="price-percent-reduction2">
+                                    -30% OFF
+                                </div>
+                            </div>
+                            <div class="right-block">
+                                <h5 class="product-name"><a href="new-magazine-march.html">New Magazine (3/2016)</a></h5>
+
+                                <div class="content_price">
+                                    <span class="price product-price"><span
+                                            style="color: orangered">Best Price:</span> 10,500đ</span>
+                                    <br><span style="color: black">Price:</span>
+                                    <span class="price old-price">15,000đ</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-block">
+                                <a><img class="img-responsive" alt="product"
+                                        src="images/cau4.png" style="width: 350px; height: 220px"/></a>
+
+                                <div class="quick-view">
+                                    <a title="Add to my wishlist" class="heart" href="#"></a>
+                                    <a title="Add to compare" class="compare" href="#"></a>
+                                    <a title="Quick view" href="images/cau4.png" class="search fancybox-button"></a>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a class="add-item-to-cart" title="Add to Cart" href="#" data-name="Black Beans - 1kg"
+                                       data-price="31500" data-image="cau4.png" data-product-code="BB0927">Add to Cart</a>
+                                </div>
+                                <div class="price-percent-reduction2">
+                                    -30% OFF
+                                </div>
+                            </div>
+                            <div class="right-block">
+                                <h5 class="product-name"><a href="new-magazine-april.html">New Magazine (4/2016)</a></h5>
+
+                                <div class="content_price">
+                                    <span class="price product-price"><span
+                                            style="color: orangered">Best Price:</span> 31,500đ</span>
+                                    <br><span style="color: black">Price:</span>
+                                    <span class="price old-price">45,000đ</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-block">
+                                <a><img class="img-responsive" alt="product"
+                                        src="images/cau5.png" style="width: 350px; height: 220px"/></a>
+
+                                <div class="quick-view">
+                                    <a title="Add to my wishlist" class="heart" href="#"></a>
+                                    <a title="Add to compare" class="compare" href="#"></a>
+                                    <a title="Quick view" href="images/cau5.png" class="search fancybox-button"></a>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a class="add-item-to-cart" title="Add to Cart" href="#" data-name="Walnuts - 500gr"
+                                       data-price="199500" data-image="cau5.png" data-product-code="WN982">Add to Cart</a>
+                                </div>
+                                <div class="price-percent-reduction2">
+                                    -30% OFF
+                                </div>
+                            </div>
+                            <div class="right-block">
+                                <h5 class="product-name"><a href="new-magazine-may.html">New Magazine (5/2016)</a></h5>
+
+                                <div class="content_price">
+                                    <span class="price product-price"><span
+                                            style="color: orangered">Best Price:</span> 199,500đ</span>
+                                    <br><span style="color: black">Price:</span>
+                                    <span class="price old-price">285,000đ</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-block">
+                                <a><img class="img-responsive" alt="product"
+                                        src="images/cau6.png" style="width: 350px; height: 220px"/></a>
+
+                                <div class="quick-view">
+                                    <a title="Add to my wishlist" class="heart" href="#"></a>
+                                    <a title="Add to compare" class="compare" href="#"></a>
+                                    <a title="Quick view" href="images/cau6.png" class="search fancybox-button"></a>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a class="add-item-to-cart" title="Add to Cart" href="#" data-name="Chilly - 500gr"
+                                       data-price="70000" data-image="cau6.png" data-product-code="CL982">Add to Cart</a>
+                                </div>
+                                <div class="price-percent-reduction2">
+                                    -30% OFF
+                                </div>
+                            </div>
+                            <div class="right-block">
+                                <h5 class="product-name"><a href="new-magazine-june.html">New Magazine (6/2016)</a></h5>
+
+                                <div class="content_price">
+                                    <span class="price product-price"><span
+                                            style="color: orangered">Best Price:</span> 70,000đ</span>
+                                    <br><span style="color: black">Price:</span>
+                                    <span class="price old-price">100,000đ</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<div class="demo_changer" id="demo_changer">
+    <div class="demo-icon fa fa-shopping-cart">
+        <span class="notify notify-left" id="count-cart">2</span>
+    </div>
+    <div class="form_holder">
+        <div class="cart-block">
+            <div class="cart-block-content">
+                <div class="cart-block-list">
+                    <div class="shop_cart">
+                        <table class="shop_table">
+                            <tbody id="show-cart">
+                            <!--/////////////////////////////////-->
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="toal-cart">
+                    <span>Total</span>
+                    <span class="toal-price pull-right" id="total_price">54,000đ</span>
+                </div>
+                <div class="cart-buttons">
+                    <a href="new-magazine-july.html" class="btn-check-out">Payment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---->
+<div class="content-page">
+    <div class="container">
+        <!-- featured category  -->
+        <div class="category-featured Vegetables">
+            <nav class="navbar nav-menu show-brand">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-brand"><a href="#"> <img alt="fashion" src="images/icon_like.png"/> Best Seller</a></div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse">
+
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+
+            </nav>
+            <div class="product-featured clearfix">
+                <div class="row">
+
+                    <div class="col-sm-12">
+                        <div class="box-right">
+                            <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+                            <ul class="product-list">
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau7.png" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau7.png" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="add-item-to-cart" title="Add to Cart" href="#" data-name="Spinach - 1kg"
+                                               data-price="55000" data-image="cau7.png" data-product-code="SP109">Add to Cart</a>
+                                        </div>
+                                        <div class="bestseller"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (1/2017)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 55,000đ</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau8.png" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau8.png" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="add-item-to-cart" title="Add to Cart" href="#" data-name="Avocado - 1kg"
+                                               data-price="52000" data-image="cau8.png" data-product-code="AC042">Add to Cart</a>
+                                        </div>
+                                        <div class="bestseller"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (2/2017)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 52,000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau9.png" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau9.png" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="add-item-to-cart" title="Add to Cart" href="#" data-name="White Rice - 1kg"
+                                               data-price="25000" data-image="cau9.png" data-product-code="WR109">Add to Cart</a>
+                                        </div>
+                                        <div class="bestseller"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (3/2017)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 25,000đ</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau10.png" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau10.png" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="add-item-to-cart" title="Add to Cart" href="#" data-name="Soy Beans - 1kg"
+                                               data-price="60000" data-image="cau10.png" data-product-code="SBD042">Add to Cart</a>
+                                        </div>
+                                        <div class="bestseller"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (4/2017)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 60,000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau11.jpg" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau11.jpg" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="add-item-to-cart" title="Add to Cart" href="#" data-name="Black Sesame - 1kg"
+                                               data-price="70000" data-image="cau11.jpg" data-product-code="BSD042">Add to Cart</a>
+                                        </div>
+                                        <div class="bestseller"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (5/2017)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 70,000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau12.jpg" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau12.jpg" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="add-item-to-cart" title="Add to Cart" href="#" data-name="Garlic - 1kg"
+                                               data-price="126000" data-image="cau12.jpg" data-product-code="WR043">Add to Cart</a>
+                                        </div>
+                                        <div class="bestseller"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (6/2017)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 126,000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau13.jpg" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau13.jpg" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="add-item-to-cart" title="Add to Cart" href="#" data-name="Cabbage - 1kg"
+                                               data-price="52000" data-image="cau13.jpg" data-product-code="CB044">Add to Cart</a>
+                                        </div>
+                                        <div class="bestseller"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (7/2017)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 52,000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau14.jpg" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau14.jpg" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="add-item-to-cart" title="Add to Cart" href="#" data-name="Red Beans - 1kg"
+                                               data-price="45000" data-image="cau14.jpg" data-product-code="SHT045">Add to Cart</a>
+                                        </div>
+                                        <div class="bestseller"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (8/2017)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 45,000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau15.jpg" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau15.jpg" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="add-item-to-cart" title="Add to Cart" href="#" data-name="Almond - 500gr"
+                                               data-price="255000" data-image="cau15.jpg" data-product-code="AM046">Add to Cart</a>
+                                        </div>
+                                        <div class="bestseller"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (9/2017)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 255,000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau16.jpg" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau16.jpg" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="add-item-to-cart" title="Add to Cart" href="#" data-name="Oats - 1kg"
+                                               data-price="75000" data-image="cau16.jpg" data-product-code="CXK047">Add to Cart</a>
+                                        </div>
+                                        <div class="bestseller"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (10/2017)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 75,000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end featured category -->
+
+
+        <div class="category-featured Vegetables">
+            <nav class="navbar nav-menu show-brand">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-brand"><a href="#"> <img alt="fashion" src="images/icon_paper-plane.png"/> Coming Soon </a></div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse">
+
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+
+            </nav>
+            <div class="product-featured clearfix">
+                <div class="row">
+
+                    <div class="col-sm-12">
+                        <div class="box-right">
+                            <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+                            <ul class="product-list">
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau17.jpg" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau17.jpg" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="not-active" title="Add to Cart" readonly="true">Add to Cart</a>
+                                        </div>
+                                        <div class="comingsoon"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (1/2018)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 85,000đ</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau18.jpg" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau18.jpg" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="not-active" title="Add to Cart" readonly="true">Add to Cart</a>
+                                        </div>
+                                        <div class="comingsoon"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (2/2018)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 52,000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau19.jpg" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau19.jpg" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="not-active" title="Add to Cart" readonly="true">Add to Cart</a>
+                                        </div>
+                                        <div class="comingsoon"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (3/2018)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 65,000đ</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau20.jpg" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau20.jpg" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="not-active" title="Add to Cart" readonly="true">Add to Cart</a>
+                                        </div>
+                                        <div class="comingsoon"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (4/2018)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 60,000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau21.jpg" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau21.jpg" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="not-active" title="Add to Cart" readonly="true">Add to Cart</a>
+                                        </div>
+                                        <div class="comingsoon"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (5/2018)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 120,000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau22.jpg" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau22.jpg" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="not-active" title="Add to Cart" readonly="true">Add to Cart</a>
+                                        </div>
+                                        <div class="comingsoon"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (6/2018)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 126,000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau23.jpg" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau23.jpg" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="not-active" title="Add to Cart" readonly="true">Add to Cart</a>
+                                        </div>
+                                        <div class="comingsoon"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (7/2018)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 152,000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau24.jpg" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau24.jpg" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="not-active" title="Add to Cart" readonly="true">Add to Cart</a>
+                                        </div>
+                                        <div class="comingsoon"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (8/2018)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 75,000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau25.jpg" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau25.jpg" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="not-active" title="Add to Cart" readonly="true">Add to Cart</a>
+                                        </div>
+                                        <div class="comingsoon"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (9/2018)</a></h5>
+
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 205,000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 product-item">
+                                    <div class="left-block">
+                                        <a><img class="img-responsive" alt="product"
+                                                src="images/cau26.jpg" style="width: 350px; height: 220px"/></a>
+
+                                        <div class="quick-view">
+                                            <a title="Add to my wishlist" class="heart" href="#"></a>
+                                            <a title="Add to compare" class="compare" href="#"></a>
+                                            <a title="Quick view" href="images/cau26.jpg" class="search fancybox-button"></a>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a class="not-active" title="Add to Cart" readonly="true">Add to Cart</a>
+                                        </div>
+                                        <div class="comingsoon"></div>
+                                    </div>
+                                    <div class="right-block">
+                                        <h5 class="product-name"><a href="#">New Magazine (10/2018) </a></h5>
+                                        <div class="content_price">
+                                            <span class="price product-price"><span style="color: orangered">Price:</span> 195,000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end featured category -->
+    </div>
+</div>
+
+
+<!-- POPUP LOGIN-REGISTER -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">LOGIN/REGISTER</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                            <li><a href="#Registration" data-toggle="tab">Register</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!-- LOGIN -->
+                            <div class="tab-pane active" id="Login">
+                                <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                      id="dangnhap_from" method="post">
+                                    <div class="form-group">
+                                        <label for="email_login" class="col-sm-3 control-label">Email</label>
+
+                                        <div class="col-sm-9">
+                                            <input type="email" class="input form-control" id="email_login"
+                                                   placeholder="Email...."/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pass_login" class="col-sm-3 control-label">Password</label>
+
+                                        <div class="col-sm-9">
+                                            <input type="password" class="input form-control" id="pass_login"
+                                                   placeholder="Password...."/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <button class="button" type="submit" id="button-confirm">Login</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- REGISTER -->
+                            <div class="tab-pane fade" id="Registration">
+                                <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                      enctype="multipart/form-data" id="dangkytk_form register">
+                                    <div class="form-group">
+                                        <label for="frm_name" class="col-sm-4 control-label">Full Name</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="text" class="input form-control" id="frm_name" required/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="email" class="input form-control" id="emailtk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="pass_tk" class="col-sm-4 control-label">Password</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="password" class="input form-control" id="pass_tk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="repass_tk" class="col-sm-4 control-label">Re-password</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="password" class="input form-control" id="repass_tk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="ngaysinh_tk" class="col-sm-4 control-label">Birth day</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="date" class="input form-control" id="ngaysinh_tk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="gender_tk" class="col-sm-4 control-label">Gender</label>
+
+                                        <div class="col-sm-8">
+                                            <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                <option value="" checked>I am...</option>
+                                                <option value="1">Female</option>
+                                                <option value="0">Male</option>
+                                                <option value="0">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="diachi" class="col-sm-4 control-label">Adress</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="text" name="diachi" class="input form-control" id="diachi_dk"/>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="dienthoai" class="col-sm-4 control-label">Phone number</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="text" name="dienthoai" class="input form-control" id="dienthoai_dk"/>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <button class="button" type="submit">Register</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div id="OR" class="hidden-xs">OR</div>
+                    </div>
+
+                    <!-- Facebook - Google account -->
+                    <div class="col-md-5">
+                        <div class="row text-center sign-with">
+                            <div class="social-header">Login With</div>
+                            <div class="unit social-column">
+                                <div class="social-inner">
+                                    <div><a href=""><img src="images/fb-login-button-big.png" alt="login-facebook"></a></div>
+                                    <div><a href=""><img src="images/gg-login-button-big.png" alt="login-google"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--EN LOGIN REGISTER-->
+
+<!--PEOPLE SAY-->
+
+<div id="owl-demo-ppsay">
+    <div class="container">
+        <div class="ppsay-title">CUSTOMER COMMENT</div>
+        <div id="customer-item-carousel" class="carousel slide hidden-sm hidden-xs" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#customer-item-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#customer-item-carousel" data-slide-to="1"></li>
+                <li data-target="#customer-item-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner hidden-sm hidden-xs">
+                <div class="item active">
+                    <div class="ppsaydiv">
+                        <div class="ppsaycontent hidden-xs col-sm-6 col-md-6">
+                            <div class="ppsayavt col-md-3 col-sm-3">
+                                <img src="images/st.jpg" alt="Son Tung MTP">
+                            </div>
+                            <div class="ppsayauthor col-md-9 col-sm-9">
+                                <div class="ppsaycontentcmt">
+                                    <p style="text-align: justify"><span>“ </span>I am pleased with product quality and service quality of Eco Shop. Best wishes to your shop. I hope that there are more new best products and your service is always sustainable.<span>”</span></p>
+                                </div>
+                                <p><span>Customer:</span> <span class="name">Son Tung MTP</span></p>
+                            </div>
+                        </div>
+                        <div class="ppsaycontent col-xs-12 col-sm-6 col-md-6">
+                            <div class="ppsayavt col-md-3 col-sm-3">
+                                <img src="images/noo.jpg" alt="Noo Phuoc Thinh">
+                            </div>
+                            <div class="ppsayauthor col-md-9 col-sm-9">
+                                <div class="ppsaycontentcmt">
+                                    <p style="text-align: justify"><span>“ </span>I am so busy that I do not have any time to go suppermarket. So that, buying food online is my best choice. Your products are always fresh and delicious. I will continue buying foods at your online shop. <span>”</span></p>
+                                </div>
+                                <p><span>Customer:</span> <span class="name">Noo Phuoc Thinh</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ppsaydiv">
+                        <div class="ppsaycontent col-xs-12 col-sm-6 col-md-6">
+                            <div class="ppsayavt col-md-3 col-sm-3">
+                                <img src="images/nt.jpg" alt="Ngoc Trinh">
+                            </div>
+                            <div class="ppsayauthor col-md-9 col-sm-9">
+                                <div class="ppsaycontentcmt">
+                                    <p style="text-align: justify"><span>“ </span> I higly appreciate your product quality and your service. I now truly believe in your brand. <span>”</span></p>
+                                </div>
+                                <p><span>Customer:</span> <span class="name">Ngoc Trinh</span></p>
+                            </div>
+                        </div>
+                        <div class="ppsaycontent col-xs-12 col-sm-6 col-md-6">
+                            <div class="ppsayavt col-md-3 col-sm-3">
+                                <img src="images/pt.jpg" alt="Phuong Trinh">
+                            </div>
+                            <div class="ppsayauthor col-md-9 col-sm-9">
+                                <div class="ppsaycontentcmt">
+                                    <p><span style="text-align: justify">“ </span> I am a young mom and have to work. It costs my time and money to access your website and buy products. <span>”</span></p>
+                                </div>
+                                <p><span>Customer:</span> <span class="name">Phuong Trinh</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ppsaydiv">
+                        <div class="ppsaycontent col-xs-12 col-sm-6 col-md-6">
+                            <div class="ppsayavt col-md-3 col-sm-3">
+                                <img src="images/issac.jpg" alt="Issac">
+                            </div>
+                            <div class="ppsayauthor col-md-9 col-sm-9">
+                                <div class="ppsaycontentcmt">
+                                    <p style="text-align: justify"><span>“ </span>When I looked for natural and organic shop, my friends introduced your shop to me. At the first time I came your shop, I am so satisfactory because of your customer care.<span>”</span></p>
+                                </div>
+                                <p><span>Customer:</span> <span class="name">Issac</span></p>
+                            </div>
+                        </div>
+                        <div class="ppsaycontent col-xs-12 col-sm-6 col-md-6">
+                            <div class="ppsayavt col-md-3 col-sm-3">
+                                <img src="images/soo.jpg" alt="Soobin Hoang Son">
+                            </div>
+                            <div class="ppsayauthor col-md-9 col-sm-9">
+                                <div class="ppsaycontentcmt">
+                                    <p style="text-align: justify"><span>“ </span>Your staff are so friendly and enthusiastic. Your shop is also clean and nice. Of course, your products are best quality.<span>”</span></p>
+                                </div>
+                                <p><span>Customer:</span> <span class="name">Soobin Hoang Son</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="customer-item-carousel" class="carousel slide hidden-md hidden-lg" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#customer-item-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#customer-item-carousel" data-slide-to="1"></li>
+                <li data-target="#customer-item-carousel" data-slide-to="2"></li>
+                <li data-target="#customer-item-carousel" data-slide-to="3"></li>
+                <li data-target="#customer-item-carousel" data-slide-to="4"></li>
+                <li data-target="#customer-item-carousel" data-slide-to="5"></li>
+            </ol>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container-fluid">
+        <div class="row foot">
+            <div id="footer">
+                <div class="row foot">
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUPPORT </h3>
+                            <p id="p2"><span class="glyphicon glyphicon glyphicon-earphone"></span> +1-202-555-0151</p>
+                            <p id="p3"><i class="glyphicon glyphicon-envelope"></i> help@yourweb.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUBSCRIBE TO NEWSLETTERS </h3>
+                            <form action="#" class="input-append newsletter-box">
+                                <input type="email" class="input-footer" placeholder="  ENTER YOUR EMAIL">
+                                <button type="submit" class="btn-sub">
+                                    <i class="glyphicon glyphicon-hand-right"></i><span> SUBSCRIBE</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> FOLLOW US </h3>
+                            <div class="social-link">
+                                <ul class="social-icons">
+                                    <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                                    <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                                    <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                                    <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                                    <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<a href="#" class="scroll_top" title="Scroll to Top" style="display: inline;">Scroll</a>
+<!-- Script-->
+
+<script type="text/javascript" src="lib/jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="lib/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="lib/fancyBox/source/jquery.fancybox.pack.js" ></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/select2/js/select2.min.js"></script>
+<script type="text/javascript" src="lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="lib/owl.carousel/owl.carousel.min.js"></script>
+
+
+
+<script type="text/javascript" src="js/jquery.actual.min.js"></script>
+<script type="text/javascript" src="js/theme-script.js"></script>
+<script type="text/javascript" src="js/shoppingCart.js"></script>
+
+<script type="text/javascript" src="js/layout.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        Layout.init();
+        Layout.initOWL();
+        Layout.initTwitter();
+        Layout.initImageZoom();
+        Layout.initTouchspin();
+        Layout.initUniform();
+        Layout.initSliderRange();
+    });
+</script>
+<script type="text/javascript">
+
+    //        var counter=0;
+    //        var email=document.getElementById("email").value();
+    function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+    function validate() {
+        var email = $("#em").val();
+        if (validateEmail(email)) {
+            return true;
+        } else {
+            alert("Emal invalid!!!")
+            return false;
+        }
+    }
+    $("#validate").bind("click", validate);
+    $(document).ready(function () {
+//            $(".add").click(function(){
+//                counter++;
+//
+//                $("#counter").text(counter);
+//            });
+
+        $('#carousel-example-generic').carousel({
+            interval: 1000
+        });
+        $(".add").click(function () {
+            $('#counter').html(function (i, val) {
+                return +val + 1
+            });
+        });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > $('#nav2').height()) {
+                $('#nav2').addClass('navbar-fixed-top');
+            } else {
+                $('#nav2').removeClass('navbar-fixed-top');
+            }
+        });
+        $("#btnsearch").click(function () {
+            $("#search-terms").animate({width:'toggle'},300);
+        });
+        $("#cate").click(function () {
+            $("#s1").toggle("2000");
+        });
+        $("#price").click(function () {
+            $("#s2").toggle("2000");
+        });
+        $("#brand").click(function () {
+            $("#s3").toggle("2000");
+        });
+        $("#a1").click(function () {
+            $("#show1").toggle("2000");
+        });
+        $("#a2").click(function () {
+            $("#show2").toggle("2000");
+        });
+        $("#a3").click(function () {
+            $("#show3").toggle("2000");
+        });
+        $("#a4").click(function () {
+            $("#show4").toggle("2000");
+        });
+        $("#a5").click(function () {
+            $("#show5").toggle("2000");
+        });
+        $("#a6").click(function () {
+            $("#show6").toggle("2000");
+        });
+    });
+
+</script>
+</body>
+</html>

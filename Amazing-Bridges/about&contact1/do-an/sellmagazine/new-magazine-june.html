@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NEW MAGAZINE IN JUNE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="bán-báo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="bán-báo.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my-JQ.js"></script>
+    <script src="js/placeholder.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="css/header&footer.css">
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <div class="row" id="nav1">
+            <div class="col-md-12 hder">
+                <nav class="navbar navbar-inverse menu">
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a  href="#"><img class="logo" src="images/images.png"/></a></li>
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">PHOTOGRAPH</a></li>
+                            <li><a href="#">SELL MAGAZINES</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form>
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </li>
+                            <li>
+                                <div class="btn-cart" id="cart-block">
+                                    <a title="SignIn" href="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-lg modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">LOGIN/REGISTER</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Register</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="Login">
+                                    <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                          id="dangnhap_from" method="post">
+                                        <div class="form-group">
+                                            <label for="email_login" class="col-sm-3 control-label">ID</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="email" class="input form-control" id="email_login"
+                                                       placeholder="ID...."/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_login" class="col-sm-3 control-label">Password</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="password" class="input form-control" id="pass_login"
+                                                       placeholder="Password...."/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <button class="button" type="submit" id="button-confirm">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="tab-pane fade" id="Registration">
+                                    <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                          enctype="multipart/form-data" id="dangkytk_form register">
+                                        <div class="form-group">
+                                            <label for="frm_name" class="col-sm-4 control-label">ID</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" class="input form-control" id="frm_name" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="email" class="input form-control" id="emailtk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="pass_tk" class="col-sm-4 control-label">Password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="pass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="repass_tk" class="col-sm-4 control-label">Re-password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="repass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ngaysinh_tk" class="col-sm-4 control-label">Birth day</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="date" class="input form-control" id="ngaysinh_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="gender_tk" class="col-sm-4 control-label">Gender</label>
+
+                                            <div class="col-sm-8">
+                                                <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                    <option value="1">Female</option>
+                                                    <option value="0">Male</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Adress</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="diachi" class="input form-control" id="diachi_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Phone number</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="dienthoai" class="input form-control"
+                                                       id="dienthoai_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <button class="button" type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="OR" class="hidden-xs">OR</div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="row text-center sign-with">
+                                <div class="social-header">Login With</div>
+                                <div class="unit social-column">
+                                    <div class="social-inner">
+                                        <div><a href=""><img src="images/ava/fb-login-button-big.png" alt="login-facebook"></a>
+                                        </div>
+                                        <div><a href=""><img src="images/ava/gg-login-button-big.png" alt="login-google"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="breadcrumb">
+                <li><a href="Bán-báo.html">HOME</a></li>
+                <li class="active">NEW MAGAZINE</li>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="cate"><span class="caret"></span>Category</a>
+                </div>
+                <div class="showcate" id="s1">
+                    <a id="a1" style="font-size: 14pt"><b>NEW MAGAZINE</b><span class="badge">12</span></a>
+                    <div id="show1" class="cateclass">
+                        <a href="new-magazine-january.html">New magazine in January</a><br>
+                        <a href="new-magazine-february.html">New magazine in February</a><br>
+                        <a href="new-magazine-march.html">New magazine in March</a><br>
+                        <a href="new-magazine-april.html">New magazine in April</a><br>
+                        <a href="new-magazine-may.html">New magazine in May</a><br>
+                        <a href="new-magazine-june.html">New magazine in June</a><br>
+                        <a href="new-magazine-july.html">New magazine in July</a><br>
+                        <a href="new-magazine-august.html">New magazine in August</a><br>
+                        <a href="new-amagazine-september.html">New magazine in September</a><br>
+                        <a href="new-magazine-october.html">New magazine in October</a><br>
+                        <a href="new-magazine-november.html">New magazine in November</a><br>
+                        <a href="new-magazine-december.html">New magazine in December</a><br>
+
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="price"><span class="caret"></span>Price<span id="badgered" class="badge">Clear</span></a>
+                </div>
+                <div class="showcate" id="s2">
+                    <form>
+                        <input type="radio" name="price"> 10$ - 50$<br>
+                        <input type="radio" name="price"> 50$ - 100$<br>
+                        <input type="radio" name="price"> 100$ - 150$<br>
+                        <input type="radio" name="price"> 150$ - 200$<br>
+                        <input type="radio" name="price"> 200$ - 250$<br>
+                        <input type="radio" name="price"> 250$ - 300$<br>
+                        <input type="radio" name="price" checked> Don't know<br>
+                    </form>
+                    <hr>
+                    <p>Enter a price range</p>
+                    <form class="form-inline">
+                        <input type="text" class="form-control" placeholder="2000$">
+                        <span> - </span>
+                        <input type="text" class="form-control" placeholder="3000$">
+                        <button type="submit" class="btn btn-default">Check</button>
+                    </form>
+                </div>
+            </div>
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="brand"><span class="caret"></span>Brand</a>
+                </div>
+                <div class="showcate" id="s3">
+                    <form>
+                        <input type="checkbox" name="brand"> New magazine in January<br>
+                        <input type="checkbox" name="brand"> New magazine in February<br>
+                        <input type="checkbox" name="brand"> New magazine in March<br>
+                        <input type="checkbox" name="brand"> New magazine in April<br>
+                        <input type="checkbox" name="brand"> New magazine in May<br>
+                        <input type="checkbox" name="brand"> New magazine in June<br>
+                        <input type="checkbox" name="brand"> New magazine in July<br>
+                        <input type="checkbox" name="brand"> New magazine in August<br>
+                        <input type="checkbox" name="brand"> New magazine in September<br>
+                        <input type="checkbox" name="brand"> New magazine in October<br>
+                        <input type="checkbox" name="brand"> New magazine in November<br>
+                        <input type="checkbox" name="brand"> New magazine in December<br>
+                        <div style="text-align: center">
+                            <button type="submit" class="btn">Check</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+            <nav class="navbar navbar-default" role="navigation" id="nav2">
+                <div class="navbar-default">
+                    <a class="navbar-brand" href="#" style="color: white">NEW MAGAZINE IN JUNE</a>
+                </div>
+            </nav>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/golden3.jpg" srcset="images/golden3-mobile.jpg 320w, images/golden3.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/golden2.jpg" srcset="images/golden2-mobile.jpg 320w, images/golden2.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/golden1.jpg" srcset="images/golden1-mobile.jpg 320w, images/golden1.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/golden4.jpg" srcset="images/golden4-mobile.png 320w, images/golden4.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/golden5.jpg" srcset="images/golden5-mobile.jpg 320w, images/golden5.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/golden6.jpg" srcset="images/golden6-mobile.jpg 320w, images/golden6.jpg 760w">
+                    </div>
+                </div>
+            </div>
+            <h1>Golden Gate Bridge In America</h1>
+            The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide (1.6 km) strait connecting San Francisco Bay and the Pacific Ocean. The structure links the American city of San Francisco, California – the northern tip of the San Francisco Peninsula – to Marin County, carrying both U.S. Route 101 and California State Route 1 across the strait. The bridge is one of the most internationally recognized symbols of San Francisco, California, and the United States. It has been declared one of the Wonders of the Modern World by the American Society of Civil Engineers.[7]
+
+            The Frommer's travel guide describes the Golden Gate Bridge as "possibly the most beautiful, certainly the most photographed, bridge in the world."[8][9] At the time of its opening in 1937, it was both the longest and the tallest suspension bridge in the world, with a main span of 4,200 feet (1,280 m) and a total height of 746 feet (227 m). Today, the Golden Gate Bridge is neither the longest nor the tallest in the world, but remains the tallest bridge in the United States.
+            <h1>Design</h1>
+            Strauss was chief engineer in charge of overall design and construction of the bridge project.[14] However, because he had little understanding or experience with cable-suspension designs,[22] responsibility for much of the engineering and architecture fell on other experts. Strauss's initial design proposal (two double cantilever spans linked by a central suspension segment) was unacceptable from a visual standpoint. The final graceful suspension design was conceived and championed by Leon Moisseiff, the engineer of the Manhattan Bridge in New York City.[23]
+
+            Irving Morrow, a relatively unknown residential architect, designed the overall shape of the bridge towers, the lighting scheme, and Art Deco elements, such as the tower decorations, streetlights, railing, and walkways. The famous International Orange color was originally used as a sealant for the bridge.[24] The US Navy had wanted it to be painted with black and yellow stripes to ensure visibility by passing ships.[14]
+
+            Senior engineer Charles Alton Ellis, collaborating remotely with Moisseiff, was the principal engineer of the project.[25] Moisseiff produced the basic structural design, introducing his "deflection theory" by which a thin, flexible roadway would flex in the wind, greatly reducing stress by transmitting forces via suspension cables to the bridge towers.[25] Although the Golden Gate Bridge design has proved sound, a later Moisseiff design, the original Tacoma Narrows Bridge, collapsed in a strong windstorm soon after it was completed, because of an unexpected aeroelastic flutter.[26] Ellis was also tasked with designing a "bridge within a bridge" in the southern abutment, to avoid the need to demolish Fort Point, a pre–Civil War masonry fortification viewed, even then, as worthy of historic preservation. He penned a graceful steel arch spanning the fort and carrying the roadway to the bridge's southern anchorage.[27]
+
+
+            Below Golden Gate Bridge
+            Ellis was a Greek scholar and mathematician who at one time was a University of Illinois professor of engineering despite having no engineering degree. He eventually earned a degree in civil engineering from the University of Illinois prior to designing the Golden Gate Bridge and spent the last twelve years of his career as a professor at Purdue University. He became an expert in structural design, writing the standard textbook of the time.[28] Ellis did much of the technical and theoretical work that built the bridge, but he received none of the credit in his lifetime. In November 1931, Strauss fired Ellis and replaced him with a former subordinate, Clifford Paine, ostensibly for wasting too much money sending telegrams back and forth to Moisseiff.[28] Ellis, obsessed with the project and unable to find work elsewhere during the Depression, continued working 70 hours per week on an unpaid basis, eventually turning in ten volumes of hand calculations.[28]
+
+            With an eye toward self-promotion and posterity, Strauss downplayed the contributions of his collaborators who, despite receiving little recognition or compensation, are largely responsible for the final form of the bridge. He succeeded in having himself credited as the person most responsible for the design and vision of the bridge. Only much later were the contributions of the others on the design team properly appreciated. In May 2007, the Golden Gate Bridge District issued a formal report on 70 years of stewardship of the famous bridge and decided to give Ellis major credit for the design of the bridge.
+            <h1>History</h1>
+            Before the bridge was built, the only practical short route between San Francisco and what is now Marin County was by boat across a section of San Francisco Bay. A ferry service began as early as 1820, with a regularly scheduled service beginning in the 1840s for the purpose of transporting water to San Francisco.
+
+            The Sausalito Land and Ferry Company service, launched in 1867, eventually became the Golden Gate Ferry Company, a Southern Pacific Railroad subsidiary, the largest ferry operation in the world by the late 1920s. Southern Pacific's automobile ferries became very profitable and important to the regional economy.The ferry crossing between the Hyde Street Pier in San Francisco and Sausalito in Marin County took approximately 20 minutes and cost US$1.00 per vehicle, a price later reduced to compete with the new bridge.[13] The trip from the San Francisco Ferry Building took 27 minutes.
+
+            Many wanted to build a bridge to connect San Francisco to Marin County. San Francisco was the largest American city still served primarily by ferry boats. Because it did not have a permanent link with communities around the bay, the city's growth rate was below the national average. Many experts said that a bridge could not be built across the 6,700 ft (2,042 m) strait, which had strong, swirling tides and currents, with water 372 ft deep at the center of the channel, and frequent strong winds. Experts said that ferocious winds and blinding fogs would prevent construction and operation.
+            The Golden Gate Bridge and Highway District, authorized by an act of the California Legislature, was incorporated in 1928 as the official entity to design, construct, and finance the Golden Gate Bridge. However, after the Wall Street Crash of 1929, the District was unable to raise the construction funds, so it lobbied for a $30 million bond measure. The bonds were approved in November 1930, by votes in the counties affected by the bridge. The construction budget at the time of approval was $27 million. However, the District was unable to sell the bonds until 1932, when Amadeo Giannini, the founder of San Francisco–based Bank of America.
+
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="footer">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUPPORT </h3>
+                            <p id="p2"><span class="glyphicon glyphicon glyphicon-earphone"></span> +1-202-555-0151</p>
+                            <p id="p3"><i class="glyphicon glyphicon-envelope"></i> help@yourweb.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUBSCRIBE TO NEWSLETTERS </h3>
+                            <form action="#" class="input-append newsletter-box">
+                                <input type="text" class="input-footer" placeholder="  ENTER YOUR EMAIL">
+                                <button type="submit" class="btn-sub">
+                                    <i class="glyphicon glyphicon-hand-right"></i><span> SUBSCRIBE</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> FOLLOW US </h3>
+                            <div class="social-link">
+                                <ul class="social-icons">
+                                    <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                                    <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                                    <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                                    <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                                    <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

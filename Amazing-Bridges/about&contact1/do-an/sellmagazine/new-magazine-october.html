@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NEW MAGAZINE OCTOBER</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="bán-báo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="bán-báo.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my-JQ.js"></script>
+    <script src="js/placeholder.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="css/header&footer.css">
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <div class="row" id="nav1">
+            <div class="col-md-12 hder">
+                <nav class="navbar navbar-inverse menu">
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a  href="#"><img class="logo" src="images/images.png"/></a></li>
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">PHOTOGRAPH</a></li>
+                            <li><a href="#">SELL MAGAZINES</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form>
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </li>
+                            <li>
+                                <div class="btn-cart" id="cart-block">
+                                    <a title="SignIn" href="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-lg modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">LOGIN/REGISTER</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Register</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="Login">
+                                    <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                          id="dangnhap_from" method="post">
+                                        <div class="form-group">
+                                            <label for="email_login" class="col-sm-3 control-label">ID</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="email" class="input form-control" id="email_login"
+                                                       placeholder="ID...."/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_login" class="col-sm-3 control-label">Password</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="password" class="input form-control" id="pass_login"
+                                                       placeholder="Password...."/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <button class="button" type="submit" id="button-confirm">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="tab-pane fade" id="Registration">
+                                    <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                          enctype="multipart/form-data" id="dangkytk_form register">
+                                        <div class="form-group">
+                                            <label for="frm_name" class="col-sm-4 control-label">ID</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" class="input form-control" id="frm_name" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="email" class="input form-control" id="emailtk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="pass_tk" class="col-sm-4 control-label">Password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="pass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="repass_tk" class="col-sm-4 control-label">Re-password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="repass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ngaysinh_tk" class="col-sm-4 control-label">Birth day</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="date" class="input form-control" id="ngaysinh_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="gender_tk" class="col-sm-4 control-label">Gender</label>
+
+                                            <div class="col-sm-8">
+                                                <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                    <option value="1">Female</option>
+                                                    <option value="0">Male</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Adress</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="diachi" class="input form-control" id="diachi_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Phone number</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="dienthoai" class="input form-control"
+                                                       id="dienthoai_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <button class="button" type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="OR" class="hidden-xs">OR</div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="row text-center sign-with">
+                                <div class="social-header">Login With</div>
+                                <div class="unit social-column">
+                                    <div class="social-inner">
+                                        <div><a href=""><img src="images/ava/fb-login-button-big.png" alt="login-facebook"></a>
+                                        </div>
+                                        <div><a href=""><img src="images/ava/gg-login-button-big.png" alt="login-google"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="breadcrumb">
+                <li><a href="Bán-báo.html">HOME</a></li>
+                <li class="active">NEW MAGAZINE</li>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="cate"><span class="caret"></span>Category</a>
+                </div>
+                <div class="showcate" id="s1">
+                    <a id="a1" style="font-size: 14pt"><b>NEW MAGAZINE</b><span class="badge">12</span></a>
+                    <div id="show1" class="cateclass">
+                        <a href="new-magazine-january.html">New magazine in January</a><br>
+                        <a href="new-magazine-february.html">New magazine in February</a><br>
+                        <a href="new-magazine-march.html">New magazine in March</a><br>
+                        <a href="new-magazine-april.html">New magazine in April</a><br>
+                        <a href="new-magazine-may.html">New magazine in May</a><br>
+                        <a href="new-magazine-june.html">New magazine in June</a><br>
+                        <a href="new-magazine-july.html">New magazine in July</a><br>
+                        <a href="new-magazine-august.html">New magazine in August</a><br>
+                        <a href="new-amagazine-september.html">New magazine in September</a><br>
+                        <a href="new-magazine-october.html">New magazine in October</a><br>
+                        <a href="new-magazine-november.html">New magazine in November</a><br>
+                        <a href="new-magazine-december.html">New magazine in December</a><br>
+
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="price"><span class="caret"></span>Price<span id="badgered" class="badge">Clear</span></a>
+                </div>
+                <div class="showcate" id="s2">
+                    <form>
+                        <input type="radio" name="price"> 10$ - 50$<br>
+                        <input type="radio" name="price"> 50$ - 100$<br>
+                        <input type="radio" name="price"> 100$ - 150$<br>
+                        <input type="radio" name="price"> 150$ - 200$<br>
+                        <input type="radio" name="price"> 200$ - 250$<br>
+                        <input type="radio" name="price"> 250$ - 300$<br>
+                        <input type="radio" name="price" checked> Don't know<br>
+                    </form>
+                    <hr>
+                    <p>Enter a price range</p>
+                    <form class="form-inline">
+                        <input type="text" class="form-control" placeholder="2000$">
+                        <span> - </span>
+                        <input type="text" class="form-control" placeholder="3000$">
+                        <button type="submit" class="btn btn-default">Check</button>
+                    </form>
+                </div>
+            </div>
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="brand"><span class="caret"></span>Brand</a>
+                </div>
+                <div class="showcate" id="s3">
+                    <form>
+                        <input type="checkbox" name="brand"> New magazine in January<br>
+                        <input type="checkbox" name="brand"> New magazine in February<br>
+                        <input type="checkbox" name="brand"> New magazine in March<br>
+                        <input type="checkbox" name="brand"> New magazine in April<br>
+                        <input type="checkbox" name="brand"> New magazine in May<br>
+                        <input type="checkbox" name="brand"> New magazine in June<br>
+                        <input type="checkbox" name="brand"> New magazine in July<br>
+                        <input type="checkbox" name="brand"> New magazine in August<br>
+                        <input type="checkbox" name="brand"> New magazine in September<br>
+                        <input type="checkbox" name="brand"> New magazine in October<br>
+                        <input type="checkbox" name="brand"> New magazine in November<br>
+                        <input type="checkbox" name="brand"> New magazine in December<br>
+                        <div style="text-align: center">
+                            <button type="submit" class="btn">Check</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+            <nav class="navbar navbar-default" role="navigation" id="nav2">
+                <div class="navbar-default">
+                    <a class="navbar-brand" href="#" style="color: white">NEW MAGAZINE IN OCTOBER</a>
+                </div>
+            </nav>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/siose3.jpg" srcset="images/siose3-mobile.jpg 320w, images/siose3.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/siose2.jpg" srcset="images/siose2-mobile.jpg 320w, images/siose2.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/siose1.jpg" srcset="images/siose1-mobile.jpg 320w, images/siose1.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/siose4.jpg" srcset="images/siose4-mobile.png 320w, images/siose4.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/siose51.jpg" srcset="images/siose51-mobile.jpg 320w, images/siose51.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/siose6.jpg" srcset="images/siose6-mobile.jpg 320w, images/siose6.jpg 760w">
+                    </div>
+                </div>
+            </div>
+            <h1>Si-o-se-pol In Iran</h1>
+            The Allahverdi Khan Bridge (Persian: پل الله‌وردی‌خان‎), popularly known as Si-o-se-pol (Persian: سی‌وسه‌پل‎, lit. '[the] bridge of thirty-three [spans]'),[2] is one of the eleven bridges in Isfahan, Iran.[3] It is the longest bridge on the Zayanderud, with a total length of 297.76 metres (976.9 ft), and is one of the most famous examples of Safavid bridge design.
+
+            Built between 1599 and 1602, the construction was financed and supervised by the Georgian chancellor of Abbas I, Allahverdi Khan Undiladze. It consists of two superimposed rows of 33 arches. There is a larger base plank at the start of the bridge, under which the Zayanderud flows, supporting a tea house, which is nowadays abandoned.
+            Si-o-se Pol (persan : سی وسه پل, pont « aux trente-trois arches ») ou pont Allahverdi Khan (Pol-e Allahverdikhan), est l'un des onze ponts d'Ispahan, en Iran. C'est l'un des ponts les mieux connus de la dynastie des Séfévides. Le Si-o-se Pol est un pont en arc à double niveau.
+
+            Il a été érigé par ordre du premier ministre géorgien de Shah Abbas, Allahverdi Khan, vers 16081. Il se place dans la continuité du Chāhār Bāgh2. Avec ses arcades, dans les côtés et dans la base, il offre ainsi une possibilité de promenade à plusieurs niveaux, selon la hauteur de l’eau. Il sert de lieu de passage, mais aussi de barrage pour réguler le cours de la rivière. En le traversant, l’eau produit un effet de grandes fontaines grâce aux emmarchements. À côté se trouve un talār, le « kiosque des miroirs », d’où le souverain pouvait observer la rivière.
+            Die Si-o-se Pol (persisch سی وسه پل, ‚‎33-Bogen-Brücke‘) – außerhalb des Iran auch als Allah-Verdi-Khan-Brücke bekannt – in der iranischen Großstadt Isfahan ist eine von elf Brücken über den Zayandeh Rud und neben der Pol-e Schahrestan und der Pol-e Chadschu eine der bekanntesten. Sie ist für den Autoverkehr gesperrt.
+            <h1>History</h1>
+
+
+            Historische Aufnahme der Brücke, 1873
+            Die Brücke wurde in der Safawiden-Zeit erbaut und gilt als Meisterwerk dieser Epoche. Sie wurde 1602 durch Schah Abbas I. in Auftrag gegeben und von seinem Kanzler Allahverdi Khan Undiladze, einem Iraner georgischer Abstammung gebaut. Im Auftrag von Schah Abbas I. sollte sie seine berühmten Vier Gärten (bis heute die Hauptverkehrsader Isfahans) mit den königlichen Gärten Hazar Jaribs und dem Armenierviertel von Dschulfa am Südufer des Flusses verbinden.
+
+            Si-o-se Pol ist ein zweistöckiges Viadukt, konzipiert als Ziegelbau auf Steinpfeilern. Sie ist 290,4 Meter lang und 13,5 Meter breit. Sie besteht – wie der Name sagt (persisch Sioseh = 33) – aus 33 Bögen. Der Hauptverkehrsweg wird zu beiden Seiten von überdachten Arkaden eingefaßt. Breite Treppen führen zu den Promenaden, welche längs der gesamten Brücke verlaufen.[1] Am Ende, an dem der Fluss liegt, befindet sich ein deutlich größerer Bogen, auf dem ein Teehaus eingerichtet ist. Ursprünglich sollen Fresken die Innenwände geziert haben. Diese wurden aber abgetragen, da sie als obszön empfunden wurden.
+
+
+            Brücke in der Dämmerung
+            Bis heute kann man in mehreren unter dem Brückendach gelegenen Teehäusern Tee trinken und Ḡalyān rauchen. In trockenen Sommern führt der Fluss Zayandeh Rud bisweilen sehr wenig bis kein Wasser.
+            <br>Il Sio-o-se Pol (persiano: سی و سه پل), che significa "ponte dei 33 archi", detto anche "ponte Allahverdi-Khan" è uno degli undici ponti di Esfahan, Iran. È considerato uno dei più famosi esempi dei ponti costruiti dalla dinastia dei Safavidi.
+
+            Commissionato nel 1602 dallo scià 'Abbas I il Grande al suo cancelliere Allahverdi Khan Undiladze, è composto da due file di 33 archi. C'è una passerella più grande all'inizio del ponte dove scorre il fiume Zaiandè, che supporta una sala da tè. Esso fungeva da ponte e da diga, ed ancora oggi assolve questa funzione.
+            Si-o-se Pol (Perzisch: سی و سه پل, "brug met 33 bogen"), ook bekend als de Allahverdi-Khanbrug, is een van de elf bruggen van Isfahan in Iran. De stenen boogbrug ligt over de Zayandeh en is een bekend voorbeeld van brugontwerpen van de dynastie der Safawieden.
+
+            De brug werd in de periode van 1599-1602 na een opdracht van Abbas I van Perzië aan zijn kanselier Allahverdi Khan gebouwd. De brug bestaat uit twee rijen van 33 bogen. Bij het begin van de brug heeft deze een bredere basis en ondersteunt een theehuis. De brug is zo'n 298 meter lang, bijna 14 meter breed en de langste overspanning is 5,6 meter.
+            <br>Si-o-se Pol (bahasa Persia: سی وسه پل, diucapkan [siː oˈseh pol],[2] yang berarti 33 Lengkungan atau Jembatan 33 Lengkungan), juga disebut Jembatan Allah-Verdi Khan adalah salah satu dari sebelas jembatan di Isfahan, Iran. Sangat peringkat sebagai salah satu contoh yang paling terkenal dari desain jembatan Safawi.
+
+            Ditugaskan pada tahun 1602 oleh Shah Abbas I dari nya kanselir Allahverdi Undiladze Khan, seorang, Georgia etnis Iran itu terdiri dari dua baris dari 33 lengkungan. Ada basis lebih besar papan di awal jembatan tempat Sungai Zayandeh mengalir di bawahnya, mendukung sebuah rumah teh.
+            <h1>Building</h1>
+            This is the most famous of Isfahan’s bridges. It is made up of a series of 33 arches and was commissioned in 1602 by Shah Abbas I from one of his Generals.
+
+            The bridge was originally known as the Bridge of Allahverdi Khan who was the general responsible for its construction. The lower level of 33 arches is surmounted by a second layer, with one arch above each of the pontoons and two arches above the lower single arch, giving it its name and rhythmic appearance. The road along the top is sandwiched between high walls which give some shelter from the wind as well as protection for travellers who can walk along the footpaths on either side to avoid the crush of the traffic.
+            The bridge itself is 295m long and 13.75m wide. The thirty four piers on which it is constructed are 3.49m thick and the arches are 5.57m wide. The southern side of the bridge, where the waters of the Zayandeh run more swiftly has supplementary arches, and it is this that makles them suitable as a tea house. The bridge acted as a springboard for the development of the Khajou Bridge some 50 years later.
+            <br>Si-o-se-pol, along with the other Safavid bridges of Esfahan, were built as a means of crossing the wide watercourse of the Zayanderud River. In the 400 odd years since the bridges were built the river has dried up – an upriver dam is to blame – and now the Safavid Bridges of Esfahan cross nothing more than a dustbowl.
+
+
+
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="footer">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUPPORT </h3>
+                            <p id="p2"><span class="glyphicon glyphicon glyphicon-earphone"></span> +1-202-555-0151</p>
+                            <p id="p3"><i class="glyphicon glyphicon-envelope"></i> help@yourweb.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUBSCRIBE TO NEWSLETTERS </h3>
+                            <form action="#" class="input-append newsletter-box">
+                                <input type="text" class="input-footer" placeholder="  ENTER YOUR EMAIL">
+                                <button type="submit" class="btn-sub">
+                                    <i class="glyphicon glyphicon-hand-right"></i><span> SUBSCRIBE</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> FOLLOW US </h3>
+                            <div class="social-link">
+                                <ul class="social-icons">
+                                    <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                                    <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                                    <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                                    <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                                    <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

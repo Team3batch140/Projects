@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NEW MAGAZINE IN FEBRUARY</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="bán-báo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="bán-báo.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my-JQ.js"></script>
+    <script src="js/placeholder.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="css/header&footer.css">
+
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <div class="row" id="nav1">
+            <div class="col-md-12 hder">
+                <nav class="navbar navbar-inverse menu">
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a  href="#"><img class="logo" src="images/images.png"/></a></li>
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">PHOTOGRAPH</a></li>
+                            <li><a href="#">SELL MAGAZINES</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form>
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </li>
+                            <li>
+                                <div class="btn-cart" id="cart-block">
+                                    <a title="SignIn" href="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-lg modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">LOGIN/REGISTER</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Register</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="Login">
+                                    <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                          id="dangnhap_from" method="post">
+                                        <div class="form-group">
+                                            <label for="email_login" class="col-sm-3 control-label">ID</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="email" class="input form-control" id="email_login"
+                                                       placeholder="ID...."/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_login" class="col-sm-3 control-label">Password</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="password" class="input form-control" id="pass_login"
+                                                       placeholder="Password...."/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <button class="button" type="submit" id="button-confirm">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="tab-pane fade" id="Registration">
+                                    <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                          enctype="multipart/form-data" id="dangkytk_form register">
+                                        <div class="form-group">
+                                            <label for="frm_name" class="col-sm-4 control-label">ID</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" class="input form-control" id="frm_name" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="email" class="input form-control" id="emailtk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="pass_tk" class="col-sm-4 control-label">Password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="pass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="repass_tk" class="col-sm-4 control-label">Re-password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="repass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ngaysinh_tk" class="col-sm-4 control-label">Birth day</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="date" class="input form-control" id="ngaysinh_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="gender_tk" class="col-sm-4 control-label">Gender</label>
+
+                                            <div class="col-sm-8">
+                                                <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                    <option value="1">Female</option>
+                                                    <option value="0">Male</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Adress</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="diachi" class="input form-control" id="diachi_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Phone number</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="dienthoai" class="input form-control"
+                                                       id="dienthoai_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <button class="button" type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="OR" class="hidden-xs">OR</div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="row text-center sign-with">
+                                <div class="social-header">Login With</div>
+                                <div class="unit social-column">
+                                    <div class="social-inner">
+                                        <div><a href=""><img src="images/ava/fb-login-button-big.png" alt="login-facebook"></a>
+                                        </div>
+                                        <div><a href=""><img src="images/ava/gg-login-button-big.png" alt="login-google"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="breadcrumb">
+                <li><a href="Bán-báo.html">HOME</a></li>
+                <li class="active">NEW MAGAZINE</li>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="cate"><span class="caret"></span>Category</a>
+                </div>
+                <div class="showcate" id="s1">
+                    <a id="a1" style="font-size: 14pt"><b>NEW MAGAZINE</b><span class="badge">12</span></a>
+                    <div id="show1" class="cateclass">
+                        <a href="new-magazine-january.html">New magazine in January</a><br>
+                        <a href="new-magazine-february.html">New magazine in February</a><br>
+                        <a href="new-magazine-march.html">New magazine in March</a><br>
+                        <a href="new-magazine-april.html">New magazine in April</a><br>
+                        <a href="new-magazine-may.html">New magazine in May</a><br>
+                        <a href="new-magazine-june.html">New magazine in June</a><br>
+                        <a href="new-magazine-july.html">New magazine in July</a><br>
+                        <a href="new-magazine-august.html">New magazine in August</a><br>
+                        <a href="new-amagazine-september.html">New magazine in September</a><br>
+                        <a href="new-magazine-october.html">New magazine in October</a><br>
+                        <a href="new-magazine-november.html">New magazine in November</a><br>
+                        <a href="new-magazine-december.html">New magazine in December</a><br>
+
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="price"><span class="caret"></span>Price<span id="badgered" class="badge">Clear</span></a>
+                </div>
+                <div class="showcate" id="s2">
+                    <form>
+                        <input type="radio" name="price"> 10$ - 50$<br>
+                        <input type="radio" name="price"> 50$ - 100$<br>
+                        <input type="radio" name="price"> 100$ - 150$<br>
+                        <input type="radio" name="price"> 150$ - 200$<br>
+                        <input type="radio" name="price"> 200$ - 250$<br>
+                        <input type="radio" name="price"> 250$ - 300$<br>
+                        <input type="radio" name="price" checked> Don't know<br>
+                    </form>
+                    <hr>
+                    <p>Enter a price range</p>
+                    <form class="form-inline">
+                        <input type="text" class="form-control" placeholder="2000$">
+                        <span> - </span>
+                        <input type="text" class="form-control" placeholder="3000$">
+                        <button type="submit" class="btn btn-default">Check</button>
+                    </form>
+                </div>
+            </div>
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="brand"><span class="caret"></span>Brand</a>
+                </div>
+                <div class="showcate" id="s3">
+                    <form>
+                        <input type="checkbox" name="brand"> New magazine in January<br>
+                        <input type="checkbox" name="brand"> New magazine in February<br>
+                        <input type="checkbox" name="brand"> New magazine in March<br>
+                        <input type="checkbox" name="brand"> New magazine in April<br>
+                        <input type="checkbox" name="brand"> New magazine in May<br>
+                        <input type="checkbox" name="brand"> New magazine in June<br>
+                        <input type="checkbox" name="brand"> New magazine in July<br>
+                        <input type="checkbox" name="brand"> New magazine in August<br>
+                        <input type="checkbox" name="brand"> New magazine in September<br>
+                        <input type="checkbox" name="brand"> New magazine in October<br>
+                        <input type="checkbox" name="brand"> New magazine in November<br>
+                        <input type="checkbox" name="brand"> New magazine in December<br>
+                        <div style="text-align: center">
+                            <button type="submit" class="btn">Check</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+            <nav class="navbar navbar-default" role="navigation" id="nav2">
+                <div class="navbar-default">
+                    <a class="navbar-brand" href="#" style="color: white">NEW MAGAZINE IN FEBRUARY</a>
+                </div>
+            </nav>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/helix1.jpg" srcset="images/helix1-mobile.jpg 320w, images/helix1.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/helix2.jpg" srcset="images/helix2-mobile.jpg 320w, images/helix2.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/helix7.jpg" srcset="images/helix7-mobile.jpg 320w, images/helix7.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/helix4.jpg" srcset="images/helix4-mobile.jpg 320w, images/helix4.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/helix5.jpg" srcset="images/helix5-mobile.jpg 320w, images/helix5.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/helix6.jpg" srcset="images/helix6-mobile.jpg 320w, images/helix6.jpg 760w">
+                    </div>
+                </div>
+            </div>
+            <h1>HELIX BRIDGE IN SINGAPORE</h1>
+            The Helix Bridge, officially The Helix,[1] and previously known as the Double Helix Bridge, is a pedestrian bridge linking Marina Centre with Marina South in the Marina Bay area in Singapore. It was officially opened on 24 April 2010 at 9 pm; however, only half was opened due to ongoing construction at the Marina Bay Sands.[1] It is located beside the Benjamin Sheares Bridge and is accompanied by a vehicular bridge, known as the Bayfront Bridge. The entire bridge was opened on 18 July 2010 to complete the entire walkway around Marina Bay.
+            <h1>Design</h1>
+            From the outset, the project posed several challenges. There was a desire for the plan view of the bridge to be curved in an arc, such that it joins the foreshore promenades on either side seamlessly. Furthermore, it was desirable to create a lightweight structure, in contrast to the adjacent 6-lane vehicle bridge which is rather heavy in appearance.
+
+            Due to the tropical climate, the brief also required the bridge to provide shade and shelter against direct sunshine and heavy rainfall. The combination of these factors, together with the desire to create a landmark structure, led to a novel and unique design. The bridge was designed using BS 5950 [7] in combination with a design guide from the SCI.[8]
+
+            The resulting bridge comprises two delicate helix structures that act together as a tubular truss to resist the design loads. This approach was inspired by the form of the curved DNA structure. The helix tubes only touch each other in one position, under the bridge deck. The two spiraling members are held apart by a series of light struts and rods, as well as stiffening rings, to form a rigid structure. This arrangement is strong and ideal for the curved form. The stainless steel bridge is met by concrete abutments at either side.
+
+            The 280 m bridge is made up of three 65 m spans and two 45 m end spans. If the steel were stretched out straight from end to end, it would measure 2.25 km in length. The major and minor helices, which spiral in opposite directions, have an overall diameter of 10.8 m and 9.4 m respectively, about 3 stories high. The outer helix is formed from six tubes (273 mm in diameter) which are set equidistant from one another. The inner helix consists of five tubes, also 273 mm in diameter. Over the river, the bridge is supported by unusually light tapered stainless steel columns, which are filled with concrete. The columns form inverted tripod shapes which support the bridge above each of the pilecaps. The bridge weighs around 1700 tonnes in total.
+
+            The final pieces of the design are a series of ovular-shaped cantilevered viewing ‘pods’, each with capacity for about 100 people, that extend out on the bay side to create ‘ring-side’ viewing for water events. These decks are also constructed using grade 1.4462 and are designed to further optimize the pedestrian experience of the bridge as a new urban place and a vital connection between Singapore’s major existing and emerging urban precincts.
+
+            Because this structure was inspired by the DNA structure, it appeared essential that the architectural lighting features should emphasise the various shapes and curves. Towards that end, a series of dynamic multi-coloured light-emitting diode (LED) lights are installed on the helix structures. Outward-facing lights accentuate the sweeping structural curves, with another discreet array of lights illuminating the internal canopy of glass and steel mesh to create a dynamic membrane of light. The inner helix uses white light to illuminate a path for pedestrians. The lights work particularly well with the surface finish and colour of the stainless steel elements.[9]
+
+            Analysis[edit]
+            Extensive numerical analysis was completed in order to explore possible solutions, using the engineer’s in-house structural optimisation software. This enabled a method to be found of linking the two helices. It also ensured that the steel sections are used to their maximum capacity in supporting the pedestrian deck, shade canopies and light fixtures. Prior to specifying materials, or even finalising the designs, the bridge was fully modelled using three-dimensional software in order to visualise its form and geometrical compatibility, as well as to visualise the pedestrian experience on the bridge.
+
+            Non-linear analysis was also carried out to assess the response under various load cases and to analyse the serviceability requirements such as vibration. It was also important to carry out robustness studies in order to examine the behaviour that would arise if the structure were subjected to accidental or deliberate removal of a helix or supporting member.
+            <h1>Construction</h1>
+            The Helix is fabricated from approximately 650 tonnes of Duplex Stainless Steel and 1000 tonnes of carbon steel used in the temporary structure and also helping the bridge to get the helix shape.[11]
+
+            The construction of the bridge was undertaken by the collaboration of Sato Kogyo Pte Ltd and TTJ Design and Engineering Pte Ltd. Both companies had their full support to help to create this bridge. Sato Kogyo specialized in building a concrete span bridge which is located parallel to the Helix bridge while TTJ Design and Engineering led in the fabrication and erection of the Helix structure. Key personnel in the project from TTJ Design and Engineering were Mr Teo Hock Chwee (Managing Director, Mr Gaynel Velasco (Senior Project Manager), Mr Arnel Alcorin (APM), Mr Tiung Chee Wee (Engr) and many others who contributed to the whole span of the bridge. Hundred of workers have contributed to the completion of the bridge.
+            <h1>Temporary works</h1>
+            A temporary truss bridge was built to support the bridge and provide access. The key issue was in launching the trusses over the central 50m wide navigation channel that had to be kept clear during construction to give safe access to other users of the bay.
+
+            The truss was launched in segments in a synchronised lift with two mobile crane units. This was done at night to minimise disturbance caused by closing the channel.
+
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="footer">
+                <div class="row">
+                       <div class="col-lg-4">
+                           <div class="footer">
+                               <h3> SUPPORT </h3>
+                               <p id="p2"><span class="glyphicon glyphicon glyphicon-earphone"></span> +1-202-555-0151</p>
+                               <p id="p3"><i class="glyphicon glyphicon-envelope"></i> help@yourweb.com</p>
+                            </div>
+                       </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUBSCRIBE TO NEWSLETTERS </h3>
+                            <form action="#" class="input-append newsletter-box">
+                                <input type="text" class="input-footer" placeholder="  ENTER YOUR EMAIL">
+                                <button type="submit" class="btn-sub">
+                                    <i class="glyphicon glyphicon-hand-right"></i><span> SUBSCRIBE</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> FOLLOW US </h3>
+                            <div class="social-link">
+                                <ul class="social-icons">
+                                    <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                                    <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                                    <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                                    <li><a class="skype" data-original-title="skype" href="#"></a></li><li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                                </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

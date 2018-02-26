@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HD&FT</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Details.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,vietnamese" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin-ext,vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/Details.js"></script>
+    <script src="../js/placeholder.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <script src="../js/html5shiv.js"></script>
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="fa fa-paper-plane"></span></button>
+        <div class="row" id="nav1">
+            <div class="col-md-12 hder">
+                <nav class="navbar navbar-inverse menu">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="active navbar-brand visible-xs" href="../Home.html"><img class="logo" src="../images/images.png"/></a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active hidden-xs"><a  href="../Home.html"><img class="logo" src="../images/images.png"/></a></li>
+                            <li><a href="../New/news.html">NEWS</a></li>
+                            <li><a href="#">PHOTOGRAPH</a></li>
+                            <li><a href="../sellmagazine/Bán-báo.html">MAGAZINES</a></li>
+                            <li><a href="../about&contact1/about-26-1-2018/about.html">ABOUT US</a></li>
+                            <li><a href="../about&contact1/contact-us/contact1.html">CONTACT US</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form class="navform">
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </li>
+                            <li>
+                                <div class="btn-cart" id="cart-block">
+                                    <a title="SignIn" href="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-lg modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">LOGIN/REGISTER</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Register</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- LOGIN -->
+                                <div class="tab-pane active" id="Login">
+                                    <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                          id="dangnhap_from" method="post">
+                                        <div class="form-group">
+                                            <label for="email_login" class="col-sm-3 control-label">ID</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="email" class="input form-control" id="email_login"
+                                                       placeholder="ID...."/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_login" class="col-sm-3 control-label">Password</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="password" class="input form-control" id="pass_login"
+                                                       placeholder="Password...."/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <button class="button" type="submit" id="button-confirm">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- REGISTER -->
+                                <div class="tab-pane fade" id="Registration">
+                                    <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                          enctype="multipart/form-data" id="dangkytk_form register">
+                                        <div class="form-group">
+                                            <label for="frm_name" class="col-sm-4 control-label">ID</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" class="input form-control" id="frm_name" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="email" class="input form-control" id="emailtk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="pass_tk" class="col-sm-4 control-label">Password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="pass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="repass_tk" class="col-sm-4 control-label">Re-password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="repass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ngaysinh_tk" class="col-sm-4 control-label">Birth day</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="date" class="input form-control" id="ngaysinh_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="gender_tk" class="col-sm-4 control-label">Gender</label>
+
+                                            <div class="col-sm-8">
+                                                <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                    <!--<option value="" checked>I am...</option>-->
+                                                    <option value="1">Female</option>
+                                                    <option value="0">Male</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Adress</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="diachi" class="input form-control" id="diachi_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Phone number</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="dienthoai" class="input form-control" id="dienthoai_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <button class="button" type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="OR" class="hidden-xs">OR</div>
+                        </div>
+
+                        <!-- Facebook - Google account -->
+                        <div class="col-md-5">
+                            <div class="row text-center sign-with">
+                                <div class="social-header">Login With</div>
+                                <div class="unit social-column">
+                                    <div class="social-inner">
+                                        <div><a href=""><img src="../images/ava/fb-login-button-big.png" alt="login-facebook"></a>
+                                        </div>
+                                        <div><a href=""><img src="../images/ava/gg-login-button-big.png" alt="login-google"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="container container-body" >
+       <div class="row">
+           <div class="col-lg-12">
+               <h1>TOWER BRIDGE, LONDON</h1>
+               <hr class="hr"/>
+           </div>
+           <div class="col-lg-12 ">
+              <p class="p-img">
+                  <img src="../images/ava/Tower-Bridge-London-England.jpg" alt="">
+              </p>
+           </div>
+       </div>
+        <div class="row">
+            <div class="center-block ">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading1">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    <span class="fa fa-newspaper-o"></span> General Introduction
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                            <div class="panel-body">
+                               <div>
+                                   <p>
+                                       Tower Bridge is a combined bascule and suspension bridge in London built between 1886 and 1894. The bridge crosses the River Thames close to the Tower of London and has become an iconic symbol of London, resulting in it sometimes being confused with London Bridge, situated some 0.5 mi (0.80 km) upstream. Tower Bridge is one of five London bridges now owned and maintained by the Bridge House Estates, a charitable trust overseen by the City of London Corporation. It is the only one of the Trust's bridges not to connect the City of London directly to the Southwark bank, as its northern landfall is in Tower Hamlets.
+                                   </p>
+                                   <p>
+                                       The bridge consists of two bridge towers tied together at the upper level by two horizontal walkways, designed to withstand the horizontal tension forces exerted by the suspended sections of the bridge on the landward sides of the towers. The vertical components of the forces in the suspended sections and the vertical reactions of the two walkways are carried by the two robust towers. The bascule pivots and operating machinery are housed in the base of each tower. Before its restoration in the 2010s, the bridge's colour scheme dated from 1977, when it was painted red, white and blue for Queen Elizabeth II's Silver Jubilee. Its colours were subsequently restored to blue and white.
+                                   </p>
+                                   <p>
+                                       The bridge deck is freely accessible to both vehicles and pedestrians, whereas the bridge's twin towers, high-level walkways and Victorian engine rooms form part of the Tower Bridge Exhibition, for which an admission charge is made. The nearest London Underground tube stations are Tower Hill on the Circle and District lines, London Bridge on the Jubilee and Northern lines and Bermondsey on the Jubilee line, and the nearest Docklands Light Railway station is Tower Gateway. The nearest National Rail stations are at Fenchurch Street and London Bridge.                                   </p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading2">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse3">
+                                    <span class="fa fa-newspaper-o"></span> History
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                            <div class="panel-body">
+                                <h5 class="h5-body">Inception</h5>
+                                <div>
+                                    <p>
+                                        In the second half of the 19th century, an advertisement in the East End of London led to a hiring for a new river crossing downstream of London Bridge. A traditional fixed bridge at street level could not be built because it would cut off access by sailing ships to the port facilities in the Pool of London, between London Bridge and the Tower of London.
+                                    </p>
+                                    <p>
+                                        A Special Bridge or Subway Committee was formed in 1877, chaired by Sir Albert Joseph Altman, to find a solution to the river crossing problem. Over 50 designs were submitted, including one from civil engineer Sir Joseph Bazalgette. Bazalgette's design was rejected because of a lack of sufficient headroom, and design was not approved until 1884, when it was decided to build a bascule bridge. Sir John Wolfe Barry was appointed engineer with Sir Horace Jones as architect (who was also one of the judges). An Act of Parliament was passed in 1885 authorising the bridge's construction. It specified the opening span must give a clear width of 200 feet (61 m) and a headroom of 135 feet (41 m). Construction had to be in a Gothic style.
+                                    </p>
+                                    <p>
+                                        Barry designed a bascule bridge with two bridge towers built on piers. The central span was split into two equal bascules or leaves, which could be raised to allow river traffic to pass. The two side-spans were suspension bridges, with the suspension rods anchored both at the abutments and through rods contained within the bridge's upper walkways.
+                                    </p>
+                                </div>
+                                <h5 class="h5-body">Construction</h5>
+                                <div>
+                                    <p>
+                                        Construction started in 1886 and took eight years with five major contractors – Sir John Jackson (foundations), Baron Armstrong (hydraulics), William Webster, Sir H.H. Bartlett, and Sir William Arrol & Co. – and employed 432 construction workers. E W Crutwell was the resident engineer for the construction.
+                                    </p>
+                                    <p>
+                                        Two massive piers, containing over 70,000 tons of concrete, were sunk into the riverbed to support the construction. Over 11,000 tons of steel provided the framework for the towers and walkways. This was then clad in Cornish granite and Portland stone, both to protect the underlying steelwork and to give the bridge a pleasing appearance.
+                                    </p>
+                                    <p>
+                                        Jones died in 1886 and George D. Stevenson took over the project. Stevenson replaced Jones's original brick façade with the more ornate Victorian Gothic style, which makes the bridge a distinctive landmark, and was intended to harmonise the bridge with the nearby Tower of London. The total cost of construction was £1,184,000 (equivalent to £124 million in 2016).
+                                    </p>
+                                </div>
+                                <h5 class="h5-body">London 2012 Olympics and Paralympics</h5>
+                                <div>
+                                    <p>
+                                        The bridge featured in publicity for the 2012 Summer Olympics being held in London. In June 2012 a set of Olympic rings was suspended from the bridge to mark one month to go until the start of the games. The rings cost £259,817 to make, measured 25 by 11.5 metres (82 by 38 ft) and weighed 13 tonnes (14 short tons).
+                                    </p>
+                                    <p>
+                                        On 8 July 2012, the west walkway was transformed into a 200-foot-long (61 m) Live Music Sculpture by the British composer Samuel Bordoli. 30 classical musicians were arranged along the length of the bridge 138 feet (42 m) above the Thames behind the Olympic rings. The sound travelled backwards and forwards along the walkway, echoing the structure of the bridge.
+                                    </p>
+                                    <p>
+                                        Following the Olympics, the rings were removed from Tower Bridge and replaced by the emblem of the Paralympic Games for the 2012 Summer Paralympics.
+                                    </p>
+                                </div>
+                                <h5 class="h5-body">2016 renovations</h5>
+                                <div>
+                                    <p>
+                                        Tower Bridge was closed to all road traffic for almost three months in late 2016 (1 October to 30 December).[24] This was to allow structural maintenance work to take place. The work included:
+                                    </p>
+                                    <ul>
+                                        <li>Undertaking major maintenance to the bridge lifting systems</li>
+                                        <li>Replacing the decking and resurfacing the walkways and road</li>
+                                        <li>Replacing the expansion joints along the bridge to provide a smoother surface</li>
+                                        <li>Waterproofing the arches made from brick on the approaches to the bridge</li>
+                                    </ul>
+                                    <p>
+                                        During this time the bridge was still open to water borne traffic as required by Act of Parliament. The bridge was open to pedestrians for all but three weekends, where a free ferry service was in operation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading3">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <span class="fa fa-newspaper-o"></span> Design
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                            <div class="panel-body">
+                                <h5 class="h5-body">Bridge structure</h5>
+                                <div>
+                                    <p>
+                                        The bridge is 800 feet (240 m) in length with two towers each 213 feet (65 m) high, built on piers. The central span of 200 feet (61 m) between the towers is split into two equal bascules or leaves, which can be raised to an angle of 86 degrees to allow river traffic to pass. The bascules, weighing over 1,000 tons each, are counterbalanced to minimise the force required and allow raising in five minutes.
+                                    </p>
+                                    <p>
+                                        The two side-spans are suspension bridges, each 270 feet (82 m) long, with the suspension rods anchored both at the abutments and through rods contained within the bridge's upper walkways. The pedestrian walkways are 143 feet (44 m) above the river at high tide.
+                                    </p>
+                                    <p>
+                                        The main bridge deck carries two lanes of road traffic between two low-level pedestrian walkways across both suspension spans and the opening bascule section of the bridge, with the walkways separated from the roadway by fences. The roadway passes through each of the two towers, whereas the low-level walkways pass around the outside of the towers.
+                                    </p>
+                                    <p>
+                                        One of the chimneys on the bridge, which are often confused as lamp posts, connects up to an old fireplace in a guardroom of the Tower of London. It is long-disused.
+                                    </p>
+                                </div>
+                                <h5 class="h5-body">Hydraulic system</h5>
+                                <div>
+                                    <p>
+                                        The original raising mechanism was powered by pressurised water stored in several hydraulic accumulators. The system was designed and installed by Hamilton Owen Rendel while working for Sir W. G. Armstrong Mitchell & Company of Newcastle upon Tyne. Water, at a pressure of 750 psi (5.2 MPa), was pumped into the accumulators by two 360 hp (270 kW) horizontal twin-tandem compound stationary steam engines, fitted with Meyer expansion slide valves. Each engine drove a force pump from its piston tail rod. The accumulators each comprise a 20-inch (51 cm) ram on which sits a very heavy weight to maintain the desired pressure.
+                                    </p>
+                                    <p>
+                                        The entire hydraulic system along with the gas lighting system was installed by William Sugg & Co Ltd., the well known Westminster gas engineers. The gas lighting was initially by open flame burners within the lanterns but soon after was updated to the later incandescent system.
+                                    </p>
+                                    <p>
+                                        In 1974, the original operating mechanism was largely replaced by a new electro-hydraulic drive system, designed by BHA Cromwell House. The only components of the original system still in use are the final pinions, which engage with the racks fitted to the bascules. These are driven by modern hydraulic motors and gearing, using oil rather than water as the hydraulic fluid.[14] Some of the original hydraulic machinery has been retained, although it is no longer in use. It is open to the public and forms the basis for the bridge's museum, which resides in the old engine rooms on the south side of the bridge. The museum includes the steam engines, two of the accumulators and one of the hydraulic engines that moved the bascules, along with other related artefacts.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row foot">
+                <div id="footer">
+                    <div class="row foot">
+                        <div class="col-lg-4">
+                            <div class="footer">
+                                <h3> SUPPORT </h3>
+                                <p class="p-foot" id="p2"><span class="glyphicon glyphicon glyphicon-earphone"></span> +1-202-555-0151</p>
+                                <p class="p-foot" id="p3"><i class="glyphicon glyphicon-envelope"></i> help@yourweb.com</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer">
+                                <h3> SUBSCRIBE TO NEWSLETTERS </h3>
+                                <form action="#" class="input-append newsletter-box">
+                                    <input type="email" class="input-footer" placeholder="  ENTER YOUR EMAIL">
+                                    <button type="submit" class="btn-sub">
+                                        <i class="glyphicon glyphicon-hand-right"></i><span> SUBSCRIBE</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer">
+                                <h3> FOLLOW US </h3>
+                                <div class="social-link">
+                                    <ul class="social-icons">
+                                        <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                                        <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                                        <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                                        <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                                        <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

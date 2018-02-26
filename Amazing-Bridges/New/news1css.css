@@ -1,0 +1,62 @@
+.bodynews1{
+    background-color: gainsboro;
+}
+.container{
+    width: 75%;
+    background-color: white;
+
+}
+.pagenews{
+    margin-bottom: 20px;
+}
+.imglogonews1{
+    width: 130px;
+    height: 80px;
+    float: left;
+}
+.hrnews1{
+    height: 1px;
+    width: 97%;
+    margin-top: 0;
+}
+.c1{
+    float: right;
+    padding: 13px;
+    color: #000000;
+    font-family:"HCo Verlag","CenturyGothic",AppleGothic,Gill Sans,Gill Sans MT,sans-serif;
+}
+h1{
+    font-family:"HCo Verlag","CenturyGothic",AppleGothic,Gill Sans,Gill Sans MT,sans-serif;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 1.6rem;
+}
+.c2 {
+    font-family: "HCo Verlag", "CenturyGothic", AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+/*.divimgnews{*/
+    /*padding-left: 2.4rem;*/
+    /*padding-right: 2.4rem;*/
+
+
+/*}*/
+img{
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.c2{
+    color: #000000;
+    font-family:"HCo Verlag","CenturyGothic",AppleGothic,Gill Sans,Gill Sans MT,sans-serif;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    font-size: 15px;
+    margin-top: 10px;
+}

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HD&FT</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Details.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,vietnamese" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin-ext,vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/Details.js"></script>
+    <script src="../js/placeholder.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <script src="../js/html5shiv.js"></script>
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="fa fa-paper-plane"></span></button>
+        <div class="row" id="nav1">
+            <div class="col-md-12 hder">
+                <nav class="navbar navbar-inverse menu">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="active navbar-brand visible-xs" href="../Home.html"><img class="logo" src="../images/images.png"/></a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active hidden-xs"><a  href="../Home.html"><img class="logo" src="../images/images.png"/></a></li>
+                            <li><a href="../New/news.html">NEWS</a></li>
+                            <li><a href="#">PHOTOGRAPH</a></li>
+                            <li><a href="../sellmagazine/Bán-báo.html">MAGAZINES</a></li>
+                            <li><a href="../about&contact1/about-26-1-2018/about.html">ABOUT US</a></li>
+                            <li><a href="../about&contact1/contact-us/contact1.html">CONTACT US</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form class="navform">
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </li>
+                            <li>
+                                <div class="btn-cart" id="cart-block">
+                                    <a title="SignIn" href="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-lg modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">LOGIN/REGISTER</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Register</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- LOGIN -->
+                                <div class="tab-pane active" id="Login">
+                                    <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                          id="dangnhap_from" method="post">
+                                        <div class="form-group">
+                                            <label for="email_login" class="col-sm-3 control-label">ID</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="email" class="input form-control" id="email_login"
+                                                       placeholder="ID...."/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_login" class="col-sm-3 control-label">Password</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="password" class="input form-control" id="pass_login"
+                                                       placeholder="Password...."/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <button class="button" type="submit" id="button-confirm">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- REGISTER -->
+                                <div class="tab-pane fade" id="Registration">
+                                    <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                          enctype="multipart/form-data" id="dangkytk_form register">
+                                        <div class="form-group">
+                                            <label for="frm_name" class="col-sm-4 control-label">ID</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" class="input form-control" id="frm_name" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="email" class="input form-control" id="emailtk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="pass_tk" class="col-sm-4 control-label">Password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="pass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="repass_tk" class="col-sm-4 control-label">Re-password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="repass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ngaysinh_tk" class="col-sm-4 control-label">Birth day</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="date" class="input form-control" id="ngaysinh_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="gender_tk" class="col-sm-4 control-label">Gender</label>
+
+                                            <div class="col-sm-8">
+                                                <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                    <!--<option value="" checked>I am...</option>-->
+                                                    <option value="1">Female</option>
+                                                    <option value="0">Male</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Adress</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="diachi" class="input form-control" id="diachi_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Phone number</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="dienthoai" class="input form-control" id="dienthoai_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <button class="button" type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="OR" class="hidden-xs">OR</div>
+                        </div>
+
+                        <!-- Facebook - Google account -->
+                        <div class="col-md-5">
+                            <div class="row text-center sign-with">
+                                <div class="social-header">Login With</div>
+                                <div class="unit social-column">
+                                    <div class="social-inner">
+                                        <div><a href=""><img src="../images/ava/fb-login-button-big.png" alt="login-facebook"></a>
+                                        </div>
+                                        <div><a href=""><img src="../images/ava/gg-login-button-big.png" alt="login-google"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="container container-body" >
+       <div class="row">
+           <div class="col-lg-12">
+               <h1>GOLDEN GATE BRIDGE, SAN FRANCISCO</h1>
+               <hr class="hr"/>
+           </div>
+           <div class="col-lg-12 ">
+              <p class="p-img">
+                  <img src="../images/ava/Golden-Gate-Bridge-San-Francisco.jpg" alt="">
+              </p>
+           </div>
+       </div>
+        <div class="row">
+            <div class="center-block ">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading1">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    <span class="fa fa-newspaper-o"></span> General Introduction
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                            <div class="panel-body">
+                                <div>
+                                    <p>
+                                        The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide (1.6 km) strait connecting San Francisco Bay and the Pacific Ocean. The structure links the American city of San Francisco, California – the northern tip of the San Francisco Peninsula – to Marin County, carrying both U.S. Route 101 and California State Route 1 across the strait. The bridge is one of the most internationally recognized symbols of San Francisco, California, and the United States. It has been declared one of the Wonders of the Modern World by the American Society of Civil Engineers.
+                                    </p>
+                                    <p>
+                                        The Frommer's travel guide describes the Golden Gate Bridge as "possibly the most beautiful, certainly the most photographed, bridge in the world." At the time of its opening in 1937, it was both the longest and the tallest suspension bridge in the world, with a main span of 4,200 feet (1,280 m) and a total height of 746 feet (227 m). Today, the Golden Gate Bridge is neither the longest nor the tallest in the world, but remains the tallest bridge in the United States.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading2">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse3">
+                                    <span class="fa fa-newspaper-o"></span> History
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                            <div class="panel-body">
+                                <h5 class="h5-body">Design:</h5>
+                                <div>
+                                    <p>
+                                        Strauss was chief engineer in charge of overall design and construction of the bridge project. However, because he had little understanding or experience with cable-suspension designs, responsibility for much of the engineering and architecture fell on other experts. Strauss's initial design proposal (two double cantilever spans linked by a central suspension segment) was unacceptable from a visual standpoint. The final graceful suspension design was conceived and championed by Leon Moisseiff, the engineer of the Manhattan Bridge in New York City.
+                                    </p>
+                                    <p>
+                                        Irving Morrow, a relatively unknown residential architect, designed the overall shape of the bridge towers, the lighting scheme, and Art Deco elements, such as the tower decorations, streetlights, railing, and walkways. The famous International Orange color was originally used as a sealant for the bridge. The US Navy had wanted it to be painted with black and yellow stripes to ensure visibility by passing ships.
+                                    </p>
+                                    <p>
+                                        Senior engineer Charles Alton Ellis, collaborating remotely with Moisseiff, was the principal engineer of the project. Moisseiff produced the basic structural design, introducing his "deflection theory" by which a thin, flexible roadway would flex in the wind, greatly reducing stress by transmitting forces via suspension cables to the bridge towers. Although the Golden Gate Bridge design has proved sound, a later Moisseiff design, the original Tacoma Narrows Bridge, collapsed in a strong windstorm soon after it was completed, because of an unexpected aeroelastic flutter. Ellis was also tasked with designing a "bridge within a bridge" in the southern abutment, to avoid the need to demolish Fort Point, a pre–Civil War masonry fortification viewed, even then, as worthy of historic preservation. He penned a graceful steel arch spanning the fort and carrying the roadway to the bridge's southern anchorage.
+                                    </p>
+                                    <p>
+                                        Ellis was a Greek scholar and mathematician who at one time was a University of Illinois professor of engineering despite having no engineering degree. He eventually earned a degree in civil engineering from the University of Illinois prior to designing the Golden Gate Bridge and spent the last twelve years of his career as a professor at Purdue University. He became an expert in structural design, writing the standard textbook of the time. Ellis did much of the technical and theoretical work that built the bridge, but he received none of the credit in his lifetime. In November 1931, Strauss fired Ellis and replaced him with a former subordinate, Clifford Paine, ostensibly for wasting too much money sending telegrams back and forth to Moisseiff. Ellis, obsessed with the project and unable to find work elsewhere during the Depression, continued working 70 hours per week on an unpaid basis, eventually turning in ten volumes of hand calculations.
+                                    </p>
+                                    <p>
+                                        With an eye toward self-promotion and posterity, Strauss downplayed the contributions of his collaborators who, despite receiving little recognition or compensation, are largely responsible for the final form of the bridge. He succeeded in having himself credited as the person most responsible for the design and vision of the bridge. Only much later were the contributions of the others on the design team properly appreciated. In May 2007, the Golden Gate Bridge District issued a formal report on 70 years of stewardship of the famous bridge and decided to give Ellis major credit for the design of the bridge.
+                                    </p>
+                                </div>
+                                <h5 class="h5-body">Cost & Construction:</h5>
+                                <div>
+                                    <p>
+                                        The Golden Gate Bridge and Highway District, authorized by an act of the California Legislature, was incorporated in 1928 as the official entity to design, construct, and finance the Golden Gate Bridge. However, after the Wall Street Crash of 1929, the District was unable to raise the construction funds, so it lobbied for a $30 million bond measure. The bonds were approved in November 1930, by votes in the counties affected by the bridge. The construction budget at the time of approval was $27 million. However, the District was unable to sell the bonds until 1932, when Amadeo Giannini, the founder of San Francisco–based Bank of America, agreed on behalf of his bank to buy the entire issue in order to help the local economy
+                                    </p>
+                                    <p>
+                                        Construction began on January 5, 1933. The project cost more than $35 million, ($493 million in 2016 dollars) completing ahead of schedule and $1.3 million under budget. The Golden Gate Bridge construction project was carried out by the McClintic-Marshall Construction Co., a subsidiary of Bethlehem Steel Corporation founded by Howard H. McClintic and Charles D. Marshall, both of Lehigh University.
+                                    </p>
+                                    <p>
+                                        The project was finished and opened May 27, 1937. The Bridge Round House diner was then included in the southeastern end of the Golden Gate Bridge, adjacent to the tourist plaza which was renovated in 2012. The Bridge Round House, an Art Deco design by Alfred Finnila completed in 1938, has been popular throughout the years as a starting point for various commercial tours of the bridge and an unofficial gift shop.[36] The diner was renovated in 2012 and the gift shop was then removed as a new, official gift shop has been included in the adjacent plaza.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading3">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <span class="fa fa-newspaper-o"></span> Structural Specifications
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                            <div class="panel-body">
+                                <div>
+                                    <p>
+                                        Until 1964, the Golden Gate Bridge had the longest suspension bridge main span in the world, at 4,200 feet (1,300 m). Since 1964 its main span length has been surpassed by ten bridges; it now has the second-longest main span in the United States, after the Verrazano-Narrows Bridge in New York City. The total length of the Golden Gate Bridge from abutment to abutment is 8,981 feet (2,737 m).
+                                    </p>
+                                    <p>
+                                        The Golden Gate Bridge's clearance above high water averages 220 feet (67 m) while its towers, at 746 feet (227 m) above the water, were the world's tallest on a suspension bridge until 1993 when it was surpassed by the Mezcala Bridge, in Mexico. The Golden Gate Bridge remains the tallest bridge in the United States.
+                                    </p>
+                                    <p>
+                                        The weight of the roadway is hung from 250 pairs of vertical suspender ropes, which are attached to two main cables. The main cables pass over the two main towers and are fixed in concrete at each end. Each cable is made of 27,572 strands of wire. The total length of galvanized steel wire used to fabricate both main cables is estimated to be 80,000 miles (130,000 km).
+                                    </p>
+                                    <p>
+                                        The bridge has approximately 1,200,000 total rivets.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row foot">
+                <div id="footer">
+                    <div class="row foot">
+                        <div class="col-lg-4">
+                            <div class="footer">
+                                <h3> SUPPORT </h3>
+                                <p class="p-foot" id="p2"><span class="glyphicon glyphicon glyphicon-earphone"></span> +1-202-555-0151</p>
+                                <p class="p-foot" id="p3"><i class="glyphicon glyphicon-envelope"></i> help@yourweb.com</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer">
+                                <h3> SUBSCRIBE TO NEWSLETTERS </h3>
+                                <form action="#" class="input-append newsletter-box">
+                                    <input type="email" class="input-footer" placeholder="  ENTER YOUR EMAIL">
+                                    <button type="submit" class="btn-sub">
+                                        <i class="glyphicon glyphicon-hand-right"></i><span> SUBSCRIBE</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer">
+                                <h3> FOLLOW US </h3>
+                                <div class="social-link">
+                                    <ul class="social-icons">
+                                        <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                                        <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                                        <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                                        <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                                        <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

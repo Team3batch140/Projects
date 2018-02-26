@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HD&FT</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Details.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,vietnamese" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin-ext,vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/Details.js"></script>
+    <script src="../js/placeholder.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <script src="../js/html5shiv.js"></script>
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="fa fa-paper-plane"></span></button>
+        <div class="row" id="nav1">
+            <div class="col-md-12 hder">
+                <nav class="navbar navbar-inverse menu">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="active navbar-brand visible-xs" href="../Home.html"><img class="logo" src="../images/images.png"/></a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active hidden-xs"><a  href="../Home.html"><img class="logo" src="../images/images.png"/></a></li>
+                            <li><a href="../New/news.html">NEWS</a></li>
+                            <li><a href="#">PHOTOGRAPH</a></li>
+                            <li><a href="../sellmagazine/Bán-báo.html">MAGAZINES</a></li>
+                            <li><a href="../about&contact1/about-26-1-2018/about.html">ABOUT US</a></li>
+                            <li><a href="../about&contact1/contact-us/contact1.html">CONTACT US</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form class="navform">
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </li>
+                            <li>
+                                <div class="btn-cart" id="cart-block">
+                                    <a title="SignIn" href="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-lg modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">LOGIN/REGISTER</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Register</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- LOGIN -->
+                                <div class="tab-pane active" id="Login">
+                                    <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                          id="dangnhap_from" method="post">
+                                        <div class="form-group">
+                                            <label for="email_login" class="col-sm-3 control-label">ID</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="email" class="input form-control" id="email_login"
+                                                       placeholder="ID...."/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_login" class="col-sm-3 control-label">Password</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="password" class="input form-control" id="pass_login"
+                                                       placeholder="Password...."/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <button class="button" type="submit" id="button-confirm">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- REGISTER -->
+                                <div class="tab-pane fade" id="Registration">
+                                    <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                          enctype="multipart/form-data" id="dangkytk_form register">
+                                        <div class="form-group">
+                                            <label for="frm_name" class="col-sm-4 control-label">ID</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" class="input form-control" id="frm_name" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="email" class="input form-control" id="emailtk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="pass_tk" class="col-sm-4 control-label">Password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="pass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="repass_tk" class="col-sm-4 control-label">Re-password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="repass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ngaysinh_tk" class="col-sm-4 control-label">Birth day</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="date" class="input form-control" id="ngaysinh_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="gender_tk" class="col-sm-4 control-label">Gender</label>
+
+                                            <div class="col-sm-8">
+                                                <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                    <!--<option value="" checked>I am...</option>-->
+                                                    <option value="1">Female</option>
+                                                    <option value="0">Male</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Adress</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="diachi" class="input form-control" id="diachi_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Phone number</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="dienthoai" class="input form-control" id="dienthoai_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <button class="button" type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="OR" class="hidden-xs">OR</div>
+                        </div>
+
+                        <!-- Facebook - Google account -->
+                        <div class="col-md-5">
+                            <div class="row text-center sign-with">
+                                <div class="social-header">Login With</div>
+                                <div class="unit social-column">
+                                    <div class="social-inner">
+                                        <div><a href=""><img src="../images/ava/fb-login-button-big.png" alt="login-facebook"></a>
+                                        </div>
+                                        <div><a href=""><img src="../images/ava/gg-login-button-big.png" alt="login-google"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="container container-body" >
+       <div class="row">
+           <div class="col-lg-12">
+               <h1>GEORGE WASHINGTON BRIDGE, NEW YORK</h1>
+               <hr class="hr"/>
+           </div>
+           <div class="col-lg-12 ">
+              <p class="p-img">
+                  <img src="../images/ava/George-Washington-Bridge-New-York.jpg" alt="">
+              </p>
+           </div>
+       </div>
+        <div class="row">
+            <div class="center-block ">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading1">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    <span class="fa fa-newspaper-o"></span> General Introduction
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                            <div class="panel-body">
+                               <div>
+                                   <p>
+                                       The George Washington Bridge – known informally as the GW Bridge, the GWB, the GW, or the George – is a double-decked suspension bridge spanning the Hudson River between the Washington Heights neighborhood of Manhattan in New York City and Fort Lee, New Jersey. As of 2016, the George Washington Bridge carried over 103 million vehicles per year, making it the world's busiest motor vehicle bridge. It is owned by the Port Authority of New York and New Jersey, a bi-state government agency that operates several bridges, tunnels and airports, as well as marine seaports, and the PATH rapid transit system.
+                                   </p>
+                                   <p>
+                                       The bridge, an integral conduit within the New York metropolitan area, has an upper level that carries four lanes in each direction and a lower level with three lanes in each direction, for a total of 14 lanes of travel. The speed limit on the bridge is 45 mph (72 km/h), though congestion frequently slows traffic on both weekdays and weekends. The bridge's upper level also carries pedestrian and bicycle traffic. Interstate 95 (I-95) and U.S. Route 1/9 (US 1/9) cross the river via the bridge. US 46, which lies entirely within New Jersey, terminates halfway across the bridge at the state border with New York. At its eastern terminus in New York City, the bridge connects with the Trans-Manhattan Expressway (part of I-95, connecting to the Cross Bronx Expressway).
+                                   </p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading2">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse3">
+                                    <span class="fa fa-newspaper-o"></span> History
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                            <div class="panel-body">
+                                <div>
+                                    <p>
+                                        The bridge sits near the sites of Fort Washington (in New York) and Fort Lee (in New Jersey), which were fortified positions used by General George Washington and his American forces as they attempted to deter the occupation of New York City in 1776 during the American Revolutionary War. Unsuccessful, Washington evacuated Manhattan by crossing between the two forts.
+                                    </p>
+                                    <p>
+                                        Construction on the bridge began in October 1927 as a project of the Port of New York Authority. The bridge's chief engineer was Othmar Ammann, with Cass Gilbert as architect. Geologists made 300-foot (91 m) test bores on the New Jersey side to determine if the geological strata would support the bridge. When construction started, the estimated cost of the bridge was $75,000,000. It was expected to carry 8 million vehicles and 1.5 million pedestrians in its first year of operation.
+                                    </p>
+                                    <p>
+                                        Prior to and while under construction, the bridge was unofficially known as the "Hudson River Bridge". That name was the popular choice, chosen over a host of other proposed names as well as the Port Authority's preference for the name "George Washington Bridge", based on 1931 ballot voting submitted to the Port Authority by New York and New Jersey residents. However, the Port Authority named the bridge after George Washington that year.
+                                    </p>
+                                    <p>
+                                        The bridge was dedicated on October 24, 1931, and opened to traffic the following day. The George Washington Bridge, with a span of 4,760 feet (1,450 m) in total – including a main span of 3,500 feet (1,100 m) – was the longest main bridge span in the world at the time, at nearly double the 1,850 feet (560 m) of the previous record holder, the Ambassador Bridge in Detroit. It held this title until the opening of the Golden Gate Bridge in 1937.
+                                    </p>
+                                    <p>
+                                        In 1946, two more lanes were created on the current upper level, widening it from the original six lanes.[11] A second, lower deck, which had been anticipated in Ammann's original plans, was approved by Lt. Col. Joseph R. McCammon, U.S. Army Corps of Engineers and opened to the public on August 29, 1962. The lower level, nicknamed "Martha" after George's wife Martha Washington, increased the capacity of the bridge by 75 percent, and simultaneously made the George Washington Bridge the world's only 14-lane suspension bridge.
+                                    </p>
+                                    <p>
+                                        The original design for the towers of the bridge called for them to be encased in concrete and granite. However, because of cost considerations during the Great Depression and favorable aesthetic critiques of the bare steel towers, this was never done. The exposed steel towers, with their distinctive criss-crossed bracing, have become one of the bridge's most identifiable characteristics.
+                                    </p>
+                                    <p>
+                                        The George Washington Bridge was designated a National Historic Civil Engineering Landmark by the American Society of Civil Engineers on October 24, 1981, the 50th anniversary of the bridge's dedication ceremony.
+                                    </p>
+                                    <p>
+                                        Starting on July 4, 2000, and for subsequent special occasions, each tower is illuminated by 380 light fixtures that highlight the exposed steel structure. On each tower there are a mix of 150 and 1000 watt metal halide lamp fixtures. The architectural lighting design was completed by Domingo Gonzalez Associates.
+                                    </p>
+                                    <p>
+                                        As the enclosed lower level is more vulnerable to hazardous material (HAZMAT) incidents than the upper level, most HAZMATs have long been prohibited there. Following the September 11 attacks, the Port Authority also prohibited people from taking photographs on the premises of the bridge out of fear that terrorist groups might study photographs to plot an attack on the bridge, but the photography ban has since been lifted.
+                                    </p>
+                                    <p>
+                                        Since 2006, the bridge has flown the world's largest free-flying American flag, measuring at 90 feet (27 m) long, 60 feet (18 m) wide, and 450 pounds (200 kg). It is hoisted on special occasions when weather allows and appears on Martin Luther King, Jr. Day, Presidents Day, Memorial Day, Flag Day, Independence Day, Labor Day, Columbus Day, and Veterans Day, as well as on dates honoring those lost in the September 11 attacks. On events where the flag is flown, the tower lights are lit from dusk until 11:59 p.m.
+                                    </p>
+                                    <p>
+                                        In December 2011, the Port Authority announced plans to repair the bridge. For the first time, the vertical suspender cables would be replaced, at an expected cost of more than $1 billion paid for by toll revenue. On August 5, 2013, repair crews began an $82-million effort to fix cracks in upper-deck structural steel caused by traffic, particularly heavy trucks. The plan called for replacing 632 road deck panels, which would add at least 20 years of service life to the roadway. The work proceeded at night, and was slated to be complete by year's end. But delays prevented completion and ultimately the work was halted for the winter. It was restarted on June 16, 2014, and was expected to last another 12 weeks.
+                                    </p>
+                                    <p>
+                                        From September 9 to 13, 2013, dedicated toll lanes for one of the local Fort Lee entrances to the bridge's upper level were reduced from three to one, the two given to highway traffic, without notification to local government officials and emergency responders on orders from aides and appointees of New Jersey Governor Chris Christie causing a political controversy called "Bridgegate". The local toll lane reductions caused massive traffic congestion, with major delays for school transportation and police and emergency service responses within Fort Lee. The repercussions and controversy surrounding these actions have been investigated by the Port Authority, federal prosecutors, and a New Jersey legislature committee.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading3">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <span class="fa fa-newspaper-o"></span> Culture
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                            <div class="panel-body">
+                                <div>
+                                    <p>
+                                        The landmark bridge is seen in a number of movies set in New York, commonly in establishing shots. The bridge is featured, along with the nearby Little Red Lighthouse, in Hildegarde Swift's 1942 children's book The Little Red Lighthouse and the Great Gray Bridge. The bridge is also featured in Francis Ford Coppola's The Godfather, Woody Allen's Broadway Danny Rose, Mike Newell's Donnie Brasco, and Abraham Polonsky's Force of Evil. On Sesame Street, Ernie often sang the words "George Washington Bridge" to the tune of Sobre las Olas ("The Loveliest Night of the Year"). There is also a work for concert band called George Washington Bridge (1950) by William Schuman. Note that work has nothing to do with Sesame Street's Ernie's song or Sobre las Olas.
+                                    </p>
+                                    <p>
+                                        In the 1976 film Network, the character Max Schumacher (William Holden) tells a funny story to his friend Howard Beale (Peter Finch), in which the young Schumacher, who overslept for a news shoot about the new lower deck at the bridge, gets into a cab wearing a raincoat over his pajamas and tells the cabbie to: "Take me to the middle of the George Washington Bridge." The cabbie, concerned that Schumacher intended to jump from the bridge, turns around and begs him: "Don't do it buddy! You're a young man! You got your whole life ahead of you!"
+                                    </p>
+                                    <p>
+                                        In 24 Legacy, a terrorist detonated a truck bomb on the upper level.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row foot">
+                <div id="footer">
+                    <div class="row foot">
+                        <div class="col-lg-4">
+                            <div class="footer">
+                                <h3> SUPPORT </h3>
+                                <p class="p-foot" id="p2"><span class="glyphicon glyphicon glyphicon-earphone"></span> +1-202-555-0151</p>
+                                <p class="p-foot" id="p3"><i class="glyphicon glyphicon-envelope"></i> help@yourweb.com</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer">
+                                <h3> SUBSCRIBE TO NEWSLETTERS </h3>
+                                <form action="#" class="input-append newsletter-box">
+                                    <input type="email" class="input-footer" placeholder="  ENTER YOUR EMAIL">
+                                    <button type="submit" class="btn-sub">
+                                        <i class="glyphicon glyphicon-hand-right"></i><span> SUBSCRIBE</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer">
+                                <h3> FOLLOW US </h3>
+                                <div class="social-link">
+                                    <ul class="social-icons">
+                                        <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                                        <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                                        <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                                        <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                                        <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

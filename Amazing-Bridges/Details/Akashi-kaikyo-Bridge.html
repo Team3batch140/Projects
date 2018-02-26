@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HD&FT</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Details.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,vietnamese" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin-ext,vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/Details.js"></script>
+    <script src="../js/placeholder.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <script src="../js/html5shiv.js"></script>
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="fa fa-paper-plane"></span></button>
+        <div class="row" id="nav1">
+            <div class="col-md-12 hder">
+                <nav class="navbar navbar-inverse menu">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="active navbar-brand visible-xs" href="../Home.html"><img class="logo" src="../images/images.png"/></a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active hidden-xs"><a  href="../Home.html"><img class="logo" src="../images/images.png"/></a></li>
+                            <li><a href="../New/news.html">NEWS</a></li>
+                            <li><a href="#">PHOTOGRAPH</a></li>
+                            <li><a href="../sellmagazine/Bán-báo.html">MAGAZINES</a></li>
+                            <li><a href="../about&contact1/about-26-1-2018/about.html">ABOUT US</a></li>
+                            <li><a href="../about&contact1/contact-us/contact1.html">CONTACT US</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form class="navform">
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </li>
+                            <li>
+                                <div class="btn-cart" id="cart-block">
+                                    <a title="SignIn" href="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-lg modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">LOGIN/REGISTER</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Register</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- LOGIN -->
+                                <div class="tab-pane active" id="Login">
+                                    <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                          id="dangnhap_from" method="post">
+                                        <div class="form-group">
+                                            <label for="email_login" class="col-sm-3 control-label">ID</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="email" class="input form-control" id="email_login"
+                                                       placeholder="ID...."/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_login" class="col-sm-3 control-label">Password</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="password" class="input form-control" id="pass_login"
+                                                       placeholder="Password...."/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <button class="button" type="submit" id="button-confirm">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- REGISTER -->
+                                <div class="tab-pane fade" id="Registration">
+                                    <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                          enctype="multipart/form-data" id="dangkytk_form register">
+                                        <div class="form-group">
+                                            <label for="frm_name" class="col-sm-4 control-label">ID</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" class="input form-control" id="frm_name" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="email" class="input form-control" id="emailtk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="pass_tk" class="col-sm-4 control-label">Password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="pass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="repass_tk" class="col-sm-4 control-label">Re-password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="repass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ngaysinh_tk" class="col-sm-4 control-label">Birth day</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="date" class="input form-control" id="ngaysinh_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="gender_tk" class="col-sm-4 control-label">Gender</label>
+
+                                            <div class="col-sm-8">
+                                                <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                    <!--<option value="" checked>I am...</option>-->
+                                                    <option value="1">Female</option>
+                                                    <option value="0">Male</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Adress</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="diachi" class="input form-control" id="diachi_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Phone number</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="dienthoai" class="input form-control" id="dienthoai_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <button class="button" type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="OR" class="hidden-xs">OR</div>
+                        </div>
+
+                        <!-- Facebook - Google account -->
+                        <div class="col-md-5">
+                            <div class="row text-center sign-with">
+                                <div class="social-header">Login With</div>
+                                <div class="unit social-column">
+                                    <div class="social-inner">
+                                        <div><a href=""><img src="../images/ava/fb-login-button-big.png" alt="login-facebook"></a>
+                                        </div>
+                                        <div><a href=""><img src="../images/ava/gg-login-button-big.png" alt="login-google"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="container container-body" >
+       <div class="row">
+           <div class="col-lg-12">
+               <h1>AKASHI KAIKYO BRIDGE, JAPAN</h1>
+               <hr class="hr"/>
+           </div>
+           <div class="col-lg-12 ">
+              <p class="p-img">
+                  <img src="../images/ava/Akashi-Kaikyo-Bridge-Japan.jpg" alt="">
+              </p>
+           </div>
+       </div>
+        <div class="row">
+            <div class="center-block ">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading1">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    <span class="fa fa-newspaper-o"></span> General Introduction
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                            <div class="panel-body">
+                               <div>
+                                   <p>
+                                       The Akashi Kaikyō Bridge (明石海峡大橋 Akashi Kaikyō Ō-hashi) is a suspension bridge, which links the city of Kobe on the Japanese mainland of Honshu to Iwaya on Awaji Island. It crosses the busy Akashi Strait (Akashi Kaikyō in Japanese) as part of the Honshu–Shikoku Highway. It was completed in 1998, and has the longest central span of any suspension bridge in the world, at 1,991 metres (6,532 ft; 1.237 mi). It is one of the key links of the Honshū–Shikoku Bridge Project, which created three routes across the Inland Sea.
+                                   </p>
+                                   <p>
+                                       From April to November each year, tours are offered four days a week. During these tours, participants learn about the bridge's history in detail, and they can visit the top of one of the suspension towers, which are nearly 300 metres in height.
+                                   </p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading2">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse3">
+                                    <span class="fa fa-newspaper-o"></span> History
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                            <div class="panel-body">
+                                <div>
+                                    <p>
+                                        Before the Akashi Kaikyō Bridge was built, ferries carried passengers across the Akashi Strait in Japan. This dangerous waterway often experiences severe storms, and in 1955 two ferries sank in the strait during a storm, killing 168 people. The ensuing shock and public outrage convinced the Japanese government to develop plans for a bridge to cross the strait. The original plan called for a mixed railway-road bridge, but when construction on the bridge began in April 1988, the construction was restricted to road only, with six lanes. Actual construction did not begin until May 1988 and involved more than 100 contractors. The bridge was opened for traffic on April 5, 1998 in a ceremony officiated by the Crown Prince Naruhito and his wife Crown Princess Masako of Japan along with Construction Minister Tsutomu Kawara.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading3">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <span class="fa fa-newspaper-o"></span> Structural & Cost
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                            <div class="panel-body">
+                                <div>
+                                    <p>
+                                        The bridge has three spans. The central span is 1,991 m (6,532 ft; 1.237 mi), and the two other sections are each 960 m (3,150 ft; 0.60 mi). The bridge is 3,911 m (12,831 ft; 2.430 mi) long overall. The two towers were originally 1,990 m (6,530 ft; 1.24 mi) apart, but the Great Hanshin earthquake on January 17, 1995, moved the towers so much (only the towers had been erected at the time) that the span had to be increased by 1 m (3.3 ft).
+                                    </p>
+                                    <p>
+                                        The bridge was designed with a dual-hinged stiffening girder system, allowing the structure to withstand winds of 286 kilometres per hour (178 mph), earthquakes measuring up to magnitude 8.5, and harsh sea currents. The bridge also contains tuned mass dampers that are designed to operate at the resonance frequency of the bridge to dampen forces. The two main supporting towers rise 282.8 m (928 ft) above sea level, and the bridge can expand because of heat by up to 2 m (6.6 ft) over the course of a day. Each anchorage required 350,000 tonnes (340,000 long tons; 390,000 short tons) of concrete. The steel cables have 300,000 kilometres (190,000 mi) of wire: each cable is 112 centimetres (44 in) in diameter and contains 36,830 strands of wire.
+                                    </p>
+                                    <p>
+                                        The Akashi–Kaikyo bridge has a total of 1,737 illumination lights: 1,084 for the main cables, 116 for the main towers, 405 for the girders and 132 for the anchorages. Sets of three high-intensity discharge lamps in the colors red, green and blue are mounted on the main cables. The RGB colour model and computer technology make for a variety of combinations. Twenty-eight patterns are used for occasions as national or regional holidays, memorial days or festivities.
+                                    </p>
+                                    <p>
+                                        The total cost is estimated at ¥500 billion or US$3.6 billion (per 1998 exchange rates). It is expected to be repaid by charging drivers a toll to cross the bridge. The toll is 2,300 yen and the bridge is used by approximately 23,000 cars per day.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row foot">
+                <div id="footer">
+                    <div class="row foot">
+                        <div class="col-lg-4">
+                            <div class="footer">
+                                <h3> SUPPORT </h3>
+                                <p class="p-foot" id="p2"><span class="glyphicon glyphicon glyphicon-earphone"></span> +1-202-555-0151</p>
+                                <p class="p-foot" id="p3"><i class="glyphicon glyphicon-envelope"></i> help@yourweb.com</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer">
+                                <h3> SUBSCRIBE TO NEWSLETTERS </h3>
+                                <form action="#" class="input-append newsletter-box">
+                                    <input type="email" class="input-footer" placeholder="  ENTER YOUR EMAIL">
+                                    <button type="submit" class="btn-sub">
+                                        <i class="glyphicon glyphicon-hand-right"></i><span> SUBSCRIBE</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer">
+                                <h3> FOLLOW US </h3>
+                                <div class="social-link">
+                                    <ul class="social-icons">
+                                        <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                                        <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                                        <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                                        <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                                        <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

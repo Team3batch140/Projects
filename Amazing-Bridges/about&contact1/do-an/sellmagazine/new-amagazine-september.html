@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NEW MAGAZINE SEPTEMBER</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="bán-báo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="bán-báo.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my-JQ.js"></script>
+    <script src="js/placeholder.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="css/header&footer.css">
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <div class="row" id="nav1">
+            <div class="col-md-12 hder">
+                <nav class="navbar navbar-inverse menu">
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a  href="#"><img class="logo" src="images/images.png"/></a></li>
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">PHOTOGRAPH</a></li>
+                            <li><a href="#">SELL MAGAZINES</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form>
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </li>
+                            <li>
+                                <div class="btn-cart" id="cart-block">
+                                    <a title="SignIn" href="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-lg modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">LOGIN/REGISTER</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Register</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="Login">
+                                    <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                          id="dangnhap_from" method="post">
+                                        <div class="form-group">
+                                            <label for="email_login" class="col-sm-3 control-label">ID</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="email" class="input form-control" id="email_login"
+                                                       placeholder="ID...."/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_login" class="col-sm-3 control-label">Password</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="password" class="input form-control" id="pass_login"
+                                                       placeholder="Password...."/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <button class="button" type="submit" id="button-confirm">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="tab-pane fade" id="Registration">
+                                    <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                          enctype="multipart/form-data" id="dangkytk_form register">
+                                        <div class="form-group">
+                                            <label for="frm_name" class="col-sm-4 control-label">ID</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" class="input form-control" id="frm_name" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="email" class="input form-control" id="emailtk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="pass_tk" class="col-sm-4 control-label">Password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="pass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="repass_tk" class="col-sm-4 control-label">Re-password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="repass_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ngaysinh_tk" class="col-sm-4 control-label">Birth day</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="date" class="input form-control" id="ngaysinh_tk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="gender_tk" class="col-sm-4 control-label">Gender</label>
+
+                                            <div class="col-sm-8">
+                                                <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                    <option value="1">Female</option>
+                                                    <option value="0">Male</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Adress</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="diachi" class="input form-control" id="diachi_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="" class="col-sm-4 control-label">Phone number</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="dienthoai" class="input form-control"
+                                                       id="dienthoai_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <button class="button" type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="OR" class="hidden-xs">OR</div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="row text-center sign-with">
+                                <div class="social-header">Login With</div>
+                                <div class="unit social-column">
+                                    <div class="social-inner">
+                                        <div><a href=""><img src="images/ava/fb-login-button-big.png" alt="login-facebook"></a>
+                                        </div>
+                                        <div><a href=""><img src="images/ava/gg-login-button-big.png" alt="login-google"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="breadcrumb">
+                <li><a href="Bán-báo.html">HOME</a></li>
+                <li class="active">NEW MAGAZINE</li>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="cate"><span class="caret"></span>Category</a>
+                </div>
+                <div class="showcate" id="s1">
+                    <a id="a1" style="font-size: 14pt"><b>NEW MAGAZINE</b><span class="badge">12</span></a>
+                    <div id="show1" class="cateclass">
+                        <a href="new-magazine-january.html">New magazine in January</a><br>
+                        <a href="new-magazine-february.html">New magazine in February</a><br>
+                        <a href="new-magazine-march.html">New magazine in March</a><br>
+                        <a href="new-magazine-april.html">New magazine in April</a><br>
+                        <a href="new-magazine-may.html">New magazine in May</a><br>
+                        <a href="new-magazine-june.html">New magazine in June</a><br>
+                        <a href="new-magazine-july.html">New magazine in July</a><br>
+                        <a href="new-magazine-august.html">New magazine in August</a><br>
+                        <a href="new-amagazine-september.html">New magazine in September</a><br>
+                        <a href="new-magazine-october.html">New magazine in October</a><br>
+                        <a href="new-magazine-november.html">New magazine in November</a><br>
+                        <a href="new-magazine-december.html">New magazine in December</a><br>
+
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="price"><span class="caret"></span>Price<span id="badgered" class="badge">Clear</span></a>
+                </div>
+                <div class="showcate" id="s2">
+                    <form>
+                        <input type="radio" name="price"> 10$ - 50$<br>
+                        <input type="radio" name="price"> 50$ - 100$<br>
+                        <input type="radio" name="price"> 100$ - 150$<br>
+                        <input type="radio" name="price"> 150$ - 200$<br>
+                        <input type="radio" name="price"> 200$ - 250$<br>
+                        <input type="radio" name="price"> 250$ - 300$<br>
+                        <input type="radio" name="price" checked> Don't know<br>
+                    </form>
+                    <hr>
+                    <p>Enter a price range</p>
+                    <form class="form-inline">
+                        <input type="text" class="form-control" placeholder="2000$">
+                        <span> - </span>
+                        <input type="text" class="form-control" placeholder="3000$">
+                        <button type="submit" class="btn btn-default">Check</button>
+                    </form>
+                </div>
+            </div>
+            <div class="category">
+                <div class="well" style="background-color: black">
+                    <a id="brand"><span class="caret"></span>Brand</a>
+                </div>
+                <div class="showcate" id="s3">
+                    <form>
+                        <input type="checkbox" name="brand"> New magazine in January<br>
+                        <input type="checkbox" name="brand"> New magazine in February<br>
+                        <input type="checkbox" name="brand"> New magazine in March<br>
+                        <input type="checkbox" name="brand"> New magazine in April<br>
+                        <input type="checkbox" name="brand"> New magazine in May<br>
+                        <input type="checkbox" name="brand"> New magazine in June<br>
+                        <input type="checkbox" name="brand"> New magazine in July<br>
+                        <input type="checkbox" name="brand"> New magazine in August<br>
+                        <input type="checkbox" name="brand"> New magazine in September<br>
+                        <input type="checkbox" name="brand"> New magazine in October<br>
+                        <input type="checkbox" name="brand"> New magazine in November<br>
+                        <input type="checkbox" name="brand"> New magazine in December<br>
+                        <div style="text-align: center">
+                            <button type="submit" class="btn">Check</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+            <nav class="navbar navbar-default" role="navigation" id="nav2">
+                <div class="navbar-default">
+                    <a class="navbar-brand" href="#" style="color: white">NEW MAGAZINE IN SEPTEMBER</a>
+                </div>
+            </nav>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/chengyang1.jpg" srcset="images/chengyang1-mobile.jpg 320w, images/chengyang1.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/chengyang2.jpg" srcset="images/chengyang2-mobile.jpg 320w, images/chengyang2.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/chengyang3.jpg" srcset="images/chengyang3-mobile.jpg 320w, images/chengyang3.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/chengyang4.jpg" srcset="images/chengyang4-mobile.png 320w, images/chengyang4.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/chengyang5.jpg" srcset="images/chengyang5-mobile.jpg 320w, images/chengyang5.jpg 760w">
+                    </div>
+                    <div class="item">
+                        <img src="images/chengyang6.jpg" srcset="images/chengyang6-mobile.jpg 320w, images/chengyang6.jpg 760w">
+                    </div>
+                </div>
+            </div>
+            <h1>Chengyang Bridge In China</h1>
+            The Yongji Bridge of Chengyang (simplified Chinese: 程阳永济桥; traditional Chinese: 程陽永濟橋; pinyin: Chéngyáng Yǒngjì Qiáo), also called the Chengyang Wind and Rain Bridge (simplified Chinese: 程阳风雨桥; traditional Chinese: 程陽風雨橋; pinyin: Chéngyáng Fēngyǔ Qiáo), is a bridge in Sanjiang County,[1] of Guangxi, China.
+
+            Chengyang Bridge is a special covered bridge or lángqiáo, and one of several Fengyu bridges in the local Dong Minority region. It was completed in 1912.[2] It is also called the Panlong Bridge (simplified Chinese: 盘龙桥; traditional Chinese: 盤龍橋; pinyin: Pánlóng Qiáo).
+            Chengyang Bridge, or a Chengyang Wind and Rain Bridge (also called Yongji Bridge or Panlong Bridge), is probably one of the most famous wind and rain bridges in China.
+
+            It is located in Sanjiang County of Guangxi Municipality on the Linxi River between villages of Dong ethnic minority and is built in 1912.
+
+            It is 64.4 meters long, 3.4 meters wide and 10.6 meters high.
+
+            It is constructed to have five pavilions, with porches and eaves, on three stone piers and three spans between them. It got its name from the ability to protect from natural weather conditions.
+
+            Chengyang Bridge West Part
+            It is mainly made of wood but in an interesting way: no nails or rivets are used. All connections are made by dovetailing a wood and despite simple materials, ingenuity of workmanship of Dong people made the bridge so sturdy that bridge still stands and is in constant use. Along the wooden railings, there are benches that are used for relaxation
+            <h1>Building</h1>
+            The Chengyang Bridge, one of the outstanding examples of its type, has 3 floor levels containing 5 pavilions, 19 verandas and a platform at either end. It is supported by 5 stone piers and has a total length of 64.4m. The corridor is 3.4m wide and the height above the river is 10m. The upper structure is elaborately designed with towers reminiscent of pagodas and palaces above each of the 5 piers. It is made almost entirely of wood and the extensive roof is covered with tiles.​
+            <br>The bridge, also known as Panlong Bridge and Yongji Bridge, was constructed in 1916 (some sources say 1912) to link local villages across the Linxi River and the wooden superstructure was built without the use of nails or rivets. In their place the talented Dong workmen used tenons and dove-tailing for the many wooden pieces.​
+
+            There’s a tile-roofed corridor on the bridge body, which is a raised tower structure. And on the top of the bridge, there are several roofs higher than the body of the bridge. The five piers support bridge pavilions shaped like pagodas and palaces. In addition, there are brightly-colored lifelike carvings and paintings adorning the corridor and the eaves of the pavilions.​
+
+            Still in daily use almost 100 years after construction the Chengyang Bridge was added to the UNESCO list of World Heritage Sites in 1996.​
+            <h1>The Chengyang Wind and Rain Bridge (Feng Yu Qiao)</h1>
+            The bridge is a few decades old. Its structure is unusual and rather beautiful. It has five solid stone pillars, each with a wooden pavilion on top. The bridge is about 64 meters (210 feet) long, 3.4 meters (11 feet) wide and 10 meters (33 feet) high. Wooden pillars run the course of the bridge and support the roof. It is said that the whole structure is built without a single nail or metal support; the planks and beams are held together using joints. In Mandarin, the bridge is called a Fengyu Qiao or Wind and Rain Bridge. It is one of about 100 such bridges in the area, and is said to be the biggest. It is interesting architecturally.
+
+            Such bridges are meant to shelter the villagers in bad weather and otherwise are places to sit together and enjoy the scenery. There is a fee of about 30 RMB for seeing the Chengyang Bridge, and women on the bridge sell embroidery and cotton blankets boldly patterned in black and white. One may also be able to buy shiny blue-black Dong jackets, dyed with indigo and varnished in egg white as protection against mosquitoes. Dance shows may be performed for an extra fee.
+
+            From the bridge, you can watch the river and the people going about their activities. You can see a tight group of two or three story houses. The houses are overlooked by a square drum tower. For an excursion while visiting the bridge, there's a trail from the main road up to two pavilions overlooking Chengyang. These give views of the villages nestled among vivid green fields.From the bridge, you can observe the river and watch the people going about their daily activities. You can see a tight group of two- or three-story houses. The houses are overlooked by a square drum tower. For an extra excursion while visiting the bridge, there's a trail from the main road up to two pavilions overlooking Chengyang. These provide views of the local villages, nestled among vivid green fields.
+            <h1>Chengyang Hiking</h1>
+            Chengyang is a district consisting of eight famous stockade villages, giving a glimpse into the lives and customs of the Dong people. It is about five hours northwest of the famous tourist area of Guilin and Yangshuo. The region north of Guilin, however, actually has a more beautiful hiking and outdoor environment than Guilin itself or even the town of Yangshuo south of Guilin. The Li River valley of Yangshuo is beautiful, but the fields and villages around Yangshuo aren’t much more scenic than in the rest of China, and a hike can get boring. In Chengyang, you can walk around the hills and perhaps have meals in the villages or in a welcoming farmer’s house, and there are guesthouses that cater to backpackers. See China hiking tours
+            You can see and walk over other covered bridges, since there are about 100 of them in the area. There are about 160 drum towers in the Sanjiang area.
+            The Dong Village Hotel in Chengyang may also have dorm beds for about 15 RMB. Such hotels may provide information about local trails.
+
+
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="footer">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUPPORT </h3>
+                            <p id="p2"><span class="glyphicon glyphicon glyphicon-earphone"></span> +1-202-555-0151</p>
+                            <p id="p3"><i class="glyphicon glyphicon-envelope"></i> help@yourweb.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUBSCRIBE TO NEWSLETTERS </h3>
+                            <form action="#" class="input-append newsletter-box">
+                                <input type="text" class="input-footer" placeholder="  ENTER YOUR EMAIL">
+                                <button type="submit" class="btn-sub">
+                                    <i class="glyphicon glyphicon-hand-right"></i><span> SUBSCRIBE</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> FOLLOW US </h3>
+                            <div class="social-link">
+                                <ul class="social-icons">
+                                    <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                                    <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                                    <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                                    <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                                    <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
