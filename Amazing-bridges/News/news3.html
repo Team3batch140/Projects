@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HD&FT</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my-JQ.js"></script>
+    <script src="js/placeholder.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="newscss.css">
+    <link rel="stylesheet" href="news1css.css">
+
+
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="fa fa-paper-plane"></span></button>
+        <div class="row" id="nav1">
+            <div class="col-md-12 hder">
+                <nav class="navbar navbar-inverse menu">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="active navbar-brand visible-xs" href="../Home.html"><img class="logo"
+                                                                                src="images/images.png"/></a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active hidden-xs"><a href="../Home.html"><img class="logo" src="images/images.png"/></a>
+                            </li>
+                            <li><a href="news.html">NEWS</a></li>
+                            <li><a href="../photograph/photograp.html">PHOTOGRAPH</a></li>
+                            <li><a href="../Sellmagazine/sellmagazine.html">MAGAZINES</a></li>
+                            <li><a href="../About-us/About-us.html">ABOUT US</a></li>
+                            <li><a href="../Contact-us/contact-us.html">CONTACT US</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form class="navform">
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </li>
+                            <li>
+                                <div class="btn-cart" id="cart-block">
+                                    <a title="SignIn" href="" data-toggle="modal" data-target="#myModal"><span
+                                            class="glyphicon glyphicon-user"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-lg modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">LOGIN/REGISTER</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Register</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- LOGIN -->
+                                <div class="tab-pane active" id="Login">
+                                    <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                          id="dangnhap_from" method="post">
+                                        <div class="form-group">
+                                            <label for="email_login" class="col-sm-3 control-label">ID</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="email" class="input form-control" id="email_login"
+                                                       placeholder="ID...."/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_login" class="col-sm-3 control-label">Password</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="password" class="input form-control" id="pass_login"
+                                                       placeholder="Password...."/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <button class="button" type="submit" id="button-confirm">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- REGISTER -->
+                                <div class="tab-pane fade" id="Registration">
+                                    <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                          enctype="multipart/form-data" id="dangkytk_form register">
+                                        <div class="form-group">
+                                            <label for="frm_name" class="col-sm-4 control-label">ID</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" class="input form-control" id="frm_name" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="email" class="input form-control" id="emailtk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="pass_tk" class="col-sm-4 control-label">Password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="pass_tk"
+                                                       required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="repass_tk" class="col-sm-4 control-label">Re-password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="repass_tk"
+                                                       required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ngaysinh_tk" class="col-sm-4 control-label">Birth day</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="date" class="input form-control" id="ngaysinh_tk"
+                                                       required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="gender_tk" class="col-sm-4 control-label">Gender</label>
+
+                                            <div class="col-sm-8">
+                                                <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                    <!--<option value="" checked>I am...</option>-->
+                                                    <option value="1">Female</option>
+                                                    <option value="0">Male</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Adress</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="diachi" class="input form-control"
+                                                       id="diachi_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Phone number</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="dienthoai" class="input form-control"
+                                                       id="dienthoai_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <button class="button" type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="OR" class="hidden-xs">OR</div>
+                        </div>
+
+                        <!-- Facebook - Google account -->
+                        <div class="col-md-5">
+                            <div class="row text-center sign-with">
+                                <div class="social-header">Login With</div>
+                                <div class="unit social-column">
+                                    <div class="social-inner">
+                                        <div><a href=""><img src="images/ava/fb-login-button-big.png"
+                                                             alt="login-facebook"></a>
+                                        </div>
+                                        <div><a href=""><img src="images/ava/gg-login-button-big.png"
+                                                             alt="login-google"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container pagenews">
+    <div class="row">
+        <div>
+            <img class="imglogonews1" src="images/logonews1.png" height="183" width="275"/>
+            <div class="c1">
+                <p>Posted by Le Chau Ky</p>
+                <p>17:00 09/10/2017 Real Estate
+                </p>
+            </div>
+        </div>
+        <hr class="hrnews1">
+        <div>
+            <h1>The real estate market in Hanoi is vibrant thanks to the planning of 4 bridges</h1>
+            <p class="c2"><i>A total investment of VND38,000 billion for four bridges spanning the Red River and the
+                Duong River. Hanoi makes real estate along the Red River more attractive to investors.</i></p>
+        </div>
+        <hr class="hrnews1">
+    </div>
+    <div class="row">
+        <p class="c2">
+            In the world, the banks of large rivers in cities such as London, Paris, New York, Seoul, Shanghai ... are
+            the golden land for the development of modern and luxurious urban areas. Therefore, embankment, bridge
+            construction and planning of "riverside cities" are always priority investment in many countries.
+
+            In Asia, the two Yangtze - Nam Pho bridges, the symbol of Shanghai, are known as the prime example of a pair
+            of "golden bridges" - "crowded cities". The bridge across the Huangpu River shines brightly every night
+            along with the expense of the properties that make this area the VIP of China's "economic hub". Seoul was
+            also successful in building dozens of bridges spanning the Han River, creating a wealth of real estate for
+            the elite.
+
+            Back to Hanoi, compared to the new central area, Long Bien is dominant dominant when the People's Committee.
+            Hanoi has proposed a specific mechanism to select investors to build four bridges with an investment of
+            approximately 40 trillion dong. These ten thousand billion bridges not only have an important position but
+            also have a strong position with the people of the capital. In addition to connecting key intersections,
+            inter-provincial highways, minimizing congestion, bridging the bridge also promotes economic development in
+            the North of the Red River. 4 bridges are also expected to become an impressive hit on the architecture and
+            landscape of the capital.
+        </p>
+        <div class="divimgnews">
+            <img src="imgnews3/3,1.jpg"/>
+        </div>
+        <p class="c2">
+            With the information about 4 billion bridges, the "gold land" on both sides of the Red River, Duong River
+            now becomes more expensive. The success of the "golden bridge" in the world has opened the potential for
+            fast, strong and sustainable growth in the Long Bien district.
+
+            As soon as the bridges come into operation, moving from the central area to the new central area - Long Bien
+            district will be easier, more convenient. Before the great opportunity to become a "river city" exciting,
+            Long Bien quickly reached the sights of the giants. In the real estate industry, the "nearsightedness"
+            approach is always attractive, especially when it comes to resonating in sync with traffic and
+            infrastructure items in the area. .
+
+            "This is really good news for those who are investing in real estate in the East Coast, especially Long Bien
+            District," said Cao Son, an investor. Buying a property that benefits from infrastructure is nothing more
+            than ".
+
+            Owner of a luxury villa in the urban Vinhomes Riverside (Long Bien), Son is pleased to be living in the
+            green, living to move into the center is also convenient by the trees. Modern bridges continue to be
+            built.</p>
+        <div class="divimgnews">
+
+            <img src="imgnews3/3,2.jpg"/>
+        </div>
+        <p class="c2">Not only have outstanding advantages with 70 hectares of green space, water surface, convenience
+            in convenience, security 4 classes as well as professional quality management services, Vinhomes Riverside
+            "attract guests" with 4 unique architectural style in stage 2, Vinhomes Riverside - The Harmony.
+
+            In particular, Que Quat area is receiving much favor in the possession of Greek architecture in parallel
+            with the location near the lake, near the precious channel. Only one step to the lake is the residents can
+            enjoy a variety of lakeside facilities such as clubhouse, outdoor sports ground, lake promenade, reading
+            island, floating restaurant, sculpture garden , Greek style gardens ... together with Vinschool kindergarten
+            and school system.
+
+            Only a few kilometers from the center of Hoan Kiem, projects such as Vinhomes Riverside - The Harmony will
+            be the second most attractive real estate investment destination in the capital. The thrust of information
+            on the infrastructure will definitely be a powerful push for the Vinhomes Riverside ecological urban area to
+            become one of the real estate projects worth.
+        </p>
+
+
+    </div>
+</div>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row foot">
+            <div id="footer">
+                <div class="row foot">
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUPPORT </h3>
+                            <p id="p2"><span class="glyphicon glyphicon glyphicon-earphone"></span> +1-202-555-0151</p>
+                            <p id="p3"><i class="glyphicon glyphicon-envelope"></i> help@yourweb.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUBSCRIBE TO NEWSLETTERS </h3>
+                            <form action="#" class="input-append newsletter-box">
+                                <input type="email" class="input-footer" placeholder="  ENTER YOUR EMAIL">
+                                <button type="submit" class="btn-sub">
+                                    <i class="glyphicon glyphicon-hand-right"></i><span> SUBSCRIBE</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> FOLLOW US </h3>
+                            <div class="social-link">
+                                <ul class="social-icons">
+                                    <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                                    <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                                    <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                                    <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                                    <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

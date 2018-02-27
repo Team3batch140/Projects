@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Bootstrap image hover effects">
+    <meta name="author" content="Mike Young">
+    <title>Photograp</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/scaffolding.less">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/production.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my-JQ.js"></script>
+    <script src="js/placeholder.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="js/Angulars JS.js"></script>
+
+
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="fa fa-paper-plane"></span></button>
+        <div class="row" id="nav1">
+            <div class="col-md-12 hder" style="background-color: black;">
+                <nav class="navbar navbar-inverse menu">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="active navbar-brand visible-xs" href="../Home.html"><img class="logo" src="images/images.png"/></a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active hidden-xs"><a href="../Home.html"><img class="logo" src="images/images.png"/></a></li>
+                            <li style="width :90px"><a href="../News/news.html">NEWS</a></li>
+                            <li style="width : 150px"><a href="photograp.html">PHOTOGRAPH</a></li>
+                            <li style="width : 125px"><a href="../Sellmagazine/sellmagazine.html">MAGAZINES</a></li>
+                            <li style="width : 136px"><a href="../About-us/About-us.html">ABOUT US</a></li>
+                            <li style="width : 154px"><a href="../Contact-us/contact-us.html">CONTACT US</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form class="navform">
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </li>
+                            <li style="margin-left: 60px;">
+                                <div class="btn-cart" id="cart-block">
+                                    <a title="SignIn" href="" data-toggle="modal" data-target="#myModal"><span
+                                            class="glyphicon glyphicon-user"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-lg modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">LOGIN/REGISTER</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Register</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- LOGIN -->
+                                <div class="tab-pane active" id="Login">
+                                    <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                          id="dangnhap_from" method="post">
+                                        <div class="form-group">
+                                            <label for="email_login" class="col-sm-3 control-label">ID</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="email" class="input form-control" id="email_login"
+                                                       placeholder="ID...."/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_login" class="col-sm-3 control-label">Password</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="password" class="input form-control" id="pass_login"
+                                                       placeholder="Password...."/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <button class="button" type="submit" id="button-confirm">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- REGISTER -->
+                                <div class="tab-pane fade" id="Registration">
+                                    <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                          enctype="multipart/form-data" id="dangkytk_form register">
+                                        <div class="form-group">
+                                            <label for="frm_name" class="col-sm-4 control-label">ID</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" class="input form-control" id="frm_name" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="email" class="input form-control" id="emailtk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="pass_tk" class="col-sm-4 control-label">Password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="pass_tk"
+                                                       required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="repass_tk" class="col-sm-4 control-label">Re-password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="repass_tk"
+                                                       required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ngaysinh_tk" class="col-sm-4 control-label">Birth day</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="date" class="input form-control" id="ngaysinh_tk"
+                                                       required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="gender_tk" class="col-sm-4 control-label">Gender</label>
+
+                                            <div class="col-sm-8">
+                                                <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                    <!--<option value="" checked>I am...</option>-->
+                                                    <option value="1">Female</option>
+                                                    <option value="0">Male</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Adress</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="diachi" class="input form-control"
+                                                       id="diachi_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Phone number</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="dienthoai" class="input form-control"
+                                                       id="dienthoai_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <button class="button" type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="OR" class="hidden-xs">OR</div>
+                        </div>
+
+                        <!-- Facebook - Google account -->
+                        <div class="col-md-5">
+                            <div class="row text-center sign-with">
+                                <div class="social-header">Login With</div>
+                                <div class="unit social-column">
+                                    <div class="social-inner">
+                                        <div><a href=""><img src="images/ava/fb-login-button-big.png"
+                                                             alt="login-facebook"></a>
+                                        </div>
+                                        <div><a href=""><img src="images/ava/gg-login-button-big.png"
+                                                             alt="login-google"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--<div class="slider" style="overflow: hidden;">-->
+<!--&lt;!&ndash; slides &ndash;&gt;-->
+<!--<div class="slider__slides">-->
+<!--<div class="slide s&#45;&#45;active" style="background-color: black;">-->
+<!--<div class="slide__inner">-->
+<!--&lt;!&ndash;<div class="slide__content">&ndash;&gt;-->
+<!--&lt;!&ndash;<h2 class="slide__heading">Clip-Path Revealing Slider</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;<p class="slide__text">Greetings, Traveler!</p>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="slide" style="background-color: black;">-->
+<!--<div class="slide__inner">-->
+<!--&lt;!&ndash;<div class="slide__content">&ndash;&gt;-->
+<!--&lt;!&ndash;<h2 class="slide__heading">Simple Animation</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;<p class="slide__text">Clip-path magic!</p>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="slide" style="background-color: black;">-->
+<!--<div class="slide__inner">-->
+<!--&lt;!&ndash;<div class="slide__content">&ndash;&gt;-->
+<!--&lt;!&ndash;<h2 class="slide__heading">Very Stylish Effect!</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;<p class="slide__text">It looks cool, isn't it?</p>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="slide" style="background-color: black;">-->
+<!--<div class="slide__inner">-->
+<!--&lt;!&ndash;<div class="slide__content">&ndash;&gt;-->
+<!--&lt;!&ndash;<h2 class="slide__heading">Limited browser support</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;<p class="slide__text">Forget about IE/Edge and FF</p>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="slide s&#45;&#45;prev" style="background-color: black;">-->
+<!--<div class="slide__inner">-->
+<!--&lt;!&ndash;<div class="slide__content">&ndash;&gt;-->
+<!--&lt;!&ndash;<h2 class="slide__heading">Check my other stuff!</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;<p class="slide__text"><a href="https://codepen.io/suez/pens/public/" target="_blank">Other demos</a> and <a href="https://twitter.com/NikolayTalanov" target="_blank">Twitter</a></p>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash; slides end &ndash;&gt;-->
+<!--<div class="slider__control">-->
+<!--<div class="slider__control-line"></div>-->
+<!--<div class="slider__control-line"></div>-->
+<!--</div>-->
+<!--<div class="slider__control slider__control&#45;&#45;right m&#45;&#45;right">-->
+<!--<div class="slider__control-line"></div>-->
+<!--<div class="slider__control-line"></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<nav class="navbar navbar-inverse navbar-static-top" role="navigation">-->
+<!--<div class="container-fluid">-->
+<!--<div class="navbar-header">-->
+<!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">-->
+<!--<span class="sr-only">Toggle navigation</span>-->
+<!--<span class="icon-bar"></span>-->
+<!--<span class="icon-bar"></span>-->
+<!--<span class="icon-bar"></span>-->
+<!--</button>-->
+<!--&lt;!&ndash;<a class="navbar-brand" href="#">PHOTOGRAPH</a>&ndash;&gt;-->
+<!--&lt;!&ndash;<a href="https://github.com/miketricking/miketricking.github.io"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>&ndash;&gt;-->
+<!--</div>-->
+<!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+<!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+<!--<ul class="nav navbar-nav">-->
+<!--<li>-->
+<!--&lt;!&ndash;<a href="https://twitter.com/mike_youngg"><i class="fa fa-twitter fa-lg"></i> Huy Nguyen</a>&ndash;&gt;-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+<!--</div>-->
+<div class="container">
+
+    <!--<div class="col-lg-12 text-center">-->
+    <!--<h1 class="page-header">Image Bridges</h1>-->
+    <!--</div>-->
+    <div class="row">
+        <div class="divnews">
+            <div class="news">
+                <h2 class="h2News"><b>PHOTOGRAPH</b></h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div ng-app="" ng-controller="photograpController" class="photos">
+            <div ng-repeat="item in photograps">
+                <img src="{{ item.ImagePath }}"/>
+            </div>
+            <!--<div>-->
+            <!--<img src="images/pexels-photo-507410.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/pexels-photo-442583.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/pexels-photo-416940.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/pexels-photo-285283.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/pexels-photo-111117.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/pexels-photo-507410.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/pexels-photo-449627.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau30.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau31.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau32.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau33.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau34.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau35.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau36.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau37.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau38.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau39.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau40.jpeg" />-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau41.jpg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau43.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau44.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau45.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau46.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau47.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau48.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau49.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau50.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau51.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau52.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau53.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau54.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau55.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau56.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau60.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--<img src="images/cau58.jpeg" />-->
+            <!--<div></div>-->
+            <!--</div>-->
+            <!--<div class="pair">-->
+            <!--<img src="images/cau20.jpg" />-->
+            <!--<div></div>-->
+            <!--<div></div>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row foot">
+            <div id="footer">
+                <div class="row foot">
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUPPORT </h3>
+                            <p id="p2"><span class="glyphicon glyphicon glyphicon-earphone"></span> +1-202-555-0151
+                            </p>
+                            <p id="p3"><i class="glyphicon glyphicon-envelope"></i> help@yourweb.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUBSCRIBE TO NEWSLETTERS </h3>
+                            <form action="#" class="input-append newsletter-box">
+                                <input type="email" class="input-footer" placeholder="  ENTER YOUR EMAIL">
+                                <button type="submit" class="btn-sub">
+                                    <i class="glyphicon glyphicon-hand-right"></i><span> SUBSCRIBE</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> FOLLOW US </h3>
+                            <div class="social-link">
+                                <ul class="social-icons">
+                                    <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                                    <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                                    <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                                    <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                                    <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    (function () {
+        var $slides = document.querySelectorAll('.slide');
+        var $controls = document.querySelectorAll('.slider__control');
+        var numOfSlides = $slides.length;
+        var slidingAT = 1300; // sync this with scss variable
+        var slidingBlocked = false;
+
+        [].slice.call($slides).forEach(function ($el, index) {
+            var i = index + 1;
+            $el.classList.add('slide-' + i);
+            $el.dataset.slide = i;
+        });
+
+        [].slice.call($controls).forEach(function ($el) {
+            $el.addEventListener('click', controlClickHandler);
+        });
+
+        function controlClickHandler() {
+            if (slidingBlocked) return;
+            slidingBlocked = true;
+
+            var $control = this;
+            var isRight = $control.classList.contains('m--right');
+            var $curActive = document.querySelector('.slide.s--active');
+            var index = +$curActive.dataset.slide;
+            (isRight) ? index++ : index--;
+            if (index < 1) index = numOfSlides;
+            if (index > numOfSlides) index = 1;
+            var $newActive = document.querySelector('.slide-' + index);
+
+            $control.classList.add('a--rotation');
+            $curActive.classList.remove('s--active', 's--active-prev');
+            document.querySelector('.slide.s--prev').classList.remove('s--prev');
+
+            $newActive.classList.add('s--active');
+            if (!isRight) $newActive.classList.add('s--active-prev');
+
+
+            var prevIndex = index - 1;
+            if (prevIndex < 1) prevIndex = numOfSlides;
+
+            document.querySelector('.slide-' + prevIndex).classList.add('s--prev');
+
+            setTimeout(function () {
+                $control.classList.remove('a--rotation');
+                slidingBlocked = false;
+            }, slidingAT * 0.75);
+        };
+    }());
+
+    function photograpController($scope, $http) {
+        var url = "Data/photograp.json";
+        $http.get(url).success(function (response) {
+            $scope.photograps = response;
+        });
+    }
+</script>
+</body>
+</html>

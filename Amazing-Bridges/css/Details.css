@@ -7,6 +7,7 @@ body{
 }
 .p-img{
     text-align: center;
+    border: none;
 }
 .hr{
     width: 100%;
@@ -931,3 +932,4 @@ div#OR {
     background-color: #555; /* Add a dark-grey background on hover */
     color: white;
 }
+

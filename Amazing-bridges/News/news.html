@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my-JQ.js"></script>
+    <script src="js/placeholder.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="newscss.css">
+
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="fa fa-paper-plane"></span></button>
+        <div class="row" id="nav1">
+            <div class="col-md-12 hder">
+                <nav class="navbar navbar-inverse menu">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="active navbar-brand visible-xs" href="../Home.html"><img class="logo"
+                                                                                src="images/images.png"/></a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active hidden-xs"><a href="../Home.html"><img class="logo" src="images/images.png"/></a>
+                            </li>
+                            <li><a href="news.html">NEWS</a></li>
+                            <li><a href="../photograph/photograp.html">PHOTOGRAPH</a></li>
+                            <li><a href="../Sellmagazine/sellmagazine.html">MAGAZINES</a></li>
+                            <li><a href="../About-us/About-us.html">ABOUT US</a></li>
+                            <li><a href="../Contact-us/contact-us.html">CONTACT US</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form class="navform">
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </li>
+                            <li>
+                                <div class="btn-cart" id="cart-block">
+                                    <a title="SignIn" href="" data-toggle="modal" data-target="#myModal"><span
+                                            class="glyphicon glyphicon-user"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-lg modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">LOGIN/REGISTER</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Register</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- LOGIN -->
+                                <div class="tab-pane active" id="Login">
+                                    <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                          id="dangnhap_from" method="post">
+                                        <div class="form-group">
+                                            <label for="email_login" class="col-sm-3 control-label">ID</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="email" class="input form-control" id="email_login"
+                                                       placeholder="ID...."/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_login" class="col-sm-3 control-label">Password</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="password" class="input form-control" id="pass_login"
+                                                       placeholder="Password...."/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <button class="button" type="submit" id="button-confirm">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- REGISTER -->
+                                <div class="tab-pane fade" id="Registration">
+                                    <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                          enctype="multipart/form-data" id="dangkytk_form register">
+                                        <div class="form-group">
+                                            <label for="frm_name" class="col-sm-4 control-label">ID</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" class="input form-control" id="frm_name" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="email" class="input form-control" id="emailtk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="pass_tk" class="col-sm-4 control-label">Password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="pass_tk"
+                                                       required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="repass_tk" class="col-sm-4 control-label">Re-password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="repass_tk"
+                                                       required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ngaysinh_tk" class="col-sm-4 control-label">Birth day</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="date" class="input form-control" id="ngaysinh_tk"
+                                                       required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="gender_tk" class="col-sm-4 control-label">Gender</label>
+
+                                            <div class="col-sm-8">
+                                                <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                    <!--<option value="" checked>I am...</option>-->
+                                                    <option value="1">Female</option>
+                                                    <option value="0">Male</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Adress</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="diachi" class="input form-control"
+                                                       id="diachi_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Phone number</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="dienthoai" class="input form-control"
+                                                       id="dienthoai_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <button class="button" type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="OR" class="hidden-xs">OR</div>
+                        </div>
+
+                        <!-- Facebook - Google account -->
+                        <div class="col-md-5">
+                            <div class="row text-center sign-with">
+                                <div class="social-header">Login With</div>
+                                <div class="unit social-column">
+                                    <div class="social-inner">
+                                        <div><a href=""><img src="images/ava/fb-login-button-big.png"
+                                                             alt="login-facebook"></a>
+                                        </div>
+                                        <div><a href=""><img src="images/ava/gg-login-button-big.png"
+                                                             alt="login-google"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="divnews">
+            <div class="news">
+                <h2 class="h2News"><b>NEWS</b></h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-6">
+            <div class="divnews1">
+                <div class="thumbnail">
+                    <img class="imgnews12" src="images/news1.jpg">
+                    <div class="carousel-caption">
+                        <h3 class="h3new12"><a class="anews" href="news1.html">12 beautiful bridges in Europe</a>
+                        </h3>
+                        <p class="C2">06:34 26/11/2017 TRAVEL</p>
+                        <p class="ttnews">
+                            The bridges are not just a link between two riverbanks or two lands and cities, but also
+                            magnificent masterpieces of engineering and architecture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-6">
+            <div class="divnews2">
+                <div class="thumbnail">
+                    <img class="imgnews12" src="images/news2.jpg">
+                    <div class="carousel-caption">
+                        <h3 class="h3new12"><a class="anews" href="news2.html">5 impressive bridges on Han Da Nang
+                            River</a>
+                        </h3>
+                        <p class="C2">13:01 1/11/2017 NEWS</p>
+                        <p class="ttnews">
+                            Turning to the sea, Thuan Phuoc hammock bridge ... all over the Han River to create
+                            beautiful scenery for Da Nang.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="thumbnail">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img class="imgnews345" src="images/news3.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="h3new345"><a class="anews1" href="news3.html">The real estate market in Hanoi is
+                            vibrant thanks to the planning of 4
+                            bridges</a>
+                        </h3>
+                        <p class="C1">17:00 09/10/2017 Real Estate</p>
+                        <p class="ttnews345">
+                            A total investment of VND38,000 billion for four bridges spanning the Red River and the
+                            Duong
+                            River
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbnail">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img class="imgnews345" src="images/news4.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="h3new345"><a class="anews1" href="news4.html">Vietnam seal on the bridge connecting
+                            the shore</a>
+                        </h3>
+                        <p class="C1">17:00 09/10/2017 TRAVEL</p>
+                        <p class="ttnews345">
+                            Not only is the important works help transportation more convenient, many bridges in Vietnam
+                            also have unique architecture, bearing the mark of history and time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbnail">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img class="imgnews345" src="images/news5.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="h3new345"><a class="anews1" href="news5.html">If you are afraid of heights, do not
+                            try to cross the world's tallest
+                            bridge
+                            in China!</a>
+                        </h3>
+                        <p class="C1">15:00 31/10/2017 NEWS</p>
+                        <p class="ttnews345">
+                            Beipanjiang Bridge connects the city of Tuyen Uy, Yunnan province, China with Thuy Chau
+                            city, Guizhou province has become the highest bridge in the world.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbnail">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img class="imgnews345" src="images/news6.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="h3new345"><a class="anews1" href="news6.html">The most popular words from the
+                            word</a>
+                        </h3>
+                        <p class="C1">16:00 24/11/2017 World</p>
+                        <p class="ttnews345">
+                            When viewed from above buildings such as the Golden Gate Bridge, London Tower Bridge becomes
+                            small but does not lose its majestic beauty and overwhelmed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="divadv">
+                <p><b>Advertisement</b></p>
+            </div>
+            <div class="row">
+                <div class="thumbnail">
+                    <img class="imgqc" src="images/qc.jpg" alt="">
+                </div>
+            </div>
+            <br>
+            <div class="divadv">
+                <p><b>Fanpage</b></p>
+
+            </div>
+            <div class="row">
+                <div class="thumbnail">
+                    <img src="images/Fanpage.png" alt="">
+                    <div class="glyfa">
+                        <a href="https://www.facebook.com" class="fa fa-facebook" role="button"> Like Page</a>
+                        <a href="https://www.facebook.com" class="glyphicon glyphicon-share-alt"
+                           role="button">Share</a>
+                    </div>
+                </div>
+            </div>
+            <div class="divadv">
+                <p><b>Featured news</b></p>
+            </div>
+            <div class="row">
+                <div class="thumbnail">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img class="imgnews345" src="images/news3.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <h5 class="h3new345"><a class="anews1" href="news3.html">The real estate market in Hanoi is
+                                vibrant thanks to the planning
+                                of 4
+                                bridges</a>
+                            </h5>
+                            <p class="C1">09/10/2017 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img class="imgnews345" src="images/news1.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <h5 class="h3new345"><a class="anews1" href="news1.html">12 beautiful bridges in Europe</a>
+                            </h5>
+                            <p class="C1">26/11/2017</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img class="imgnews345" src="images/news4.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <h5 class="h3new345"><a class="anews1" href="news5.html">Vietnam seal on the bridge
+                                connecting the shore</a>
+                            </h5>
+                            <p class="C1">09/10/2017</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row foot">
+            <div id="footer">
+                <div class="row foot">
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUPPORT </h3>
+                            <p id="p2"><span class="glyphicon glyphicon glyphicon-earphone"></span> +1-202-555-0151</p>
+                            <p id="p3"><i class="glyphicon glyphicon-envelope"></i> help@yourweb.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUBSCRIBE TO NEWSLETTERS </h3>
+                            <form action="#" class="input-append newsletter-box">
+                                <input type="email" class="input-footer" placeholder="  ENTER YOUR EMAIL">
+                                <button type="submit" class="btn-sub">
+                                    <i class="glyphicon glyphicon-hand-right"></i><span> SUBSCRIBE</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> FOLLOW US </h3>
+                            <div class="social-link">
+                                <ul class="social-icons">
+                                    <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                                    <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                                    <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                                    <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                                    <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

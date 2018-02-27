@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HD&FT</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my-JQ.js"></script>
+    <script src="js/placeholder.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" href="newscss.css">
+    <link rel="stylesheet" href="news1css.css">
+
+
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="fa fa-paper-plane"></span></button>
+        <div class="row" id="nav1">
+            <div class="col-md-12 hder">
+                <nav class="navbar navbar-inverse menu">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="active navbar-brand visible-xs" href="../Home.html"><img class="logo"
+                                                                                src="images/images.png"/></a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active hidden-xs"><a href="../Home.html"><img class="logo" src="images/images.png"/></a>
+                            </li>
+                            <li><a href="news.html">NEWS</a></li>
+                            <li><a href="../photograph/photograp.html">PHOTOGRAPH</a></li>
+                            <li><a href="../Sellmagazine/sellmagazine.html">MAGAZINES</a></li>
+                            <li><a href="../About-us/About-us.html">ABOUT US</a></li>
+                            <li><a href="../Contact-us/contact-us.html">CONTACT US</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form class="navform">
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </li>
+                            <li>
+                                <div class="btn-cart" id="cart-block">
+                                    <a title="SignIn" href="" data-toggle="modal" data-target="#myModal"><span
+                                            class="glyphicon glyphicon-user"></span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-lg modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">LOGIN/REGISTER</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Register</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- LOGIN -->
+                                <div class="tab-pane active" id="Login">
+                                    <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                          id="dangnhap_from" method="post">
+                                        <div class="form-group">
+                                            <label for="email_login" class="col-sm-3 control-label">ID</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="email" class="input form-control" id="email_login"
+                                                       placeholder="ID...."/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_login" class="col-sm-3 control-label">Password</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="password" class="input form-control" id="pass_login"
+                                                       placeholder="Password...."/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <button class="button" type="submit" id="button-confirm">Login</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- REGISTER -->
+                                <div class="tab-pane fade" id="Registration">
+                                    <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                          enctype="multipart/form-data" id="dangkytk_form register">
+                                        <div class="form-group">
+                                            <label for="frm_name" class="col-sm-4 control-label">ID</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" class="input form-control" id="frm_name" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="email" class="input form-control" id="emailtk" required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="pass_tk" class="col-sm-4 control-label">Password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="pass_tk"
+                                                       required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="repass_tk" class="col-sm-4 control-label">Re-password</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="repass_tk"
+                                                       required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ngaysinh_tk" class="col-sm-4 control-label">Birth day</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="date" class="input form-control" id="ngaysinh_tk"
+                                                       required/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="gender_tk" class="col-sm-4 control-label">Gender</label>
+
+                                            <div class="col-sm-8">
+                                                <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                    <!--<option value="" checked>I am...</option>-->
+                                                    <option value="1">Female</option>
+                                                    <option value="0">Male</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Adress</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="diachi" class="input form-control"
+                                                       id="diachi_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Phone number</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="dienthoai" class="input form-control"
+                                                       id="dienthoai_dk"/>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <button class="button" type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="OR" class="hidden-xs">OR</div>
+                        </div>
+
+                        <!-- Facebook - Google account -->
+                        <div class="col-md-5">
+                            <div class="row text-center sign-with">
+                                <div class="social-header">Login With</div>
+                                <div class="unit social-column">
+                                    <div class="social-inner">
+                                        <div><a href=""><img src="images/ava/fb-login-button-big.png"
+                                                             alt="login-facebook"></a>
+                                        </div>
+                                        <div><a href=""><img src="images/ava/gg-login-button-big.png"
+                                                             alt="login-google"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container pagenews">
+    <div class="row">
+        <div>
+            <img class="imglogonews1" src="images/logonews1.png" height="183" width="275"/>
+            <div class="c1">
+                <p>Posted by Le Chau Ky</p>
+                <p>13:01 01/11/2017 NEWS
+                </p>
+            </div>
+        </div>
+        <hr class="hrnews1">
+        <div>
+            <h1>5 impressive bridges span the Han River in Da Nang</h1>
+            <p class="c2"><i>Bridge, Dragon bridge to fly to the sea, Thuan Phuoc hammock bridge ... all across the Han
+                River to create beautiful scenery for Da Nang.</i></p>
+        </div>
+        <hr class="hrnews1">
+    </div>
+    <div class="row">
+        <p class="c2"><b>Impressive visitors Da Nang shines bridges</b><br>Visitors to Danang are particularly impressed
+            by the unique brilliance that shines brilliantly across the Han River.</p>
+        <div class="divimgnews">
+            <img src="imgnews2/1,2.jpg"/>
+        </div>
+        <p class="c2">Da Nang has long been dubbed "the city of light" by many domestic and international tourists.</p>
+        <div class="divimgnews">
+
+            <img src="imgnews2/2,2.jpg"/>
+        </div>
+        <p class="c2">This special bridge was designed and built by Vietnamese experts and engineers in the period
+            1998-2000. The bridge is nearly 500m long and 12m wide, connecting two central roads between Hai Chau
+            district and the district. Son Tra. Everyday at 1am, the center of the bridge turns 90 degrees to open the
+            way for large boats to cross the Han River.
+        </p>
+        <div class="divimgnews">
+
+            <img src="imgnews2/3,2.jpg"/>
+        </div>
+        <p class="c2">
+            West of Han River is Thuan Phuoc hammock. There are six bridges spanning the Han River including the Han
+            River (also known as the quay), Thuan Phuoc Bridge, Nguyen Van Troi Bridge, Tran Thi Ly Bridge, Dragon
+            Bridge, Tien Son Bridge. Adjacent to Danang Bay, 1.8 km long, 13 m wide, built in over 6 years (2003 - 2009)
+            with a total investment capital of nearly 1,000 billion VND
+        </p>
+        <div class="divimgnews">
+
+            <img src="imgnews2/4,2.jpg"/>
+        </div>
+        <p class="c2">This bridge across the Han River has a unique architecture with the shape of a dragon reaching out
+            to the sea. The dragon head can fire and water. The bridge was started construction in July 2009 and
+            completed after nearly 4 years of construction, length 666 m and total investment of over 1.700 billion.
+            Dragon Bridge simulates the shape of the dragon in the Ly sea to the East Sea with a span of 568 m in
+            length, weighing nearly 9,000 tons. This is a unique architectural bridge designed by Louis Berger Group
+            (USA), the only steel arch in Southeast Asia.
+        </p>
+        <div class="divimgnews">
+
+            <img src="imgnews2/5,2.jpg"/>
+        </div>
+        <p class="c2">The Tran Thi Ly Bridge is designed in the shape of a sail on the Han River. The bridge was started
+            in April 2010, 731m long, 34.5m wide and invested more than 1.700 billion. The bridge was inaugurated in
+            March 2013. The bridge has a reinforced concrete pillar with 12 degrees of tilt, with 3 spools and no rigid
+            design such as regular cable-stayed bridges that are rigidly connected to the bridge deck, resting on the S5
+            shaft through Ball bearings to reduce the size of nails, save materials.
+        </p>
+        <div class="divimgnews">
+
+            <img src="imgnews2/6,2.jpg"/>
+        </div>
+        <p class="c2">Nguyen Van Troi Bridge has the longest life span, the bridge includes 14 spans of Poni steel
+            length more than 500 m, bridge size 10.5 m, no pedestrian margin. Currently, this bridge is kept as a
+            souvenir of Danang to serve the street walk. The bridge was designed and constructed by RMK (USA) in 1965.
+            The naming of hero Nguyen Van Troi placed the bridge to commemorate the person carrying out the bombing to
+            assassinate US Secretary of Defense McNamara in 1964.
+        </p>
+
+    </div>
+</div>
+<footer>
+    <div class="container-fluid">
+        <div class="row foot">
+            <div id="footer">
+                <div class="row foot">
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUPPORT </h3>
+                            <p id="p2"><span class="glyphicon glyphicon glyphicon-earphone"></span> +1-202-555-0151</p>
+                            <p id="p3"><i class="glyphicon glyphicon-envelope"></i> help@yourweb.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> SUBSCRIBE TO NEWSLETTERS </h3>
+                            <form action="#" class="input-append newsletter-box">
+                                <input type="email" class="input-footer" placeholder="  ENTER YOUR EMAIL">
+                                <button type="submit" class="btn-sub">
+                                    <i class="glyphicon glyphicon-hand-right"></i><span> SUBSCRIBE</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer">
+                            <h3> FOLLOW US </h3>
+                            <div class="social-link">
+                                <ul class="social-icons">
+                                    <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                                    <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                                    <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                                    <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                                    <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
